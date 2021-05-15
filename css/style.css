@@ -608,6 +608,7 @@ b {
 .panel-box.basic-info-right {
 	min-height: 320px !important;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px)
 {
 	.panel-box.basic-info-left,
@@ -1328,6 +1329,19 @@ b {
 }
 
 /*============================= Contact me =============================*/
+
+.panel-box.contact-me-left,
+.panel-box.contact-me-right {
+	min-height: 350px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+	.panel-box.basic-info-left,
+	.panel-box.basic-info-right {
+		
+	}
+}
 
 .map {
 	width: 100%;
