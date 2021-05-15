@@ -360,7 +360,7 @@ var jobs = [
         <b>Environment:</b> Visual Studio, Visual Studio Code, docker, Jenkins, AWS, DBeaver, GIT (Bitbucket), Postman, Jira, Confluence, LucidChart
         <br/>
         <b>Other:</b> EasyNetQ, EFPlus (batch queries), RestSharp, Automapper, custom react libraries, custom nuget, npm & docker repositories`,
-        tags: ["Web Development", "ASP.NET", "Architecture", "React", "Message brokers"]
+        tags: ["Web Development", "ASP.NET", "Architecture", "React", "Transportation", "Message brokers"]
     },
     {
         title: "🍹 Lead Software Developer",
