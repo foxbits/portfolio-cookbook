@@ -338,22 +338,46 @@ var cards = [
 ];
 
 var firstJobYear = 2015;
-var jobs = [{
+var jobs = [
+    {
+        title: "🚌 Senior Software Engineer",
+        employer: "Ness Digital Engineering",
+        period: "Jul. 2020 - Present (?)",
+        description: `Full-stack creative software engineer working on a transport intelligence product in an agile-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
+
+        <br/><br/>
+        <b>Activities:</b> software development & maintenance, bug tracking, architecture, API Design, providing technical solutions for business requirements, code reviews, writing technical documentation, investigating tech news & solutions and presenting them to the team, mentorship (interns, new joiners)
+        <br/>
+        <b>Related projects:</b> 
+            <a class="color__projects" href="#project-24">Flowbird - ABT</a>
+        <br/><br/>
+        <b>Tech stack:</b> .NET Core, ASP.NET (Core) WebApi, Entity Framework (Core), Redis, RabbitMQ, Keycloak (Identity Provider), Hangfire, MSUnit
+        <br/>
+        <b>UI:</b> React, Material UI, HTML, CSS, SCSS, JSS, JEST
+        <br/>
+        <b>Languages:</b> C#, JavaScript, LINQ, SQL (flavors: PostgreSQL)
+        <br/>
+        <b>Environment:</b> Visual Studio, Visual Studio Code, docker, Jenkins, AWS, DBeaver, GIT (Bitbucket), Postman, Jira, Confluence, LucidChart
+        <br/>
+        <b>Other:</b> EasyNetQ, EFPlus (batch queries), RestSharp, Automapper, custom react libraries, custom nuget, npm & docker repositories`,
+        tags: ["Web Development", "ASP.NET", "Architecture", "React", "Message brokers"]
+    },
+    {
         title: "🍹 Lead Software Developer",
         employer: "KireyEst",
-        period: "Aug. 2017 - Present (?)",
+        period: "Aug. 2017 - June 2020 (~3 years)",
         description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
 
         <br/><br/>
         <b>Activities:</b> software development & maintenance, writing technical documentation, API design, technical decisions based on requirements, software architecture, planning & estimates, mentorship (<i>planning & implementation of training sessions on .NET, Angular & related</i>)
         <br/>
         <b>Related projects:</b> 
-            <a href="#project-23">K-Value | KG Talent Platform</a>,
-            <a href="#project-22">GDM</a>,
-            <a href="#project-21">Kaly</a>,
-            <a href="#project-20">Risk Asset Manager</a>,
-            <a href="#project-15">Promis - Oil&Gas PM</a>
-        <br/>
+            <a class="color__projects" href="#project-23">K-Value | KG Talent Platform</a>,
+            <a class="color__projects" href="#project-22">GDM</a>,
+            <a class="color__projects" href="#project-21">Kaly</a>,
+            <a class="color__projects" href="#project-20">Risk Asset Manager</a>,
+            <a class="color__projects" href="#project-15">Promis - Oil&Gas PM</a>
+        <br/><br/>
         <b>Frameworks:</b> .NET Framework / Core, ASP.NET (Core) MVC / WebApi, Entity Framework (Core), Angular, MSUnit
         <br/>
         <b>Languages:</b> C#, TypeScript, JavaScript, LINQ, SQL (flavors: T-SQL, MySQL, PostgreSQL)
@@ -371,9 +395,9 @@ var jobs = [{
 
         <br/><br/>
         <b>Related projects:</b> 
-            <a href="#project-1">Anti-fraud - Fraud & Risk Management</a>,
-            <a href="#project-4">"Vittoria's Secrets" - Automated Tests & Tools</a>,
-            <a href="#project-8">""Product Factory" - Banking Product Management</a>
+            <a class="color__projects" href="#project-1">Anti-fraud - Fraud & Risk Management</a>,
+            <a class="color__projects" href="#project-4">"Vittoria's Secrets" - Automated Tests & Tools</a>,
+            <a class="color__projects" href="#project-8">""Product Factory" - Banking Product Management</a>
         <br/>
         <b>Frameworks:</b> .NET Framework, ASP.NET WebForms, WPF (MVVM), Entity Framework, Spring.NET, Telerik
         <br/>
@@ -501,14 +525,25 @@ contributors.forEach(element => {
 /* All projects AREA */
 var allProjects = [
     {
+        id: 24,
+        category: "work-projects",
+        time: "Jul. 2020 - Present",
+        type: "Work / In Progress",
+        title: "Flowbird - ABT",
+        description: "Account Based Ticketing (ABT) is an open-payment transport intelligence solution for making public transport easier (tap your card & no cares). It Reacts to the users when viewing their journeys data & uses the cloud to choreograph its workflows through RabbitMQ & ASP.NET",
+        url: {
+            title: "Private work"
+        },
+        image: "./img/portfolio/flowbird-abt.jpg"
+    },
+    {
         id: 23,
         category: "work-projects",
-        time: "Oct. 2019 - Present",
-        type: "Work / In Progress",
+        time: "Oct. 2019 - June 2020",
+        type: "Work / Abandoned",
         title: "K-Value | KG Talent Platform",
         description: "K-Value aggregates employee & implements a feedback system for employees, based on various business indicators, in order to provide a strong overview of a company's workforce. It is written with Spring and Angular, using Office365 and Teams web integrations.",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/k-value.png"
@@ -516,12 +551,11 @@ var allProjects = [
     {
         id: 22,
         category: "work-projects",
-        time: "Sep. 2019 - Present",
-        type: "Work / In Progress",
+        time: "Sep. 2019 - June 2020",
+        type: "Work / Abandoned",
         title: "GDM",
         description: "Part of the maintenance and evolutionary requests management team for GDM - an application constructed out of a set of services, with a web application on top of them, that handles document management (at multiple layers).",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/gdm.png"
@@ -529,12 +563,11 @@ var allProjects = [
     {
         id: 21,
         category: "work-projects",
-        time: "Oct. 2019 - Present",
-        type: "Work / In Progress",
+        time: "Oct. 2019 - June 2020",
+        type: "Work / Abandoned",
         title: "Kaly",
         description: "Web application, written in Spring and Angular, for the management of a corporation's internal resources and workflows (e.g. employee management, timesheets, holidays, etc.). I helped reengineer it (from performance and code-quality standpoint) and further build of advanced modules.",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/kaly.jpg"
@@ -542,12 +575,11 @@ var allProjects = [
     {
         id: 19,
         category: "side-projects",
-        time: "Aug. 2018 - Present",
-        type: "Side Project / Solo / In Progress",
+        time: "Aug. 2018 - ?",
+        type: "Side Project / Solo / On Hold",
         title: "Replay.NET - Streaming Playground",
         description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.  Includes: ASP.NET Core, scraping/testing with Puppeteer, streaming from HTTP and P2P, integration with Electron.",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/replay.jpg"
@@ -560,7 +592,6 @@ var allProjects = [
         title: "Risk Asset Manager",
         description: "Web application, reengineered after an old Desktop app, with ASP.NET Core &amp; Angular, which does banking workflows, algorithms and management of assets.",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/ramnet.jpg"
@@ -573,7 +604,6 @@ var allProjects = [
         title: "Autofiller - Gurushots Automation Bot",
         description: "Created as a side project in order to test if Gurushots' voting and friend search can be automated using Puppeteer and .NET Core",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/gurushots.jpg"
@@ -586,7 +616,6 @@ var allProjects = [
         title: "Promis - Oil&Gas Project Management",
         description: "Web application, ASP.NET MVC &amp; (*FE libs) of which purpose is the management of huge oil&gas project's construction and resources",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/promisnet.jpg"
@@ -599,7 +628,6 @@ var allProjects = [
         title: "'Product Factory' - Banking product management",
         description: "Developed WPF Desktop application, with an internal MVVM framework, following best practices, adding ideas and testing.",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/product-placement.jpg"
@@ -619,7 +647,6 @@ var allProjects = [
         <a href='https://github.com/marianfx/dotnet-core-labs'>.NET Core</a>,
         `,
         url: {
-            link: "javascript:void()",
             title: "Links in description"
         },
         image: "./img/portfolio/labs-cn.jpg"
@@ -632,7 +659,6 @@ var allProjects = [
         title: "'Vittoria's Secrets' - Automated Tests & Tools",
         description: "Developed tools for the automated testing of a banking website (C#); also executed and maintained a set of tests (Telerik).",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/tests.jpg"
@@ -645,7 +671,6 @@ var allProjects = [
         title: "'Anti-fraud' - Fraud Management System",
         description: "Web application /w ASP.NET Web Forms. Entered the project when it was in progress and developed different functionalities.",
         url: {
-            link: "javascript:void()",
             title: "Private work"
         },
         image: "./img/portfolio/anti-fraud.jpg"
@@ -653,7 +678,7 @@ var allProjects = [
     {
         id: 2,
         category: "side-projects",
-        time: "Jan. 2016 - Present",
+        time: "Jan. 2016 - ?",
         type: "Side Project / Solo",
         title: "Technology Testing",
         description: `Small applications built for wanting to try out different technologies:
@@ -663,7 +688,6 @@ var allProjects = [
         <a href='https://github.com/marianfx/com.fx.Id3Helper'>ID3 ML Helper</a>,
         `,
         url: {
-            link: "javascript:void()",
             title: "Links in description"
         },
         image: "./img/portfolio/tech-test.jpg"
@@ -679,7 +703,6 @@ var allProjects = [
         <a href='https://github.com/tabby336/Solution1'>here</a>,
         `,
         url: {
-            link: "javascript:void()",
             title: "Links in description"
         },
         image: "./img/portfolio/fun-web.png"
