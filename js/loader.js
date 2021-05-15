@@ -1,10 +1,11 @@
 /* Initializers */
 var imagesAvailable = 6;
-var currentImage = 4;
+var currentImage = 6;
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
 });
+
 var pluginspreparer = function () {
     "use strict";
 
@@ -17,20 +18,22 @@ var pluginspreparer = function () {
         }, 200);
     });
 
-    $("#cpyear").text(new Date().getFullYear());
+    attachMisc();
     loadData();
 
     startChangingImages();
-    // var logosAvailable = 2;
-    // var randomLogoId = Math.floor(Math.random() * logosAvailable + 1);
-    // $('.navbar-brand img').attr("src", "img/logos/logo" + randomLogoId + ".png");
 };
+
+function attachMisc(){
+    $("#cpyear").text(new Date().getFullYear());
+    $("#appversion").html("<small>(v." + APP_VERSION + ")</small>");
+}
 
 function afterLoadedDissapears() {
     $("body").addClass("scrollbar");
     $("body").addClass("scyan");
     $('[data-toggle="tooltip"]').tooltip(); //enable tooltips
-    // $(".hidden-images").removeClass("hidden");
+    
     setChangingInterval();
 }
 $(pluginspreparer);
@@ -40,12 +43,6 @@ function initializeImageLoad() {
 }
 
 function startChangingImages() {
-    // let divContent = "";
-    // for(let j = 1; j <= imagesAvailable; j++) {
-    //     divContent += "<div class='lazy lazy" + j + "' data-src='img/portraits/portrait" + j + ".png' style='background-image:url(img/portraits/portrait" + j + ".png)'></div>"
-    // }
-    // $(".hidden-images").html(divContent);
-
     changeImage(currentImage, true);
 }
 
@@ -366,6 +363,9 @@ function attachContact() {
 
 function initProjects() {
     _.forEach(allProjects, function (data) {
+        var linkElement = data.url.link
+            ? `<a target="_blank" href="` + data.url.link + `" class="button">` + data.url.title + `</a>`
+            : `<a href="#" onclick="return false;" class="button">` + data.url.title + `</a>`;
         var element = `<li id="project-` + data.id + `" class="full-card card ` + data.category + ` col-xs-12 col-sm-6 col-md-4 mix">
                             <div class="wrapper" style="background: url(` + data.image + `) center/cover no-repeat;">
                                 <div class="header">
@@ -379,9 +379,9 @@ function initProjects() {
                                         <h2 class="title">
                                             <a href="#">` + data.title + `</a>
                                         </h2>
-                                        <p class="text">` + data.description + `</p>
-                                        <a target="_blank" href="` + data.url.link + `" class="button">` + data.url.title + `</a>
-                                    </div>
+                                        <p class="text">` + data.description + `</p>`
+                                        + linkElement +
+                                    `</div>
                                 </div>
                             </div>
                         </li>`;

@@ -135,7 +135,7 @@
 							</div>
 
 							<div class="col-xs-12 col-sm-6">
-								<div class="panel-box wow fadeInLeft">
+								<div class="basic-info-left panel-box wow fadeInLeft">
 									<h2>Basic Information</h2>
 									<!-- Attach Basic Info -->
 									<ul class="basic-info"></ul>
@@ -144,7 +144,7 @@
 
 							<div class="col-xs-12 col-sm-6">
 								<!-- Attach Professional Profile Desc -->
-								<div class="panel-box professional-profile wow fadeInRight">
+								<div class="panel-box professional-profile wow fadeInRight basic-info-right">
 									<h2>Professional Profile</h2>
 								</div>
 							</div>
@@ -179,23 +179,6 @@
 					</div>
 				</section>
 				<!-- End Skills -->
-				
-				<!-- My interests -->
-				<section class="content backgrounded" id="the-interests">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="my-interests panel-box wow fadeInUp" style="padding-bottom: 40px;">
-									<h2>My Interests</h2>
-									<!-- Container for Interests -->
-									<p id="interests-description"></p>
-									<p id="interests-caption" style="text-align:right"></p>
-									<ul id="interests-container"></ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
 
 				<!-- Experience -->
 				<section class="content backgrounded" id="experience">
@@ -216,6 +199,23 @@
 					</div>
 				</section>
 				<!-- End Experience -->
+				
+				<!-- My interests -->
+				<section class="content backgrounded" id="the-interests">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="my-interests panel-box wow fadeInUp" style="padding-bottom: 40px;">
+									<h2>My Interests</h2>
+									<!-- Container for Interests -->
+									<p id="interests-description"></p>
+									<p id="interests-caption" style="text-align:right"></p>
+									<ul id="interests-container"></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<!-- Education -->
 				<section class="content backgrounded" id="education">
@@ -247,9 +247,9 @@
 									<!-- Filters -->
 									<ul id="filter-list">
 										<li class="filter" data-filter="all">ALL</li>
+										<li class="filter" data-filter=".work-projects">Work Projects</li>
 										<li class="filter" data-filter=".side-projects">Side Projects</li>
 										<li class="filter" data-filter=".uni-projects">University Projects</li>
-										<li class="filter" data-filter=".work-projects">Work Projects</li>
 									</ul>
 									<!-- End Filters -->
 								</div>
@@ -280,12 +280,12 @@
 
 							<!-- Attach contact data -->
 							<div id="contact-data" class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
-								<ul class="panel-box">
+								<ul class="panel-box contact-me-left">
 								</ul>
 							</div>
 
 							<div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
-								<div class="panel-box">
+								<div class="panel-box contact-me-right">
 									<h2>Send me an e-mail</h2>
 									<!-- Attach actions -->
 									<form role="form" id="contact-form" class="contact-form">
@@ -322,8 +322,10 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="copyright text-center">
-									<p>FX © Copyright
-										<span id="cpyear"></span>. All Rights Reserved.</p>
+									<p>FX © copyright
+										<span id="cpyear"></span>. All Rights Reserved.
+										<span id="appversion"></span>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -366,7 +368,6 @@
 	<!-- Import page JS -->
 	<script src="js/data.js"></script>
 	<script src="js/script-vertical.js"></script>
-	<!-- <script src="js/site.js"></script> -->
 	<script src="js/loader.js"></script>
 </body>
 

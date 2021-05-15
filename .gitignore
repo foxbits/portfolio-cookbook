@@ -1,4 +1,7 @@
 node_modules
 dest/*
 !dest/img
+!dest/js
+!dest/css
+!dest/files
 !dest/index.html
