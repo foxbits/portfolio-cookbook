@@ -5,6 +5,7 @@ var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
 });
+
 var pluginspreparer = function () {
     "use strict";
 
@@ -17,14 +18,16 @@ var pluginspreparer = function () {
         }, 200);
     });
 
-    $("#cpyear").text(new Date().getFullYear());
+    attachMisc();
     loadData();
 
     startChangingImages();
-    // var logosAvailable = 2;
-    // var randomLogoId = Math.floor(Math.random() * logosAvailable + 1);
-    // $('.navbar-brand img').attr("src", "img/logos/logo" + randomLogoId + ".png");
 };
+
+function attachMisc(){
+    $("#cpyear").text(new Date().getFullYear());
+    $("#appversion").html("<small>(v." + APP_VERSION + ")</small>");
+}
 
 function afterLoadedDissapears() {
     $("body").addClass("scrollbar");

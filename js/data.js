@@ -1,3 +1,5 @@
+const APP_VERSION = 2021.1;
+
 var loves = [{
         name: "Ideas"
     },
