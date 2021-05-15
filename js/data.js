@@ -345,7 +345,7 @@ var jobs = [
         title: "🚌 Senior Software Engineer",
         employer: "Ness Digital Engineering",
         period: "Jul. 2020 - Present (?)",
-        description: `Full-stack creative software engineer working on a transport intelligence product in an agile-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
+        description: `Creative software engineer working on a transport intelligence product in a scrum-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
 
         <br/><br/>
         <b>Activities:</b> software development & maintenance, bug tracking, architecture, API Design, providing technical solutions for business requirements, code reviews, writing technical documentation, investigating tech news & solutions and presenting them to the team, mentorship (interns, new joiners)
