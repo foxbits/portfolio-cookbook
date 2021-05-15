@@ -135,7 +135,7 @@ var interestsData = [{
     },
     {
         title: "Money",
-        link: "http://paypal.me/marianfx",
+        link: "https://revolut.me/mfx",
         icon: "fa-money"
     },
     {
@@ -171,21 +171,26 @@ var cards = [
         data: [
             {
                 title: "Web Development",
-                value: 95,
-                tooltip: "designing and creating APIs, full-stack with different frameworks, knowledge of core concepts that I can apply other frameworks"
+                value: 96,
+                tooltip: "Designing and creating APIs; consuming them through different web frameworks. Knowledge of core concepts that I can apply to any other framework"
             },
             {
                 title: ".NET Development",
                 value: 93,
-                tooltip: "desktop, web or services"
+                tooltip: "Web, Services or Desktop, with insights into latest versions of .NET"
             },
             {
                 title: "OOP / <a target='_blank' href='https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)'>S.O.L.I.D.</a> Programming.",
                 value: 93
             },
             {
+                title: "Architecture",
+                value: 86,
+                tooltip: "Technical design of solutions fitting the business needs"
+            },
+            {
                 title: "Front-End Development",
-                value: 83,
+                value: 85,
                 tooltip: "with or without a framework"
             },
             {
@@ -200,7 +205,7 @@ var cards = [
             {
                 title: "Mentorship",
                 value: 70,
-                tooltip: "ability to teach knowledge from these fields to others"
+                tooltip: "Ability to teach knowledge from all these fields to others"
             }
         ]
     },
@@ -209,35 +214,35 @@ var cards = [
         data: [
             {
                 title: "Confidence",
-                value: 90
+                value: 92
             },
             {
                 title: "Organizational Skills Suite",
-                value: 88
+                value: 90
             },
             {
                 title: "Attention to Details",
+                value: 90
+            },
+            {
+                title: "Leadership",
                 value: 85
             },
             {
                 title: "Architectural Thinking",
+                value: 82
+            },
+            {
+                title: "Team Coreography",
+                value: 82
+            },
+            {
+                title: "Communication",
                 value: 80
             },
             {
                 title: "Fast Learning algorithm",
                 value: 75
-            },
-            {
-                title: "Leadership",
-                value: 75
-            },
-            {
-                title: "Communication",
-                value: 69
-            },
-            {
-                title: "Team Coreography",
-                value: 69
             }
         ]
     },
@@ -246,17 +251,27 @@ var cards = [
         data: [{
                 title: "ASP.NET (+Core) & Related",
                 value: 92,
-                tooltip: "Includes ASP.NET MVC, ASP.NET Web API, .NET Core alternatives and many Nu-Get libraries for any usecase"
+                tooltip: "Includes ASP.NET (MVC, Web API), .NET Core alternatives and many Nu-Get libraries for any usecase"
             },
             {
                 title: "Front-End Frameworks & Libs",
-                value: 80,
-                tooltip: "Angular (2+), jQuery, Vue.JS, Bootstrap, Material Design Frameworks (Angular Material, Materialize), PrimeNG, Chart.JS + Chart.JS based packages, etc"
+                value: 85,
+                tooltip: "React, Angular (5+), Material UI, Unit Testing with Jest, jQuery, Vue.JS, Bootstrap, Material Design Frameworks (Angular Material, Materialize), PrimeNG, Chart.JS, etc"
             },
             {
                 title: "Databases / ORMs",
                 value: 82,
-                tooltip: "Includes T-SQL / PL/SQL knowledge, advanced query writing, query building mechanisms, Entity Framework (Core) proficiency with extras like EFPlus (batch) and LINQ, that can be adapted easily to other ORMs"
+                tooltip: "Includes Postgres / SQL Server / MariaDB / Oracle knowledge, advanced query writing, query building mechanisms, Entity Framework (Core) proficiency with extras like EFPlus (batch) and LINQ, that can be adapted easily to other ORMs"
+            },
+            {
+                title: "Docker & The Cloud",
+                value: 79,
+                tooltip: "Working scenarios and application deployments through docker containers to the cloud (AWS / Azure)"
+            },
+            {
+                title: "Enterprise patterns",
+                value: 78,
+                tooltip: "Defining choreographies between microservices using HTTP and/or exchanges/queues (RabbitMQ) according to business needs"
             },
             {
                 title: "Agile & Customs",
@@ -267,7 +282,7 @@ var cards = [
                 value: 70
             },
             {
-                title: ".NET Framework",
+                title: "Old School .NET Framework",
                 value: 69,
                 tooltip: "Refers to other .NET Framework knowledge, like WCF, WFA, WPF"
             },
@@ -278,7 +293,7 @@ var cards = [
             },
             {
                 title: "Functional Programming",
-                value: 60,
+                value: 55,
                 tooltip: "Applied with JavaScript mostly, and a long time ago with Python"
             },
             {
@@ -296,7 +311,7 @@ var cards = [
             },
             {
                 title: "JavaScript (ES6+ +/- TypeScript)",
-                value: 90
+                value: 92
             },
             {
                 title: "SQL (PL/SQL, T-SQL, MySQL)",
@@ -330,7 +345,7 @@ var jobs = [{
         description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
 
         <br/><br/>
-        <b>Related projects:</b> software development & maintenance, writing technical documentation, API design, technical decisions based on requirements, software architecture, planning & estimates, mentorship (<i>planning & implementation of training sessions on .NET, Angular & related</i>)
+        <b>Activities:</b> software development & maintenance, writing technical documentation, API design, technical decisions based on requirements, software architecture, planning & estimates, mentorship (<i>planning & implementation of training sessions on .NET, Angular & related</i>)
         <br/>
         <b>Related projects:</b> 
             <a href="#project-23">K-Value | KG Talent Platform</a>,
