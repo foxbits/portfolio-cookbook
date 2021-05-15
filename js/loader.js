@@ -1,6 +1,6 @@
 /* Initializers */
 var imagesAvailable = 6;
-var currentImage = 4;
+var currentImage = 6;
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
@@ -33,7 +33,7 @@ function afterLoadedDissapears() {
     $("body").addClass("scrollbar");
     $("body").addClass("scyan");
     $('[data-toggle="tooltip"]').tooltip(); //enable tooltips
-    // $(".hidden-images").removeClass("hidden");
+    
     setChangingInterval();
 }
 $(pluginspreparer);
@@ -43,12 +43,6 @@ function initializeImageLoad() {
 }
 
 function startChangingImages() {
-    // let divContent = "";
-    // for(let j = 1; j <= imagesAvailable; j++) {
-    //     divContent += "<div class='lazy lazy" + j + "' data-src='img/portraits/portrait" + j + ".png' style='background-image:url(img/portraits/portrait" + j + ".png)'></div>"
-    // }
-    // $(".hidden-images").html(divContent);
-
     changeImage(currentImage, true);
 }
 
