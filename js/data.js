@@ -1,4 +1,4 @@
-const APP_VERSION = 2021.1;
+const APP_VERSION = 2021.2;
 
 var loves = [{
         name: "Ideas"
@@ -97,7 +97,7 @@ var contactData = {
     messengerLink: "https://m.me/marian.fx"
 };
 var profiFile = {
-    description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better developer by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on.",
+    description: "Sassy software enthusiast with great skills of communication, attention to details & architectural thinking. Based on my fast learning algorithm and team choreography understanding, I'm looking forward to increasing my software engineering skills and growing myself into the better professional by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on.",
     links: [
         {
             title: "Linkedin (Web)",
@@ -117,12 +117,12 @@ var interestsIntro = {
 
 var interestsData = [{
         title: "Movies",
-        link: "https://www.imdb.com/user/ur30571247",
+        link: "https://www.taste.io/users/monsieurfx",
         icon: "fa-film"
     },
     {
         title: "Music",
-        link: "https://www.youtube.com/c/MonsieurFX/playlists",
+        link: "https://youtube.com/c/MonsieurFX/playlists",
         icon: "fa-music"
     },
     {
@@ -342,9 +342,22 @@ var cards = [
 var firstJobYear = 2015;
 var jobs = [
     {
+        title: "💺 Technical Lead",
+        employer: "Ness Digital Engineering",
+        period: "Jul. 2021 - Present (?)",
+        description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum-based team towards sprint goals in an Agile environment with other engineers and product representatives across UK and France.
+
+        <br/><br/>
+        <b>Activities:</b> system design, architecture, team choreography, providing technical solutions for business requirements, software development, code reviews, mentorship
+        <br/>
+        <b>Related projects:</b> 
+            <a class="color__projects" href="#project-24">Flowbird - ABT</a>`,
+        tags: ["Leadership", "Business value", "Web Development", "ASP.NET", "Architecture", "Transportation"]
+    },
+    {
         title: "🚌 Senior Software Engineer",
         employer: "Ness Digital Engineering",
-        period: "Jul. 2020 - Present (?)",
+        period: "Jul. 2020 - Jun. 2021",
         description: `Creative software engineer working on a transport intelligence product in a scrum-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
 
         <br/><br/>
