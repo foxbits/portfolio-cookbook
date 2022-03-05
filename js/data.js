@@ -33,7 +33,7 @@ var loves = [{
 ];
 
 var socialLinks = [{
-        url: "https://my.bio/monsieurfx",
+        url: "https://my.bio/foxie",
         icon: "fa-globe",
         title: "Everything"
     },
@@ -48,12 +48,12 @@ var socialLinks = [{
         title: "Github"
     },
     {
-        url: "https://twitter.com/fxsays",
+        url: "https://twitter.com/foxietamine",
         icon: "fa-twitter",
         title: "Twitter"
     },
     {
-        url: "https://www.instagram.com/monsieurfx",
+        url: "https://www.instagram.com/foxietamine",
         icon: "fa-instagram",
         title: "Instagram"
     }
@@ -117,7 +117,7 @@ var interestsIntro = {
 
 var interestsData = [{
         title: "Movies",
-        link: "https://www.taste.io/users/monsieurfx",
+        link: "https://www.taste.io/users/foxietamine",
         icon: "fa-film"
     },
     {
@@ -142,7 +142,7 @@ var interestsData = [{
     },
     {
         title: "Photography",
-        link: "https://gurushots.com/monsieurfx",
+        link: "https://gurushots.com/foxietamine",
         icon: "fa-photo"
     },
     {
