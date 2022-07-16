@@ -434,6 +434,13 @@ var jobs = [
 
 var edus = [
     {
+        institution: "🍉 The Principal Developer Masterclass",
+        title: '<a href="https://certs.principal.dev/14x/U03NTA03VUN" target="_blank">Certificate</a>',
+        period: "Jul. 2022",
+        description: `Attended a great training - <a href="https://principal.dev" target="_blank">The Principal Dev"</a> by <a href="https://twitter.com/eduardsi" target="_blank">Eduards Sizovs</a> - in order to better understand the psychology of teams and how to add value and technical excellence to my work gang. A great course with a lot of new ideas to apply.`,
+        tags: ["Technical Lead", "principal.dev"]
+    },
+    {
         institution: "🌞 Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)",
         title: '<a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>',
         period: "Sep. 2019 - Dec. 2019",
