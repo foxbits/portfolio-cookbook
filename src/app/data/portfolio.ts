@@ -1,7 +1,8 @@
-export const APP_VERSION = 2021.2;
+import { formatDistance } from 'date-fns';
+
+export const APP_VERSION = 2025.1;
 
 const age = getAge(1996, 8, 4);
-const firstJobYear = 2015;
 const phoneNumber = "+40 75*-***-669";
 const email = "contact@foxbites.net";
 const messengerLink = "https://m.me/marian.fx";
@@ -61,9 +62,10 @@ export let portfolioData = {
       title: "Messenger"
     },
     {
-      url: "https://portfolio.foxbites.net",
+      url: "https://portfolio.foxbites.net#about-me",
       icon: "fa-globe",
-      title: "CV / Portfolio"
+      title: "CV / Portfolio",
+      target: "_self"
     },
   ],
   infos: [
@@ -73,7 +75,7 @@ export let portfolioData = {
     },
     {
       title: "Email",
-      value: '<a href="' + email + '">' + email + '</a>'
+      value: '<a href="mailto:' + email + '">' + email + '</a>'
     },
     {
       title: "Phone",
@@ -81,7 +83,7 @@ export let portfolioData = {
     },
     {
       title: "Date of birth",
-      value: '<a href="http://whathappenedinmybirthyear.com/" target="_black">04 Aug 1996 (' + age + ' years)</a>'
+      value: '<a href="https://happyhappybirthday.net/en/1996/08/04?started_work=19&pension=65&life_expectancy=80" target="_black">04 Aug 1996 (' + age + ' years)</a>'
     },
     {
       title: "Address",
@@ -123,60 +125,22 @@ export let portfolioData = {
       }
     ]
   },
-  interestsIntro: {
-    description: '"We don\'t read and write poetry because it\'s cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. And medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for."',
-    caption: "- Robin Williams in ‘Dead Poets Society’"
-  },
-  interestsData: [
+  numbersData: [
     {
-      title: "Movies",
-      link: "https://letterboxd.com/cinemarrian",
-      icon: "fa-film"
+      title: "Projects",
+      count: undefined // calculated later
     },
     {
-      title: "Music",
-      link: "https://stats.fm/foxbites",
-      icon: "fa-music"
+      title: "Cups of coffee",
+      count: Infinity
     },
     {
-      title: "Books",
-      link: "https://www.goodreads.com/cinemarrian",
-      icon: "fa-book"
+      title: "Years of experience",
+      count: undefined // calculated later
     },
     {
-      title: "Writing",
-      link: "https://foxietamine.substack.com/",
-      icon: "fa-feather"
-    },
-    {
-      title: "Money",
-      link: "https://revolut.me/mfx",
-      icon: "fa-money"
-    },
-    {
-      title: "Photography",
-      link: "https://gurushots.com/foxietamine",
-      icon: "fa-photo"
-    },
-    {
-      title: "Art",
-      link: "https://www.cosmos.so/foxbites/artistic-habits",
-      icon: "fa-paint-brush"
-    },
-    {
-      title: "Humour",
-      link: "https://comedybox.ro",
-      icon: "fa-graduation-cap"
-    },
-    {
-      title: "Video Games",
-      link: "https://backloggd.com/u/foxie",
-      icon: "fa-gamepad"
-    },
-    {
-      title: "Shopping",
-      link: "https://www.vinted.ro/member/170366344-foxietamine",
-      icon: "fa-shopping-bag"
+      title: "Glasses of wine",
+      count: 1996
     },
   ],
   cards: [
@@ -194,7 +158,7 @@ export let portfolioData = {
           tooltip: "Web, Services or Desktop, with insights into latest versions of .NET"
         },
         {
-          title: "OOP / <a target='_blank' href='https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)'>S.O.L.I.D.</a> Programming.",
+          title: "OOP / S.O.L.I.D. Programming",
           value: 93
         },
         {
@@ -213,7 +177,7 @@ export let portfolioData = {
           tooltip: "Manage, Query, Procedural Programming"
         },
         {
-          title: "Data Structures &amp; Algorithms",
+          title: "Data Structures & Algorithms",
           value: 70
         },
         {
@@ -354,7 +318,8 @@ export let portfolioData = {
     {
       title: "💺 Technical Lead",
       employer: "Ness Digital Engineering",
-      period: "Jul. 2021 - Present (?)",
+      startDate: new Date(2021, 6, 1),
+      endDate: undefined,
       description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum-based team towards sprint goals in an Agile environment with other engineers and product representatives across UK and France.
 
         <br/><br/>
@@ -367,7 +332,8 @@ export let portfolioData = {
     {
       title: "🚌 Senior Software Engineer",
       employer: "Ness Digital Engineering",
-      period: "Jul. 2020 - Jun. 2021",
+      startDate: new Date(2020, 6, 1),
+      endDate: new Date(2021, 5, 30),
       description: `Creative software engineer working on a transport intelligence product in a scrum-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
 
         <br/><br/>
@@ -390,7 +356,8 @@ export let portfolioData = {
     {
       title: "🍹 Lead Software Developer",
       employer: "KireyEst",
-      period: "Aug. 2017 - June 2020 (~3 years)",
+      startDate: new Date(2017, 7, 1),
+      endDate: new Date(2020, 5, 30),
       description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
 
         <br/><br/>
@@ -415,7 +382,8 @@ export let portfolioData = {
     {
       title: "🍷 .NET Software Developer",
       employer: "KireyEst",
-      period: "Oct. 2015 - Jul. 2017 (<2 years)",
+      startDate: new Date(2015, 9, 1),
+      endDate: new Date(2017, 6, 31),
       description: `Worked part-time, while also studying at university, alongside both junior and experienced developers, on a various set of technologies, in order to gain experience.
 
         <br/><br/>
@@ -436,10 +404,67 @@ export let portfolioData = {
     {
       title: "🍼 .NET Intern",
       employer: "KireyEst",
-      period: "Jul. 2015 - Sep. 2015 (3 months)",
+      startDate: new Date(2015, 6, 1),
+      endDate: new Date(2015, 8, 30),
       description: `Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS...).`,
       tags: ["Training"]
     }
+  ],
+  interestsIntro: {
+    description: '"We don\'t read and write poetry because it\'s cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. And medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for."',
+    caption: "- Robin Williams in ‘Dead Poets Society’"
+  },
+  interestsData: [
+    {
+      title: "Movies",
+      link: "https://letterboxd.com/cinemarrian",
+      icon: "fa-film"
+    },
+    {
+      title: "Music",
+      link: "https://stats.fm/foxbites",
+      icon: "fa-music"
+    },
+    {
+      title: "Books",
+      link: "https://www.goodreads.com/cinemarrian",
+      icon: "fa-book"
+    },
+    {
+      title: "Writing",
+      link: "https://foxietamine.substack.com/",
+      icon: "fa-feather"
+    },
+    {
+      title: "Money",
+      link: "https://revolut.me/mfx",
+      icon: "fa-money"
+    },
+    {
+      title: "Photography",
+      link: "https://gurushots.com/foxietamine",
+      icon: "fa-photo"
+    },
+    {
+      title: "Art",
+      link: "https://www.cosmos.so/foxbites/artistic-habits",
+      icon: "fa-paint-brush"
+    },
+    {
+      title: "Humour",
+      link: "https://comedybox.ro",
+      icon: "fa-graduation-cap"
+    },
+    {
+      title: "Video Games",
+      link: "https://backloggd.com/u/foxie",
+      icon: "fa-gamepad"
+    },
+    {
+      title: "Shopping",
+      link: "https://www.vinted.ro/member/170366344-foxietamine",
+      icon: "fa-shopping-bag"
+    },
   ],
   edus: [
     {
@@ -693,28 +718,14 @@ export let portfolioData = {
       },
       image: "./img/portfolio/fun-web.png"
     }
-  ],
-  numbersData: [{
-    title: "Projects",
-    count: undefined // calculated later
-  },
-  {
-    title: "Cups of coffee",
-    count: Infinity
-  },
-  {
-    title: "Years of experience",
-    count: (new Date().getFullYear() - firstJobYear)
-  },
-  {
-    title: "Glasses of wine",
-    count: "1996"
-  },
   ]
 };
 
 // assign the number of projects to the "Projects" count
 portfolioData.numbersData.find(x => x.title == "Projects")!.count = portfolioData.allProjects.length;
+
+// assign the years of experience to the "Years of experience" count
+portfolioData.numbersData.find(x => x.title == "Years of experience")!.count = new Date().getFullYear() - portfolioData.jobs[portfolioData.jobs.length - 1].startDate.getFullYear();
 
 
 /* Helpful functions */

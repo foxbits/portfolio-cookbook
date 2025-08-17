@@ -606,14 +606,14 @@ b {
 /*========================= About Me =======================*/
 .panel-box.basic-info-left,
 .panel-box.basic-info-right {
-	min-height: 320px !important;
+	min-height: 400px !important;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px)
 {
 	.panel-box.basic-info-left,
 	.panel-box.basic-info-right {
-		min-height: 347px !important;
+		min-height: 360px !important;
 	}
 }
 

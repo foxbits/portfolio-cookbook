@@ -5,6 +5,7 @@ export interface SocialLinksProps {
     url: string;
     title: string;
     icon: string;
+    target?: string;
   }[];
 }
 
@@ -13,7 +14,7 @@ const SocialLinks: FC<SocialLinksProps> = ({ links = [] }) => {
     <ul className="social-link">
       {links.map((link, index) => (
         <li key={index}>
-          <a href={link.url} target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title={"View " + link.title }>
+          <a href={link.url} target={ link.target ?? "_blank" } rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title={"View " + link.title }>
             <i className={`fa ${link.icon}`} aria-hidden="true"></i>
           </a>
         </li>

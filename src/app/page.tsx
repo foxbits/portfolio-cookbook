@@ -3,14 +3,16 @@ import { FC } from 'react';
 import { useEffect } from "react";
 import PageLayout from './components/layout/PageLayout';
 import HomeSection from './components/sections/home/HomeSection';
-import AboutSection from './components/sections/AboutSection';
-import SkillsSection from './components/sections/SkillsSection';
-import ExperienceSection from './components/sections/ExperienceSection';
+import AboutSection from './components/sections/about/AboutSection';
+import SkillsSection from './components/sections/skills/SkillsSection';
+import ExperienceSection from './components/sections/experience/ExperienceSection';
 import EducationSection from './components/sections/EducationSection';
 import PortfolioSection from './components/sections/PortfolioSection';
 import ContactSection from './components/sections/ContactSection';
 
 import { portfolioData } from './data/portfolio';
+import CupsSection from './components/sections/cups/CupsSection';
+import InterestsSection from './components/sections/interests/InterestsSection';
 
 
 const loadScript = (src: string) => {
@@ -64,20 +66,20 @@ export default function Home() {
 
 
   return (
-      <>
-        <HomeSection loves={portfolioData.loves} socialLinks={portfolioData.socialLinks} />
-        {/* <AboutSection 
-          basicInfo={portfolioData.basicInfo}
-          professionalProfile={portfolioData.professionalProfile}
-        />
-        <SkillsSection skills={portfolioData.skills} />
-        <ExperienceSection experiences={portfolioData.experiences} />
+    <>
+      <HomeSection loves={portfolioData.loves} socialLinks={portfolioData.socialLinks} />
+      <AboutSection info={portfolioData.infos} profiFile={portfolioData.profiFile} />
+      <CupsSection numbers={portfolioData.numbersData} />
+      <SkillsSection skills={portfolioData.cards} />
+      <ExperienceSection jobs={portfolioData.jobs} />
+      <InterestsSection interestsIntro={portfolioData.interestsIntro} interestsData={portfolioData.interestsData} />
+      {/* <ExperienceSection experiences={portfolioData.experiences} />
         <EducationSection education={portfolioData.education} />
         <PortfolioSection items={portfolioData.portfolioItems} /> */}
-        {/* <ContactSection 
+      {/* <ContactSection 
           contactInfo={portfolioData.contactInfo}
           onContactSubmit={handleContactSubmit}
         /> */}
-      </>
+    </>
   );
 }

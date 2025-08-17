@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Timeline from '../shared/Timeline';
+import Timeline from './experience/Timeline';
 
 interface EducationSectionProps {
   education: {
