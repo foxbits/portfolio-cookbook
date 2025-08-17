@@ -86,7 +86,6 @@ function changeImage(randomImageId, direct) {
 /* Classic attachment of data to placeholders (data is retrieved from data.js) using jQuery. */
 function loadData() {
     attachContact();
-    initProjects();
 }
 
 function attachContact() {
@@ -190,33 +189,4 @@ function attachContact() {
         // var mailstr = "mailto:" + mailto.text() + "?subject=" + subject + "&body=" + message;
         // window.open(mailstr, '_self');
     });
-}
-
-function initProjects() {
-    _.forEach(allProjects, function (data) {
-        var linkElement = data.url.link
-            ? `<a target="_blank" href="` + data.url.link + `" class="button">` + data.url.title + `</a>`
-            : `<a href="#" onclick="return false;" class="button">` + data.url.title + `</a>`;
-        var element = `<li id="project-` + data.id + `" class="full-card card ` + data.category + ` col-xs-12 col-sm-6 col-md-4 mix">
-                            <div class="wrapper" style="background: url(` + data.image + `) center/cover no-repeat;">
-                                <div class="header">
-                                <div class="date">
-                                    <span class="year">` + data.time + `</span>
-                                </div>
-                                </div>
-                                <div class="data">
-                                    <div class="content">
-                                        <span class="author">` + data.type + `</span>
-                                        <h2 class="title">
-                                            <a href="#">` + data.title + `</a>
-                                        </h2>
-                                        <p class="text">` + data.description + `</p>`
-                                        + linkElement +
-                                    `</div>
-                                </div>
-                            </div>
-                        </li>`;
-        $('.portfolio_items').append(element);
-    });
-
 }

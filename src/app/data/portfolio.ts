@@ -1,5 +1,6 @@
-import { formatDistance } from 'date-fns';
+import { formatDistance, startOfDay } from 'date-fns';
 import { start } from 'repl';
+import { PortfolioItemCategory } from '../components/sections/portfolio/PortfolioSection';
 
 export const APP_VERSION = 2025.1;
 
@@ -546,9 +547,10 @@ export let portfolioData = {
   allProjects: [
     {
       id: 24,
-      category: "work-projects",
-      time: "Jul. 2020 - Present",
-      type: "Work / In Progress",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2020, 6, 1),
+      endDate: new Date(2025, 6, 1),
+      status: "Work / In Progress",
       title: "Flowbird - ABT",
       description: "Account Based Ticketing (ABT) is an open-payment transport intelligence solution for making public transport easier (tap your card & no cares). It Reacts to the users when viewing their journeys data & uses the cloud to choreograph its workflows through RabbitMQ & ASP.NET",
       url: {
@@ -558,9 +560,10 @@ export let portfolioData = {
     },
     {
       id: 23,
-      category: "work-projects",
-      time: "Oct. 2019 - June 2020",
-      type: "Work / Abandoned",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2019, 9, 1),
+      endDate: new Date(2020, 5, 30),
+      status: "Work / Abandoned",
       title: "K-Value | KG Talent Platform",
       description: "K-Value aggregates employee & implements a feedback system for employees, based on various business indicators, in order to provide a strong overview of a company's workforce. It is written with Spring and Angular, using Office365 and Teams web integrations.",
       url: {
@@ -570,9 +573,10 @@ export let portfolioData = {
     },
     {
       id: 22,
-      category: "work-projects",
-      time: "Sep. 2019 - June 2020",
-      type: "Work / Abandoned",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2019, 8, 1),
+      endDate: new Date(2020, 5, 30),
+      status: "Work / Abandoned",
       title: "GDM",
       description: "Part of the maintenance and evolutionary requests management team for GDM - an application constructed out of a set of services, with a web application on top of them, that handles document management (at multiple layers).",
       url: {
@@ -582,9 +586,10 @@ export let portfolioData = {
     },
     {
       id: 21,
-      category: "work-projects",
-      time: "Oct. 2019 - June 2020",
-      type: "Work / Abandoned",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2019, 9, 1),
+      endDate: new Date(2020, 5, 30),
+      status: "Work / Abandoned",
       title: "Kaly",
       description: "Web application, written in Spring and Angular, for the management of a corporation's internal resources and workflows (e.g. employee management, timesheets, holidays, etc.). I helped reengineer it (from performance and code-quality standpoint) and further build of advanced modules.",
       url: {
@@ -594,11 +599,11 @@ export let portfolioData = {
     },
     {
       id: 19,
-      category: "side-projects",
-      time: "Aug. 2018 - ?",
-      type: "Side Project / Solo / On Hold",
+      category: PortfolioItemCategory.SideProjects,
+      startDate: new Date(2018, 7, 1),
+      status: "Side Project / Solo / On Hold",
       title: "Replay.NET - Streaming Playground",
-      description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.  Includes: ASP.NET Core, scraping/testing with Puppeteer, streaming from HTTP and P2P, integration with Electron.",
+      description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.  Includes: ASP.NET Core, automation with Puppeteer, streaming from HTTP and P2P, WebTorrent, Electron.",
       url: {
         title: "Private work"
       },
@@ -606,9 +611,10 @@ export let portfolioData = {
     },
     {
       id: 20,
-      category: "work-projects",
-      time: "May 2018 - Aug. 2019",
-      type: "Work / Finished",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2018, 4, 1),
+      endDate: new Date(2019, 7, 31),
+      status: "Work / Finished",
       title: "Risk Asset Manager",
       description: "Web application, reengineered after an old Desktop app, with ASP.NET Core &amp; Angular, which does banking workflows, algorithms and management of assets.",
       url: {
@@ -618,9 +624,10 @@ export let portfolioData = {
     },
     {
       id: 18,
-      category: "side-projects",
-      time: "Sep.. 2018 - Nov. 2018",
-      type: "Side Project / Solo / Finished",
+      category: PortfolioItemCategory.SideProjects,
+      startDate: new Date(2018, 8, 1),
+      endDate: new Date(2018, 10, 30),
+      status: "Side Project / Solo / Finished",
       title: "Autofiller - Gurushots Automation Bot",
       description: "Created as a side project in order to test if Gurushots' voting and friend search can be automated using Puppeteer and .NET Core",
       url: {
@@ -630,9 +637,10 @@ export let portfolioData = {
     },
     {
       id: 15,
-      category: "work-projects",
-      time: "Aug. 2017 - Apr. 2018",
-      type: "Work / Finished",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2017, 7, 1),
+      endDate: new Date(2018, 3, 30),
+      status: "Work / Finished",
       title: "Promis - Oil&Gas Project Management",
       description: "Web application, ASP.NET MVC &amp; (*FE libs) of which purpose is the management of huge oil&gas project's construction and resources",
       url: {
@@ -642,9 +650,10 @@ export let portfolioData = {
     },
     {
       id: 8,
-      category: "work-projects",
-      time: "Nov. 2016 - Aug. 2017",
-      type: "Work / Finished",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2016, 10, 1),
+      endDate: new Date(2017, 7, 31),
+      status: "Work / Finished",
       title: "'Product Factory' - Banking product management",
       description: "Developed WPF Desktop application, with an internal MVVM framework, following best practices, adding ideas and testing.",
       url: {
@@ -654,9 +663,10 @@ export let portfolioData = {
     },
     {
       id: 14,
-      category: "uni-projects",
-      time: "Nov. 2016 - May 2017",
-      type: "Uni / Team Player",
+      category: PortfolioItemCategory.UniProjects,
+      startDate: new Date(2016, 10, 1),
+      endDate: new Date(2017, 4, 31),
+      status: "Uni / Team Player",
       title: "Learning Curve - University",
       description: `This 'project' lists all the interesting projects worked on in years 2 and 3 of university:
         <a href='https://bitbucket.org/javafxteam/cn-labs'>Numerical Calculus</a>,
@@ -673,9 +683,10 @@ export let portfolioData = {
     },
     {
       id: 4,
-      category: "work-projects",
-      time: "Jun. 2016 - Nov. 2016",
-      type: "Work / Finished",
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2016, 5, 1),
+      endDate: new Date(2016, 10, 30),
+      status: "Work / Finished",
       title: "'Vittoria's Secrets' - Automated Tests & Tools",
       description: "Developed tools for the automated testing of a banking website (C#); also executed and maintained a set of tests (Telerik).",
       url: {
@@ -684,22 +695,27 @@ export let portfolioData = {
       image: "./img/portfolio/tests.jpg"
     },
     {
-      id: 1,
-      category: "work-projects",
-      time: "Oct. 2015 - Jun. 2016",
-      type: "Work / Finished",
-      title: "'Anti-fraud' - Fraud Management System",
-      description: "Web application /w ASP.NET Web Forms. Entered the project when it was in progress and developed different functionalities.",
+      id: 3,
+      category: PortfolioItemCategory.UniProjects,
+      startDate: new Date(2016, 2, 1),
+      endDate: new Date(2017, 1, 28),
+      status: "Uni / Team Player",
+      title: "Fun Web / Solution1 - Learning / Multiplayer / Assignments",
+      description: `Fun educational app for learning courses, gaining XP, and then competing in multiplayer Q&A competitions. Transformed afterward in assignment upload/grade management. Check:
+        <a href='https://github.com/marianfx/team-7-fun-web'>here</a>,
+        <a href='https://github.com/tabby336/Solution1'>here</a>,
+        `,
       url: {
-        title: "Private work"
+        title: "Links in description"
       },
-      image: "./img/portfolio/anti-fraud.jpg"
+      image: "./img/portfolio/fun-web.png"
     },
     {
       id: 2,
-      category: "side-projects",
+      category: PortfolioItemCategory.SideProjects,
+      startDate: new Date(2016, 0, 1),
       time: "Jan. 2016 - ?",
-      type: "Side Project / Solo",
+      status: "Side Project / Solo",
       title: "Technology Testing",
       description: `Small applications built for wanting to try out different technologies:
         <a href='https://github.com/marianfx/change-notifier'>Change Notifier</a>,
@@ -713,19 +729,17 @@ export let portfolioData = {
       image: "./img/portfolio/tech-test.jpg"
     },
     {
-      id: 3,
-      category: "uni-projects",
-      time: "Mar. 2016 - Feb. 2017",
-      type: "Uni / Team Player",
-      title: "Fun Web / Solution1 - Learning / Multiplayer / Assignments",
-      description: `Fun educational app for learning courses, gaining XP, and then competing in multiplayer Q&A competitions. Transformed afterward in assignment upload/grade management. Check:
-        <a href='https://github.com/marianfx/team-7-fun-web'>here</a>,
-        <a href='https://github.com/tabby336/Solution1'>here</a>,
-        `,
+      id: 1,
+      category: PortfolioItemCategory.WorkProjects,
+      startDate: new Date(2015, 9, 1),
+      endDate: new Date(2016, 5, 30),
+      status: "Work / Finished",
+      title: "'Anti-fraud' - Fraud Management System",
+      description: "Web application /w ASP.NET Web Forms. Entered the project when it was in progress and developed different functionalities.",
       url: {
-        title: "Links in description"
+        title: "Private work"
       },
-      image: "./img/portfolio/fun-web.png"
+      image: "./img/portfolio/anti-fraud.jpg"
     }
   ]
 };
