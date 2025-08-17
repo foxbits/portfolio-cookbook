@@ -1406,6 +1406,8 @@ textarea.form-control {
 	height: auto;
 	text-align: left;
 	color: #333;
+	display: flex;		
+	align-items: center;
 }
 
 .contact-list .fa {
@@ -1437,6 +1439,14 @@ textarea.form-control {
 
 .contact-info a {
 	color: #333;
+}
+
+.contact-info-btn {
+	margin-right: 5px;
+}
+
+.contact-info-btn i {
+	margin-right: 5px;
 }
 
 /*==================== Vertical scrolling ================*/

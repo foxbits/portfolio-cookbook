@@ -1,7 +1,5 @@
 'use client'
-import { FC } from 'react';
 import { useEffect } from "react";
-import PageLayout from './components/layout/PageLayout';
 import HomeSection from './components/sections/home/HomeSection';
 import AboutSection from './components/sections/about/AboutSection';
 import SkillsSection from './components/sections/skills/SkillsSection';
@@ -75,13 +73,7 @@ export default function Home() {
       <InterestsSection interestsIntro={portfolioData.interestsIntro} interestsData={portfolioData.interestsData} />
       <EducationSection timeline={portfolioData.edus} />
       <PortfolioSection items={portfolioData.allProjects} />
-      {/* <ExperienceSection experiences={portfolioData.experiences} />
-        <EducationSection education={portfolioData.education} />
-        <PortfolioSection items={portfolioData.portfolioItems} /> */}
-      {/* <ContactSection 
-          contactInfo={portfolioData.contactInfo}
-          onContactSubmit={handleContactSubmit}
-        /> */}
+      <ContactSection contactData={portfolioData.contactData} />
     </>
   );
 }
