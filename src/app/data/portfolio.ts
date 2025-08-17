@@ -761,7 +761,7 @@ const metaData = {
 };
 
 
-export let portfolioData = {
+export const portfolioData = {
   loves,
   socialLinks,
   infos,

@@ -2,7 +2,9 @@ import { FC, useState, FormEvent } from 'react';
 
 declare global {
   interface Window {
-    $: any;
+    $: {
+      notify: (message: string, options: { position: string; className: string }) => void;
+    };
   }
 }
 
@@ -112,7 +114,7 @@ const ContactSection: FC<ContactSectionProps> = ({ contactData }) => {
 
           <div className="col-xs-12 col-sm-7 col-md-7 col-lg-8">
             <div className="panel-box contact-me-right">
-              <h2>Let's chat</h2>
+              <h2>Let&apos;s chat</h2>
               {/* <!-- Attach actions --> */}
               <form role="form" id="contact-form" className="contact-form">
                 <div className="row">

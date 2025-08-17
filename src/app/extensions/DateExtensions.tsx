@@ -43,10 +43,10 @@ export function toDisplayableDates<T extends DateBasedObject>(items: T[]): T[] {
 
 
 export function getAge(year: number, month: number, day: number) {
-    var today = new Date();
-    var birthDay = new Date(year, month - 1, day);
-    var age = today.getFullYear() - birthDay.getFullYear();
-    var m = today.getMonth() - birthDay.getMonth();
+    const today = new Date();
+    const birthDay = new Date(year, month - 1, day);
+    let age = today.getFullYear() - birthDay.getFullYear();
+    const m = today.getMonth() - birthDay.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthDay.getDate()))
         age--;
     return age;
