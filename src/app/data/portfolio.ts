@@ -65,7 +65,7 @@ const socialLinks = [
     title: "Messenger"
   },
   {
-    url: "https://portfolio.foxbites.net#about-me",
+    url: "#about-me",
     icon: "fa-globe",
     title: "CV / Portfolio",
     target: "_self"
