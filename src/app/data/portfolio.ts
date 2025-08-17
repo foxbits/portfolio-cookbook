@@ -1,7 +1,8 @@
 import { PortfolioItemCategory } from '../components/sections/portfolio/PortfolioSection';
 import { getAge } from '../extensions/DateExtensions';
 
-export const APP_VERSION = 2025.1;
+export const APP_VERSION = "2025.1";
+export const COPYRIGHT_YEAR = new Date().getFullYear();
 
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
@@ -754,6 +755,11 @@ const numbersData = [
   },
 ];
 
+const metaData = {
+  appVersion: APP_VERSION,
+  copyrightYear: COPYRIGHT_YEAR
+};
+
 
 export let portfolioData = {
   loves,
@@ -767,5 +773,6 @@ export let portfolioData = {
   interestsData,
   edus,
   allProjects,
-  contactData
+  contactData,
+  metaData
 };

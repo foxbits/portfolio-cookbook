@@ -1,6 +1,11 @@
 import { FC } from 'react';
 
-const Footer: FC = () => {
+export interface FooterProps {
+  appVersion: string;
+  copyrightYear: number;
+}
+
+const Footer: FC<FooterProps> = ({ appVersion, copyrightYear }) => {
   return (
     <footer>
       <div className="container">
@@ -8,9 +13,9 @@ const Footer: FC = () => {
           <div className="col-xs-12">
             <div className="copyright text-center">
               <p>
-                foxbites © copyright{' '}
-                <span id="cpyear">{new Date().getFullYear()}</span>. All Rights Reserved.{' '}
-                <span id="appversion"></span>
+                copyright © foxbites {' '}
+                <span id="cpyear">{copyrightYear}</span>. all rights reserved.{' '}
+                <span id="appversion">{`v${appVersion}`}</span>
               </p>
             </div>
           </div>

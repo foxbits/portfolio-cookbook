@@ -4,6 +4,7 @@ import Footer from './components/layout/Footer';
 import CoffeeLoader from './components/shared/CoffeeLoader';
 
 import "./styles/globals.css";
+import { portfolioData } from './data/portfolio';
 
 export default function RootLayout({
   children,
@@ -41,7 +42,7 @@ export default function RootLayout({
           <div className="content-wrapper">
             <div className="content-inner">
               {children}
-              <Footer />
+              <Footer {...portfolioData.metaData} />
               <div className="back-top" style={{ display: 'block' }}>
                 <a href="#">
                   <i className="fa fa-angle-up"></i>

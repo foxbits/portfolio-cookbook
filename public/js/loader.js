@@ -23,16 +23,9 @@ var pluginspreparer = function () {
     } else {
         $(window).on("load", onLoadHandler);
     }
-
-    attachMisc();
-
+    
     startChangingImages();
 };
-
-function attachMisc(){
-    $("#cpyear").text(new Date().getFullYear());
-    $("#appversion").html("<small>(v." + APP_VERSION + ")</small>");
-}
 
 function afterLoadedDissapears() {
     $("body").addClass("scrollbar");
