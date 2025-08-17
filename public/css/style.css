@@ -1505,6 +1505,18 @@ footer p {
 	opacity: 0.9;
 }
 
+footer a {
+	color: lightgoldenrodyellow;
+}
+
+footer a:hover {
+	color: goldenrod
+}
+
+footer a:focus {
+	color: goldenrod;
+}
+
 .back-top {
 	width: auto;
 	float: right;

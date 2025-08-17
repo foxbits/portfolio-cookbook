@@ -17,6 +17,10 @@ const Footer: FC<FooterProps> = ({ appVersion, copyrightYear }) => {
                 <span id="cpyear">{copyrightYear}</span>. all rights reserved.{' '}
                 <span id="appversion">{`v${appVersion}`}</span>
               </p>
+                <p>
+                  built with ❤️ & <a href="https://react.dev" target="_blank" rel="noopener noreferrer">React</a> on 
+                <a href="https://github.com/foxbits/portfolio-cookbook" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                </p>
             </div>
           </div>
         </div>
