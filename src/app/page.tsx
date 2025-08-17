@@ -6,7 +6,7 @@ import HomeSection from './components/sections/home/HomeSection';
 import AboutSection from './components/sections/about/AboutSection';
 import SkillsSection from './components/sections/skills/SkillsSection';
 import ExperienceSection from './components/sections/experience/ExperienceSection';
-import EducationSection from './components/sections/EducationSection';
+import EducationSection from './components/sections/education/EducationSection';
 import PortfolioSection from './components/sections/PortfolioSection';
 import ContactSection from './components/sections/ContactSection';
 
@@ -71,8 +71,9 @@ export default function Home() {
       <AboutSection info={portfolioData.infos} profiFile={portfolioData.profiFile} />
       <CupsSection numbers={portfolioData.numbersData} />
       <SkillsSection skills={portfolioData.cards} />
-      <ExperienceSection jobs={portfolioData.jobs} />
+      <ExperienceSection timeline={portfolioData.jobs} />
       <InterestsSection interestsIntro={portfolioData.interestsIntro} interestsData={portfolioData.interestsData} />
+      <EducationSection timeline={portfolioData.edus} />
       {/* <ExperienceSection experiences={portfolioData.experiences} />
         <EducationSection education={portfolioData.education} />
         <PortfolioSection items={portfolioData.portfolioItems} /> */}

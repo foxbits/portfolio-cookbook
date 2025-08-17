@@ -1,16 +1,7 @@
 import { FC } from 'react';
-import Timeline from './experience/Timeline';
+import Timeline, { TimelineProps } from '../../shared/timeline/Timeline';
 
-interface EducationSectionProps {
-  education: {
-    date: string;
-    title: string;
-    subtitle: string;
-    description: string;
-  }[];
-}
-
-const EducationSection: FC<EducationSectionProps> = ({ education }) => {
+const EducationSection: FC<TimelineProps> = ({ timeline }) => {
   return (
     <section className="content backgrounded" id="education">
       <div className="container">
@@ -21,9 +12,7 @@ const EducationSection: FC<EducationSectionProps> = ({ education }) => {
             </div>
           </div>
 
-          <div className="col-xs-12">
-            <Timeline items={education} />
-          </div>
+          <Timeline timeline={timeline} />
         </div>
       </div>
     </section>

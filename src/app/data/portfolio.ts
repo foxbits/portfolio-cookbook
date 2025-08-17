@@ -1,4 +1,5 @@
 import { formatDistance } from 'date-fns';
+import { start } from 'repl';
 
 export const APP_VERSION = 2025.1;
 
@@ -317,7 +318,7 @@ export let portfolioData = {
   jobs: [
     {
       title: "💺 Technical Lead",
-      employer: "Ness Digital Engineering",
+      location: "Ness Digital Engineering",
       startDate: new Date(2021, 6, 1),
       endDate: undefined,
       description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum-based team towards sprint goals in an Agile environment with other engineers and product representatives across UK and France.
@@ -331,7 +332,7 @@ export let portfolioData = {
     },
     {
       title: "🚌 Senior Software Engineer",
-      employer: "Ness Digital Engineering",
+      location: "Ness Digital Engineering",
       startDate: new Date(2020, 6, 1),
       endDate: new Date(2021, 5, 30),
       description: `Creative software engineer working on a transport intelligence product in a scrum-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
@@ -355,7 +356,7 @@ export let portfolioData = {
     },
     {
       title: "🍹 Lead Software Developer",
-      employer: "KireyEst",
+      location: "KireyEst",
       startDate: new Date(2017, 7, 1),
       endDate: new Date(2020, 5, 30),
       description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
@@ -381,7 +382,7 @@ export let portfolioData = {
     },
     {
       title: "🍷 .NET Software Developer",
-      employer: "KireyEst",
+      location: "KireyEst",
       startDate: new Date(2015, 9, 1),
       endDate: new Date(2017, 6, 31),
       description: `Worked part-time, while also studying at university, alongside both junior and experienced developers, on a various set of technologies, in order to gain experience.
@@ -403,7 +404,7 @@ export let portfolioData = {
     },
     {
       title: "🍼 .NET Intern",
-      employer: "KireyEst",
+      location: "KireyEst",
       startDate: new Date(2015, 6, 1),
       endDate: new Date(2015, 8, 30),
       description: `Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS...).`,
@@ -433,7 +434,7 @@ export let portfolioData = {
     {
       title: "Writing",
       link: "https://foxietamine.substack.com/",
-      icon: "fa-feather"
+      icon: "fa-pencil-square"
     },
     {
       title: "Money",
@@ -468,56 +469,63 @@ export let portfolioData = {
   ],
   edus: [
     {
-      institution: "🍉 The Principal Developer Masterclass",
-      title: '<a href="https://certs.principal.dev/14x/U03NTA03VUN" target="_blank">Certificate</a>',
-      period: "Jul. 2022",
+      title: "🍉 The Principal Developer Masterclass",
+      location: '<a href="https://certs.principal.dev/14x/U03NTA03VUN" target="_blank">Certificate</a>',
+      startDate: new Date(2022, 6, 1),
+      endDate: new Date(2022, 6, 4),
       description: `Attended a great training - <a href="https://principal.dev" target="_blank">The Principal Dev"</a> by <a href="https://twitter.com/eduardsi" target="_blank">Eduards Sizovs</a> - in order to better understand the psychology of teams and how to add value and technical excellence to my work gang. A great course with a lot of new ideas to apply.`,
       tags: ["Technical Lead", "principal.dev"]
     },
     {
-      institution: "🌞 Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)",
-      title: '<a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>',
-      period: "Sep. 2019 - Dec. 2019",
+      title: "🌞 Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)",
+      location: '<a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>',
+      startDate: new Date(2019, 8, 1),
+      endDate: new Date(2019, 11, 31),
       description: `I took this complete course about Vue.js in order to prepare for a set of work-related projects and to keep up with the ongoing progress of front-end technologies. Coming from an Angular background, many terms here are familiar; as a result, it was easy to learn and interesting to compare the two tools.
         <br/>This course is presented by <a href="https://www.udemy.com/user/maximilian-schwarzmuller/" target="_blank">Maximilian Schwarzmüller</a>, the same awesome person from which I learned Angular. All problems tackled in the course can be found on my <a href="https://github.com/marianfx/vue-udemy" target="_blank">GitHub</a>.`,
       tags: ["VueJS"]
     },
     {
-      institution: "🌞 Udemy - DevOps Essentials",
-      title: '<a href="http://ude.my/UC-NY1A7VGY" target="_blank">Certificate</a>',
-      period: "Sep. 2019 (1 month)",
+      title: "🌞 Udemy - DevOps Essentials",
+      location: '<a href="http://ude.my/UC-NY1A7VGY" target="_blank">Certificate</a>',
+      startDate: new Date(2019, 8, 1),
+      endDate: new Date(2019, 8, 11),
       description: `I took this course in order to learn the core notion of what DevOps ecosystem means. It is presented by The Linux Academy. After learning it, I prepared some CI/CD environments using docker and Jenkins`,
       tags: ["DevOps"]
     },
     {
-      institution: "🌞 Udemy - Agile Project Management: Scrum Cert. Prep",
-      title: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
-      period: "Aug. 2019 (1 month)",
+      title: "🌞 Udemy - Agile Project Management: Scrum Cert. Prep",
+      location: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
+      startDate: new Date(2019, 7, 1),
+      endDate: new Date(2019, 7, 31),
       description: `It includes 2 courses: Scrum Certification Prep + Scrum Master + Agile Scrum Training && Agile Project Management: Scrum Step by Step. <br/>
         I took this set of courses in order to clarify my notions about Agile methodologies and the Scrum framework. Throughout the courses, I learned about Scrum Theory, Scrum Team Roles, Scrum Events, Scrum Artifacts, Scrum of Scrums, with practical exercises and questions about real-world scenarios.`,
       tags: ["Agile", "Scrum"]
     },
     {
-      institution: "🌞 Udemy - Angular (Angular 2+) - The Complete Guide",
-      title: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
-      period: "Apr. 2019 - JuL. 2019",
+      title: "🌞 Udemy - Angular (Angular 2+) - The Complete Guide",
+      location: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
+      startDate: new Date(2019, 3, 1),
+      endDate: new Date(2019, 6, 30),
       description: `I took this course after already working with Angular a few months, for rooting my knowledge on the subject. This complete guide is presented by Maximilian Schwarzmüller. <br/>
         All problems tackled in the course can be found on my <a href="https://github.com/marianfx/ng-udemy-files" target="_blank">GitHub</a>. <br/>
         Based on this course, I then prepared a restructured & optimized set of classes that I presented, with additional explanations, to a set of juniors`,
       tags: ["Angular"]
     },
     {
-      institution: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
-      title: "!Bachelor's Degree, Computer Science",
-      period: "2014 - 2017 (3 years)",
+      title: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
+      location: "!Bachelor's Degree, Computer Science",
+      startDate: new Date(2014, 9, 1),
+      endDate: new Date(2017, 5, 15),
       description: `Status: finished, no license.<br/> 
         Three years of learning more or less useful knowledge (presented in a more or less optimized fashion), meeting new people and discovering new ideas about my future self. Topics studied added as tags.`,
       tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
     },
     {
-      institution: "🎒 „Ștefan Procopiu” High-School, Vaslui",
-      title: "High School Diploma in Mathematics and Computer Science",
-      period: "2010 - 2014 (4 years)",
+      title: "🎒 „Ștefan Procopiu” High-School, Vaslui",
+      location: "High School Diploma in Mathematics and Computer Science",
+      startDate: new Date(2010, 8, 15),
+      endDate: new Date(2014, 5, 30),
       description: `Also obtained <i>Professional Certificate</i>, <i>Baccalaureate Diploma</i> and <i>English Certificate</i>. 
             <hr>
             Baccalaureate - Jun 2014. Avg: <b>9.86</b> <br/> 
@@ -527,9 +535,10 @@ export let portfolioData = {
       tags: ["Mathematics", "Computer Science", "Romanian Language &amp; Literature", "English Language"]
     },
     {
-      institution: "👶 Elementary School &amp; Secondary Education",
-      title: "Life++",
-      period: "2002 - 2010 (8 years)",
+      title: "👶 Elementary School &amp; Secondary Education",
+      location: "Life++",
+      startDate: new Date(2002, 8, 15),
+      endDate: new Date(2010, 5, 15),
       description: `Does anybody remember something from this forgotten times?`,
       tags: ["Life Experience"]
     }

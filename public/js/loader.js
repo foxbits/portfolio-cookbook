@@ -85,43 +85,8 @@ function changeImage(randomImageId, direct) {
 
 /* Classic attachment of data to placeholders (data is retrieved from data.js) using jQuery. */
 function loadData() {
-    attachEduExperience();
     attachContact();
     initProjects();
-}
-
-function attachEduExperience() {
-    var count = -1;
-    _.forEach(edus, function (edu) {
-        var tags = "";
-        _.forEach(edu.tags, function (tag) {
-            var element = "<li><a href='javascript:void()'><span>" + tag + "</span></a></li>";
-            tags += element;
-        });
-
-        var inverted = ((count++) % 2 === 0 ? "timeline-inverted " : " ");
-        var eduBody = `<li class="` + inverted + `wow fadeIn` + edu.dataposition + `">
-                        <div class="timeline-badge">
-                            <i class="fa fa-circle"></i>
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h2>` + edu.institution + `</h2>
-                                <h3>` + edu.title + `</h3>
-                                <span class="date"><i>` + edu.period + `</i></span>
-                            </div>
-                            <div class="timeline-body">
-                                ` + edu.description + `
-                            </div>
-                            <div class="tagcloud">
-                                <ul>
-                                ` + tags + `
-                                </ul>
-                            </div>
-                        </div>
-                    </li>`;
-        $('#edu-timeline').append(eduBody);
-    });
 }
 
 function attachContact() {
