@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: foxbits/portfolio-cookbook:latest
+    container_name: portfolio-cookbook
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 9820:3000
+    restart: unless-stopped
