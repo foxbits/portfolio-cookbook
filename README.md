@@ -29,4 +29,4 @@ Standard next.js app router based structure, with some important mentions:
 
 ### Caveats
 
-This website has been migrated from a singular, plain HTML+JS+CSS version. Some of the scripts used in the initial version are not migrated yet, and are loaded and executed async in the application's main page. There is a plan to migrate it, which awaits its time.
+This website has been migrated from a singular, plain HTML+JS+CSS version. Some of the scripts used in the initial version are not migrated yet, and are loaded and executed async in the application's main page. There is a plan to migrate it, but it will be completed when the time is right.
