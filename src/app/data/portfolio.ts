@@ -6,7 +6,7 @@ export const COPYRIGHT_YEAR = new Date().getFullYear();
 
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
-const email = "contact@foxbites.net";
+const email = "marian@foxbites.net";
 const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
 
