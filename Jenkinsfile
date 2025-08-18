@@ -8,6 +8,7 @@ pipeline {
             }
             steps {
                 echo "Running build-only since not on main branch"
+                sh 'chmod +x ./build-docker.sh'
                 sh "./build-docker.sh"
             }
         }
@@ -17,6 +18,7 @@ pipeline {
             }
             steps {
                 echo "Building and deploying locally since on main branch"
+                sh 'chmod +x ./docker-compose.run.sh'
                 sh "./docker-compose.run.sh"
             }
         }
