@@ -16,7 +16,7 @@ interface PortfolioItem extends DateBasedObject {
   description: string;
   url: {
     title: string;
-    url: string;
+    url?: string;
   };
   image: string;
 }
