@@ -3,11 +3,8 @@ pipeline {
 
     stages {
         stage('Build only') {
-            when {
-                not { branch 'main' }
-            }
             steps {
-                echo "Running build-only since not on main branch"
+                echo "Running build"
                 sh 'chmod +x ./build-docker.sh'
                 sh "./build-docker.sh"
             }
@@ -17,7 +14,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                echo "Building and deploying locally since on main branch"
+                echo "Deploying locally"
                 sh 'chmod +x ./docker-compose.run.sh'
                 sh "./docker-compose.run.sh"
             }
