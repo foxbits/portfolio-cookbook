@@ -5,7 +5,7 @@ export enum PortfolioItemCategory {
   All = 'all',
   WorkProjects = 'work-projects',
   SideProjects = 'side-projects',
-  UniProjects = 'uni-projects'
+  Learning = 'learning-projects'
 };
 
 interface PortfolioItem extends DateBasedObject {
@@ -16,6 +16,7 @@ interface PortfolioItem extends DateBasedObject {
   description: string;
   url: {
     title: string;
+    url?: string;
   };
   image: string;
 }
@@ -42,7 +43,7 @@ const PortfolioSection: FC<PortfolioSectionProps> = ({ items }) => {
                 <li className="filter" data-filter="all">ALL</li>
                 <li className="filter" data-filter=".work-projects">Work Projects</li>
                 <li className="filter" data-filter=".side-projects">Side Projects</li>
-                <li className="filter" data-filter=".uni-projects">University Projects</li>
+                <li className="filter" data-filter=".learning-projects">Learning Projects</li>
               </ul>
             </div>
           </div>
@@ -61,10 +62,11 @@ const PortfolioSection: FC<PortfolioSectionProps> = ({ items }) => {
                       <div className="content">
                         <span className="author">{item.status}</span>
                         <h2 className="title">
-                          <a href="#">{item.title}</a>
+                          <a href="#" onClick={(e) => e.preventDefault()}>{item.title}</a>
                         </h2>
                         <p className="text" dangerouslySetInnerHTML={{ __html: item.description }}></p>
-                        <a href="#" onClick={(e) => e.preventDefault()} className="button">{ item.url.title }</a>
+                        {!item.url.url && <a href="#" onClick={(e) => e.preventDefault()} className="button">{ item.url.title }</a>}
+                        {item.url.url && <a href={item.url.url} className="button" target="_blank">{item.url.title}</a>}
                       </div>
                     </div>
                   </div>
