@@ -1,6 +1,6 @@
 This repository contains a versioned curriculum vitae for Marian Focșa (yours truly).
 
-The CV is also available at [cv.foxbites.net](https://cv.foxbites.net)
+The CV is also available at [connect.foxbites.net](https://connect.foxbites.net)
 
 - [Functionality:](#functionality)
 - [Tech Stack](#tech-stack)

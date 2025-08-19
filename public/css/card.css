@@ -124,9 +124,10 @@
   .full-card .header {
     z-index: 2;/* put it in front of background */
     color: #000;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
-  .full-card .data{
+  .full-card .data {
     z-index: 2;/* put it in front of background */
   }
   .full-card .header::before, .full-card .header::after {
@@ -139,6 +140,8 @@
   .full-card .header .date {
     float: left;
     font-size: 12px;
+    width: 100%;
+    margin-left: 0px;
   }
   .full-card .menu-content {
     float: right;
