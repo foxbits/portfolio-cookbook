@@ -2,11 +2,31 @@ This repository contains a versioned curriculum vitae for Marian Focșa (yours t
 
 The CV is also available at [cv.foxbites.net](https://cv.foxbites.net)
 
+- [Functionality:](#functionality)
 - [Tech Stack](#tech-stack)
 - [Documentation](#documentation)
   - [Application structure](#application-structure)
   - [Caveats](#caveats)
 
+
+## Functionality:
+In the rather technical order of appearing in pages:
+
+1. Open Graph integrated metadata for SEO optimization
+2. Dynamic Interests animation and connect links
+3. Dynamic, lazy loaded image slideshow on home-page
+4. Interactive scrolling
+5. About me section with surprise links
+6. 3 different types of CVs
+7. Cards with statistics
+8. Skills charts (percentage)
+9. Experience timeline with tags and projects links
+10. Hobbies cards with surprise links
+11. Education timeline with tags and certificate links
+12. Portfolio section with 3 types of projects: work, side and learning
+13. Contact section with dynamic mailing
+14. Footer with source code
+15. Other goodies
 
 ## Tech Stack
 
