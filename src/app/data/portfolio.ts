@@ -9,6 +9,7 @@ const phoneNumber = "+40 75*-***-669";
 const email = "marian@foxbites.net";
 const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
+const substackLink = "https://thefoxdiaries.substack.com/";
 
 const loves = [
   {
@@ -60,9 +61,9 @@ const socialLinks = [
     title: "Facebook"
   },
   {
-    url: messengerLink,
-    icon: "fa-comments-o",
-    title: "Messenger"
+    url: substackLink,
+    icon: "fa-pencil-square",
+    title: "Substack"
   },
   {
     url: "#about-me",
@@ -105,9 +106,7 @@ const infos = [
 
 const profiFile = {
   description: `Sassy software expert with great skills of communication, attention to details & architectural thinking. 
-  Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on.
-  
-  With a verifiable experience in developing web applications with(but not limited to) the .NET tech stack and various front- end goodies(from plain JS up to Angular and React), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high- quality software development.`,
+  Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on. With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to Angular and React), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
   links: [
     {
       title: "Linkedin (Web)",
@@ -416,7 +415,7 @@ const interestsData = [
   },
   {
     title: "Writing",
-    link: "https://foxietamine.substack.com/",
+    link: substackLink,
     icon: "fa-pencil-square"
   },
   {
