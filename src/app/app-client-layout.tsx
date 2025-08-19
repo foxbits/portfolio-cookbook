@@ -1,16 +1,16 @@
 'use client'
 
-import Header from './layout/Header';
-import Footer from './layout/Footer';
-import CoffeeLoader from './shared/CoffeeLoader';
-import { portfolioData } from '../data/portfolio';
-import { dosis, raleway } from '../fonts';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import CoffeeLoader from './components/shared/CoffeeLoader';
+import { portfolioData } from './data/portfolio';
+import { dosis, raleway } from './fonts';
 
 interface ClientLayoutProps {
     children: React.ReactNode;
 }
 
-export default function ClientLayout({ children }: ClientLayoutProps) {
+export default function AppClientLayout({ children }: ClientLayoutProps) {
     return (
         <>
             <head>

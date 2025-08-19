@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import ClientLayout from './components/ClientLayout';
+import AppClientLayout from './app-client-layout';
 import "./styles/globals.css";
+
+const metadataBaseUrl = process.env.PUBLIC_URL || "https://connect.foxbites.net";
 
 export const metadata: Metadata = {
   title: "Marian Focșa (FX) - Professional Profile Page | CV | Portfolio",
@@ -13,6 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: "img/logos/logo2.png"
   },
+  metadataBase: new URL(metadataBaseUrl),
 };
 
 export default function RootLayout({
@@ -22,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClientLayout>
+      <AppClientLayout>
         {children}
-      </ClientLayout>
+      </AppClientLayout>
     </html>
   );
 }

@@ -47,13 +47,10 @@ export default function Home() {
 
   useEffect(() => {
     const loadScripts = async () => {
-      console.log("Loading scripts...");
       try {
         for (const url of scriptUrls) {
-          console.log(`Loading script: ${url}`);
           await loadScript(url);
         }
-        console.log("All scripts loaded successfully.");
       } catch (error) {
         console.error("Error loading scripts:", error);
       }
