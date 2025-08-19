@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Marian Focșa (FX) - Professional Profile Page | CV | Portfolio",
     description: "Who is Marian Focșa? View the CV, Portfolio and Professional Profile Page",
     type: "website",
-    images: "img/logos/logo2.png"
+    images: "img/logos/logo2_1.png"
   },
   metadataBase: new URL(metadataBaseUrl),
 };
