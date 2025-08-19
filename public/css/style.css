@@ -32,10 +32,6 @@ a {
 	color: #333;
 }
 
-.wrapper .data .content .text a {
-	color: lightgray;
-}
-
 a:hover {
 	color: #171915;
 }
@@ -1156,16 +1152,6 @@ b {
 	background-color: #171915;
 	border-color: #171915;
 	color: #fff;
-}
-
-.wrapper .header .date {
-	width: 50%;
-    margin-left: -13px;
-    text-align: left;
-	background-color: darkslategray;
-	color: white;
-	padding-left: 5px;
-	margin-top: -13px;
 }
 
 /****************************** Blog **************************************/

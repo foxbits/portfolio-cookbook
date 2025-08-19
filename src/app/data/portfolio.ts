@@ -298,7 +298,7 @@ const cards = [
 const jobs = [
   {
     title: "💺 Technical Lead",
-    location: "Ness Digital Engineering",
+    location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2021, 6, 1),
     endDate: undefined,
     description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum-based team towards sprint goals in an Agile environment with other engineers and product representatives across UK and France.
@@ -312,7 +312,7 @@ const jobs = [
   },
   {
     title: "🚌 Senior Software Engineer",
-    location: "Ness Digital Engineering",
+    location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2020, 6, 1),
     endDate: new Date(2021, 5, 30),
     description: `Creative software engineer working on a transport intelligence product in a scrum-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
@@ -336,7 +336,7 @@ const jobs = [
   },
   {
     title: "🍹 Lead Software Developer",
-    location: "KireyEst",
+    location: '<a href="https://www.kireygroup.com" target="_blank">Kirey Group</a>',
     startDate: new Date(2017, 7, 1),
     endDate: new Date(2020, 5, 30),
     description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
@@ -362,7 +362,7 @@ const jobs = [
   },
   {
     title: "🍷 .NET Software Developer",
-    location: "KireyEst",
+    location: '<a href="https://www.kireygroup.com" target="_blank">Kirey Est</a>',
     startDate: new Date(2015, 9, 1),
     endDate: new Date(2017, 6, 31),
     description: `Worked part-time, while also studying at university, alongside both junior and experienced developers, on a various set of technologies, in order to gain experience.
@@ -384,7 +384,7 @@ const jobs = [
   },
   {
     title: "🍼 .NET Intern",
-    location: "KireyEst",
+    location: '<a href="https://www.kireygroup.com" target="_blank">Kirey Est</a>',
     startDate: new Date(2015, 6, 1),
     endDate: new Date(2015, 8, 30),
     description: `Trained by a supervisor in a long list of .NET Technologies by realizing small projects (enum: C#, VB.NET, ASP.NET WebForms, ASP.NET MVC, ADO.NET, Entity Framework, WPF – MVVM, WFC, Spring.NET, T-SQL, Javascript & jQuery, HTML, CSS...).`,
@@ -497,7 +497,7 @@ const edus = [
   },
   {
     title: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
-    location: "!Bachelor's Degree, Computer Science",
+    location: "<a href='https://www.info.uaic.ro' target='_blank'>!Bachelor's Degree, Computer Science</a>",
     startDate: new Date(2014, 9, 1),
     endDate: new Date(2017, 5, 15),
     description: `Status: finished, no license.<br/> 
@@ -506,7 +506,7 @@ const edus = [
   },
   {
     title: "🎒 „Ștefan Procopiu” High-School, Vaslui",
-    location: "High School Diploma in Mathematics and Computer Science",
+    location: "<a href='http://lspvs.ro' target='_blank'>High School Diploma in Mathematics and Computer Science</a>",
     startDate: new Date(2010, 8, 15),
     endDate: new Date(2014, 5, 30),
     description: `Also obtained <i>Professional Certificate</i>, <i>Baccalaureate Diploma</i> and <i>English Certificate</i>. 
@@ -537,7 +537,8 @@ const allProjects = [
     title: "Flowbird - ABT",
     description: "Account Based Ticketing (ABT) is an open-payment transport intelligence solution for making public transport easier (tap your card & no cares). It Reacts to the users when viewing their journeys data & uses the cloud to choreograph its workflows through RabbitMQ & ASP.NET",
     url: {
-      title: "Private work"
+      title: "More details",
+      url: "https://www.flowbird.com/our-solutions/transport-solutions/transport-fare-collection-platform/"
     },
     image: "./img/portfolio/flowbird-abt.jpg"
   },
@@ -574,7 +575,7 @@ const allProjects = [
     endDate: new Date(2020, 5, 30),
     status: "Work / Abandoned",
     title: "Kaly",
-    description: "Web application, written in Spring and Angular, for the management of a corporation's internal resources and workflows (e.g. employee management, timesheets, holidays, etc.). I helped reengineer it (from performance and code-quality standpoint) and further build of advanced modules.",
+    description: "Web application, Spring + Angular, for managing a corporation's internal resources and workflows (employees, timesheets, holidays). I helped reengineer it (from performance and code-quality standpoint) and further build of advanced modules.",
     url: {
       title: "Private work"
     },
@@ -584,9 +585,9 @@ const allProjects = [
     id: 19,
     category: PortfolioItemCategory.SideProjects,
     startDate: new Date(2018, 7, 1),
-    status: "Side Project / Solo / On Hold",
-    title: "Replay.NET - Streaming Playground",
-    description: "Web application which tries to integrate many existing movie engines (IMDb, Trakt, Taste) for creating awesome movie / one-place streaming experience.  Includes: ASP.NET Core, automation with Puppeteer, streaming from HTTP and P2P, WebTorrent, Electron.",
+    status: "Side Project / Solo / Abandoned",
+    title: "Replay.NET",
+    description: "Web application integrating many existing movie engines (IMDb, Trakt, Taste) for creating an one-place streaming experience.  Includes: ASP.NET Core, automation with Puppeteer, streaming from HTTP and P2P, WebTorrent, Electron.",
     url: {
       title: "Private work"
     },
@@ -646,7 +647,7 @@ const allProjects = [
   },
   {
     id: 14,
-    category: PortfolioItemCategory.UniProjects,
+    category: PortfolioItemCategory.Learning,
     startDate: new Date(2016, 10, 1),
     endDate: new Date(2017, 4, 31),
     status: "Uni / Team Player",
@@ -679,12 +680,12 @@ const allProjects = [
   },
   {
     id: 3,
-    category: PortfolioItemCategory.UniProjects,
+    category: PortfolioItemCategory.Learning,
     startDate: new Date(2016, 2, 1),
     endDate: new Date(2017, 1, 28),
     status: "Uni / Team Player",
-    title: "Fun Web / Solution1 - Learning / Multiplayer / Assignments",
-    description: `Fun educational app for learning courses, gaining XP, and then competing in multiplayer Q&A competitions. Transformed afterward in assignment upload/grade management. Check:
+    title: "Fun Web / Solution1 - Learning Multiplayer",
+    description: `Fun educational app for learning courses, gaining XP, and competing in multiplayer Q&A. Transformed afterward in assignment upload/grade management. Check:
       <a href='https://github.com/marianfx/team-7-fun-web'>here</a>,
       <a href='https://github.com/tabby336/Solution1'>here</a>,
       `,

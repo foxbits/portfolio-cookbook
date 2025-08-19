@@ -39,7 +39,6 @@ const scriptUrls = [
   "js/newsticker.min.js",
   "js/wow.min.js",
   "js/script-vertical.js",
-  "js/data.js",
   "js/loader.js"
 ];
 
