@@ -609,7 +609,7 @@ b {
 {
 	.panel-box.basic-info-left,
 	.panel-box.basic-info-right {
-		min-height: 360px !important;
+		min-height: 510px !important;
 	}
 }
 
