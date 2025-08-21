@@ -1,8 +1,4 @@
 /* Taken and improved from https://codepen.io/choogoor/pen/YWBxAg @example-2 */
-#wrapper-1 {
-  background: url(../img/portfolio/change-notifier.jpg) center/cover no-repeat;
-}
-
 .wrapper::after,
 .wrapper .header::after,
 .wrapper .data::after {

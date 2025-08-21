@@ -1,6 +1,27 @@
 /* Initializers */
-var imagesAvailable = 6;
-var currentImage = 6;
+var imagesArray = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+];
+var currentImageIndex = 6;
+var usedImageIndexes = [];
+var intervalChangeMs = 8000;
+/* Lazy Load */
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
@@ -30,46 +51,56 @@ var pluginspreparer = function () {
 function afterLoadedDissapears() {
     $("body").addClass("scrollbar");
     $("body").addClass("scyan");
-    $('[data-toggle="tooltip"]').tooltip(); //enable tooltips
-    
-    setChangingInterval();
-}
+    $('[data-toggle="tooltip"]').tooltip(); //enable tooltips    
+};
+
 $(pluginspreparer);
 
-function initializeImageLoad() {
-
-}
-
 function startChangingImages() {
-    changeImage(currentImage, true);
+    changeImage(imagesArray[currentImageIndex]);
+    usedImageIndexes.push(currentImageIndex);
+    setChangingInterval();
 }
 
 function setChangingInterval() {
-    let intrvl = setInterval(() => {
-        var randomImageId = currentImage;
-        while(true) {
-            randomImageId = Math.floor(Math.random() * imagesAvailable + 1);
-            if (randomImageId !== currentImage)
-                break;
-        }
-        currentImage = randomImageId;
-        changeImage(randomImageId);
-    }, 7000);
+    if (!imagesArray || imagesArray.length === 0) {
+        console.warn("No images available for changing.");
+        return;
+    }
+
+    setInterval(setNextImage, intervalChangeMs);
 }
 
-function changeImage(randomImageId, direct) {
-    let divContent = "<div class='lazy lazy" + randomImageId + "' data-src='img/portraits/portrait" + randomImageId + ".png' style='background-image:url(img/portraits/portrait" + randomImageId + ".png)'></div>"
+function setNextImage() {
+    if (usedImageIndexes.length >= imagesArray.length) {
+        usedImageIndexes = [];
+    }
+
+    var randomImageId = currentImageIndex;
+    while (true) {
+        randomImageId = Math.floor(Math.random() * imagesArray.length);
+        if (usedImageIndexes.indexOf(randomImageId) === -1)
+            break;
+    }
+    usedImageIndexes.push(randomImageId);
+    currentImageIndex = imagesArray[randomImageId];
+
+    changeImage(currentImageIndex);
+}
+
+function changeImage(imageId) {
+    let divContent = "<div class='lazy lazy" + imageId + "' data-src='img/portraits/portrait" + imageId + ".jpeg' style='background-image:url(img/portraits/portrait" + imageId + ".jpeg)'></div>"
     $(".hidden-images").html(divContent);
 
     setTimeout(() => {
         $(".banner").fadeOut(200, function() {
-            $(".banner").css("background-image", "url(img/portraits/portrait" + randomImageId + "_small.jpeg)");
-            $(".banner").attr("data-src", $(".lazy" + randomImageId).attr("data-src"));
+            $(".banner").css("background-image", "url(img/portraits/portrait" + imageId + "_small.jpeg)");
+            $(".banner").attr("data-src", $(".lazy" + imageId).attr("data-src"));
             $(".banner").attr("data-was-processed", false);
 
             if (lazyLoadInstance) {
                 lazyLoadInstance.update();
             }
         }).fadeIn(200);
-    }, direct ? 100 : 6000);
+    }, 100);
 }
