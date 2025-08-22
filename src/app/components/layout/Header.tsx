@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header: FC = () => {
   return (
@@ -10,7 +11,13 @@ const Header: FC = () => {
       <nav className="navbar navbar-default navbar-static-top">
         <div className="logo">
           <Link href="/" className="navbar-brand">
-            <img src="/img/logos/logo2.png" alt="Logo" />
+            <Image
+              src="/img/logos/logo2.png"
+              alt="Logo"
+              width={190}
+              height={190}
+              style={{ position: 'static' }}
+            />
           </Link>
         </div>
         <div id="navbar" style={{ textAlign: 'center' }}>
