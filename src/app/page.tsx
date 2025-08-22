@@ -27,7 +27,6 @@ const loadScript = (src: string) => {
 const scriptUrls = [
   "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js",
-  "https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js",

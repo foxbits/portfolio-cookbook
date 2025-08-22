@@ -42,12 +42,6 @@ export default function AppClientLayout({ children }: ClientLayoutProps) {
                         </div>
                     </div>
                 </div>
-
-                <div className="hidden-images">
-                </div>
-                <div className="commercial-images">
-                    <img src="img/portraits/portrait4.png" alt="Marian Focsa CV" />
-                </div>
             </body>
         </>
     );

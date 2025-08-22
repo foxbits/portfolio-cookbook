@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import SocialLinks, { SocialLinksProps } from './SocialLinks';
 import Loves, { LovesEntry } from './Loves';
+import PortraitCarousel from '../../shared/portrait-carousel/PortraitCarousel';
 
 interface HomeSectionProps {
   loves: LovesEntry[],
@@ -10,7 +11,7 @@ interface HomeSectionProps {
 const HomeSection: FC<HomeSectionProps> = (props) => {
   return (
     <section className="content backgrounded" id="home">
-      <div className="banner lazy">
+      <PortraitCarousel>
         <div className="caption-info">
           <div className="container">
             <div className="row">
@@ -24,7 +25,7 @@ const HomeSection: FC<HomeSectionProps> = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </PortraitCarousel>
     </section>
   );
 };
