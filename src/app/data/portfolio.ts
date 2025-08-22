@@ -300,14 +300,30 @@ const jobs = [
     title: "💺 Technical Lead",
     location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2021, 6, 1),
-    endDate: undefined,
-    description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum-based team towards sprint goals in an Agile environment with other engineers and product representatives across UK and France.
+    endDate: new Date(2025, 6, 31),
+    description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum team towards sprint goals in an Agile environment, visibly reducing their stress, helping them learn, be productive and never forget that humor is important -  all through a philosophy of building trust, based on professionalism and saying "no" when needed, with other engineers and product representatives across UK and France.
 
       <br/><br/>
-      <b>Activities:</b> system design, architecture, team choreography, providing technical solutions for business requirements, software development, code reviews, mentorship
+      <b>Responsibilities:</b> system design, architecture, team choreography, technical solutions design, software development, code reviews, mentorship, interviews
+      <br/><br/>
+      <b>Activities:</b> Business Capping Rule Engine (re)design and expansion (e.g. concessions) to match custom transportation rules; Multi-Tenancy migration challenges analysis, change design and implementation; Notifications System (email + sms), Identity Validation (IDNow), Payment Processors & 3rd parties integration (e.g. Google Wallet, NMI), two production launches extended support (Sherlock Holmes + bugfixing); documentation guru; tooling management delegate (.NET 6 + .NET 8 + React upgrades, dev environment setup with docker compose, Jenkins scripting, Rancher Desktop migration, UI unit tests introduction); Settings management (upgrade settings storage and documentation); diagramming; Re-Captcha (brute-force attach mittigation); internal reusable generic mechanisms (e.g. redis caching, requeue for out-of-order messages, identity middlewares); 
+      <br/><br/>
+      <b>Highlights:</b> Ness Internal Partnership & Collaboration Award in 2022 for outstanding teamwork and customer collaboration; headlined the Ness - Behind the Ness Scenes program in 2024 (<a href="https://www.facebook.com/iasi.ness/videos/900454821625042" target="_blank" >link</a>) for outstanding feedback from the customer
       <br/>
       <b>Related projects:</b> 
-          <a class="color__projects" href="#project-24">Flowbird - ABT</a>`,
+      <a class="color__projects" href="#project-24">Flowbird - ABT</a>
+      <br/><br/>
+      <b>Back-end:</b> ASP.NET, Entity Framework (Core), Redis, RabbitMQ, Keycloak (Identity Provider), Hangfire, MSUnit
+      <br/>
+      <b>UI:</b> React, Material UI, HTML, CSS, SCSS, JSS, JEST
+      <br/>
+      <b>Languages:</b> C#, JavaScript, TypeScript, LINQ, SQL (flavors: PostgreSQL)
+      <br/>
+      <b>Infrastructure:</b> docker, kubernetes, AWS (S3, SNS, SMS, Glacier, Elastic, RDS), Jenkins, DataDog, ElasticSearch + Kibana
+      <br/>
+      <b>Tools:</b> Visual Studio, Visual Studio Code, DBeaver, GIT (Bitbucket), SonarQube, Postman, Jira, Confluence, LucidChart
+      <br/>
+      <b>Other:</b> EasyNetQ, EFPlus (batch queries), IDNow, Google API, scripting (bash, make), RestSharp, Automapper, custom react libraries & nuget & npm & docker repositories`,
     tags: ["Leadership", "Business value", "Web Development", "ASP.NET", "Architecture", "Transportation"]
   },
   {
@@ -323,7 +339,7 @@ const jobs = [
       <b>Related projects:</b> 
           <a class="color__projects" href="#project-24">Flowbird - ABT</a>
       <br/><br/>
-      <b>Tech stack:</b> .NET Core, ASP.NET (Core) WebApi, Entity Framework (Core), Redis, RabbitMQ, Keycloak (Identity Provider), Hangfire, MSUnit
+      <b>Back-end:</b> .NET Core, ASP.NET (Core) WebApi, Entity Framework (Core), Redis, RabbitMQ, Keycloak (Identity Provider), Hangfire, MSUnit
       <br/>
       <b>UI:</b> React, Material UI, HTML, CSS, SCSS, JSS, JEST
       <br/>
@@ -332,7 +348,7 @@ const jobs = [
       <b>Environment:</b> Visual Studio, Visual Studio Code, docker, Jenkins, AWS, DBeaver, GIT (Bitbucket), Postman, Jira, Confluence, LucidChart
       <br/>
       <b>Other:</b> EasyNetQ, EFPlus (batch queries), RestSharp, Automapper, custom react libraries, custom nuget, npm & docker repositories`,
-    tags: ["Web Development", "ASP.NET", "Architecture", "React", "Transportation", "Message brokers"]
+    tags: ["Web Development", "ASP.NET", "React", "Transportation", "Full-Stack"]
   },
   {
     title: "🍹 Lead Software Developer",
