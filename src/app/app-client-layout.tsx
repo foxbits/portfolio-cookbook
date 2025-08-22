@@ -42,9 +42,6 @@ export default function AppClientLayout({ children }: ClientLayoutProps) {
                         </div>
                     </div>
                 </div>
-
-                <div className="hidden-images">
-                </div>
             </body>
         </>
     );
