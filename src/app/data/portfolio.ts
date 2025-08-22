@@ -297,33 +297,48 @@ const cards = [
 
 const jobs = [
   {
+    title: "🚀 Freelance Technical Professional",
+    location: "<span style='text-transform: none'>self-employed, side-projects, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
+    startDate: new Date(2025, 5, 1),
+    endDate: undefined,
+    description: `Software Development is about discovering that you are actually a god and you can create literally anything, you are limited only by your imagination (or at least this is the reason why I initially got into it).
+     That's why I started leaning into investing more time into personal projects:
+     <ul>
+      <li>- Writer at <a href='https://thefoxdiaries.substack.com' target='_blank'>thefoxdiaries.substack.com</a></li>
+      <li>- Creator of two incipient projects: Hobbythos and Quizz Rivals</li>
+      <li>- Creator of <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a> (CV / Portfolio Website)</li>
+      <li>- Self-hoster at foxbites.net</li>
+      <li>- Seldom GitHub contributor</li>
+     </ul>
+    Details can be found in the Projects section.
+    <br/><br/>
+    <b>Related projects:</b> 
+    <a class="color__projects" href="#project-25">The Fox Diaries Substack</a>,
+    <a class="color__projects" href="#project-26">Hobbythos</a>,
+    <a class="color__projects" href="#project-27">Quizz Rivals</a>,
+    <a class="color__projects" href="#project-28">CV / Portfolio Website</a>,
+    <a class="color__projects" href="#project-29">Self-Hosting</a>,
+    <a class="color__projects" href="#project-30">GitHub* Contributor (seldom)</a>`,
+    tags: ["Side-projects", "GitHub", "Substack", "Self-hosting"]
+  },
+  {
     title: "💺 Technical Lead",
     location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2021, 6, 1),
-    endDate: new Date(2025, 6, 31),
+    endDate: undefined,
     description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum team towards sprint goals in an Agile environment, visibly reducing their stress, helping them learn, be productive and never forget that humor is important -  all through a philosophy of building trust, based on professionalism and saying "no" when needed, with other engineers and product representatives across UK and France.
 
       <br/><br/>
       <b>Responsibilities:</b> system design, architecture, team choreography, technical solutions design, software development, code reviews, mentorship, interviews
       <br/><br/>
-      <b>Activities:</b> Business Capping Rule Engine (re)design and expansion (e.g. concessions) to match custom transportation rules; Multi-Tenancy migration challenges analysis, change design and implementation; Notifications System (email + sms), Identity Validation (IDNow), Payment Processors & 3rd parties integration (e.g. Google Wallet, NMI), two production launches extended support (Sherlock Holmes + bugfixing); documentation guru; tooling management delegate (.NET 6 + .NET 8 + React upgrades, dev environment setup with docker compose, Jenkins scripting, Rancher Desktop migration, UI unit tests introduction); Settings management (upgrade settings storage and documentation); diagramming; Re-Captcha (brute-force attach mittigation); internal reusable generic mechanisms (e.g. redis caching, requeue for out-of-order messages, identity middlewares); 
+      <b>Activities:</b> Business Capping Rule Engine (re)design and expansion (e.g. concessions) to match custom transportation rules; Multi-Tenancy migration challenges analysis, change design and implementation; Notifications System (email + sms), Identity Validation (IDNow), Payment Processors & 3rd parties integration (e.g. Google Wallet, NMI), two production launches extended support (Sherlock Holmes + bugfixing); documentation guru; tooling management delegate (.NET 6 + .NET 8 + React upgrades, dev environment setup with docker compose, Jenkins scripting, Rancher Desktop migration, UI unit tests introduction); Settings management (upgrade settings storage and documentation); diagramming; Re-Captcha (brute-force attach mitigation); internal reusable generic mechanisms (e.g. redis caching, requeue for out-of-order messages, identity middlewares);
       <br/><br/>
-      <b>Highlights:</b> Ness Internal Partnership & Collaboration Award in 2022 for outstanding teamwork and customer collaboration; headlined the Ness - Behind the Ness Scenes program in 2024 (<a href="https://www.facebook.com/iasi.ness/videos/900454821625042" target="_blank" >link</a>) for outstanding feedback from the customer
+      <b>Highlights:</b> Ness Internal Partnership & Collaboration Award in 2022 for outstanding teamwork; opened the "Behind the Ness Scenes" program in 2024 (<a href="https://www.linkedin.com/posts/ness-digital-engineering-romania_voices-rewardsandrecognition-innovation-activity-7155202769992200192-PPSs" target="_blank" >social 1</a>, <a href="https://www.facebook.com/iasi.ness/videos/900454821625042" target="_blank" >social 2</a>) for outstanding customer satisfaction
       <br/>
       <b>Related projects:</b> 
       <a class="color__projects" href="#project-24">Flowbird - ABT</a>
       <br/><br/>
-      <b>Back-end:</b> ASP.NET, Entity Framework (Core), Redis, RabbitMQ, Keycloak (Identity Provider), Hangfire, MSUnit
-      <br/>
-      <b>UI:</b> React, Material UI, HTML, CSS, SCSS, JSS, JEST
-      <br/>
-      <b>Languages:</b> C#, JavaScript, TypeScript, LINQ, SQL (flavors: PostgreSQL)
-      <br/>
-      <b>Infrastructure:</b> docker, kubernetes, AWS (S3, SNS, SMS, Glacier, Elastic, RDS), Jenkins, DataDog, ElasticSearch + Kibana
-      <br/>
-      <b>Tools:</b> Visual Studio, Visual Studio Code, DBeaver, GIT (Bitbucket), SonarQube, Postman, Jira, Confluence, LucidChart
-      <br/>
-      <b>Other:</b> EasyNetQ, EFPlus (batch queries), IDNow, Google API, scripting (bash, make), RestSharp, Automapper, custom react libraries & nuget & npm & docker repositories`,
+      <b>Tech stack</b>: similar to the previous position, with more focus on cloud, kubernetes and third party integrations - Google Wallet, IDNow, AWS (S3, SNS, SMS, Glacier, Elastic, RDS)`,
     tags: ["Leadership", "Business value", "Web Development", "ASP.NET", "Architecture", "Transportation"]
   },
   {
@@ -345,7 +360,7 @@ const jobs = [
       <br/>
       <b>Languages:</b> C#, JavaScript, LINQ, SQL (flavors: PostgreSQL)
       <br/>
-      <b>Environment:</b> Visual Studio, Visual Studio Code, docker, Jenkins, AWS, DBeaver, GIT (Bitbucket), Postman, Jira, Confluence, LucidChart
+      <b>Environment:</b> Visual Studio, Visual Studio Code, SonarQube, docker, Jenkins, AWS, DBeaver, GIT (Bitbucket), Postman, Jira, Confluence, LucidChart, DataDog, ElasticSearch + Kibana
       <br/>
       <b>Other:</b> EasyNetQ, EFPlus (batch queries), RestSharp, Automapper, custom react libraries, custom nuget, npm & docker repositories`,
     tags: ["Web Development", "ASP.NET", "React", "Transportation", "Full-Stack"]
@@ -544,6 +559,89 @@ const edus = [
 ];
 
 const allProjects = [
+  {
+    id: 27,
+    category: PortfolioItemCategory.SideProjects,
+    startDate: new Date(2025, 7, 15),
+    status: "Side Project / In Progress",
+    title: "Quizz Rivals",
+    description: "A game with quizzes, similar to the former QuizzUp, but with a lovely twist",
+    url: {
+      title: "Private work"
+    },
+    image: "./img/portfolio/flowbird-abt.jpg"
+  },
+  {
+    id: 26,
+    category: PortfolioItemCategory.SideProjects,
+    startDate: new Date(2025, 7, 15),
+    status: "Side Project / In Progress",
+    title: "Hobbythos",
+    description: "A mobile application around building healthy hobbies and meeting people (with a twist)",
+    url: {
+      title: "Private work"
+    },
+    image: "./img/portfolio/flowbird-abt.jpg"
+  },
+  {
+    id: 29,
+    category: PortfolioItemCategory.SideProjects,
+    startDate: new Date(2024, 6, 1),
+    status: "Side Project / In Progress",
+    title: "Self-Hosting",
+    description: "Home server, first for multimedia (Plex), then extended for photos (immich), cloud (nextcloud), development (jenkins, gitlab) & app deployments (e.g. portfolio website). Protected with tailscale & cloudflare zerotrust. Wrote about it on <a href='https://thefoxdiaries.substack.com' target='_blank'>substack</a>",
+    url: {
+      title: "View GitHub",
+      url: "https://github.com/foxbits/self-hosting-cookbook"
+    },
+    image: "./img/portfolio/flowbird-abt.jpg"
+  },
+  {
+    id: 25,
+    category: PortfolioItemCategory.SideProjects,
+    startDate: new Date(2022, 6, 1),
+    status: "Side Project / In Progress",
+    title: "The Fox Diaries Substack",
+    description: "A technical blog (migrated from Medium) where I write about guidelines and tricks on technical topics (most famous until now are a migration from Docker to Rancher and a Plex Server setup guide)",
+    url: {
+      title: "View Substack",
+      url: "https://thefoxdiaries.substack.com"
+    },
+    image: "./img/portfolio/flowbird-abt.jpg"
+  },
+  {
+    id: 28,
+    category: PortfolioItemCategory.SideProjects,
+    startDate: new Date(2021, 2, 21),
+    status: "Side Project / In Progress",
+    title: "CV / Portfolio Website",
+    description: "A personal website written in React and deployed with docker to showcase my CV and portfolio - <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a>",
+    url: {
+      title: "View GitHub",
+      url: "https://github.com/foxbits/portfolio-cookbook"
+    },
+    image: "./img/portfolio/flowbird-abt.jpg"
+  },
+  {
+    id: 30,
+    category: PortfolioItemCategory.SideProjects,
+    startDate: new Date(2021, 0, 1),
+    status: "Side Project / In Progress",
+    title: "GitHub* Contributor (seldom)",
+    description: `Created:
+    <a href='https://github.com/foxbits/fx-core' target='_blank'>fx-core</a>,
+    <a href='https://github.com/foxbits/portfolio-cookbook' target='_blank'>portfolio-cookbook</a>,
+    <a href='https://github.com/foxbits/self-hosting-cookbook' target='_blank'>self-hosting-cookbook</a>
+    and others, and contributed to:
+    <a href='https://github.com/arvvoid/plugin.video.hbogoeu' target='_blank'>plugin.video.hbogoeu</a>,
+    <a href='https://github.com/Jackett/Jackett' target='_blank'>Jackett</a>
+    `,
+    url: {
+      title: "GitHub profile",
+      url: "https://github.com/foxbits"
+    },
+    image: "./img/portfolio/flowbird-abt.jpg"
+  },
   {
     id: 24,
     category: PortfolioItemCategory.WorkProjects,
