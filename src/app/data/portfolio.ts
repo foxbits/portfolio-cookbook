@@ -455,7 +455,7 @@ const interestsData = [
   },
   {
     title: "Photography",
-    link: "https://gurushots.com/foxietamine",
+    link: "https://gurushots.com/foxbites",
     icon: "fa-photo"
   },
   {
@@ -470,7 +470,7 @@ const interestsData = [
   },
   {
     title: "Video Games",
-    link: "https://backloggd.com/u/foxie",
+    link: "https://backloggd.com/u/foxbites/",
     icon: "fa-gamepad"
   },
   {
@@ -490,40 +490,29 @@ const edus = [
     tags: ["Technical Lead", "principal.dev"]
   },
   {
-    title: "🌞 Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)",
-    location: '<a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>',
-    startDate: new Date(2019, 8, 1),
-    endDate: new Date(2019, 11, 31),
-    description: `I took this complete course about Vue.js in order to prepare for a set of work-related projects and to keep up with the ongoing progress of front-end technologies. Coming from an Angular background, many terms here are familiar; as a result, it was easy to learn and interesting to compare the two tools.
-      <br/>This course is presented by <a href="https://www.udemy.com/user/maximilian-schwarzmuller/" target="_blank">Maximilian Schwarzmüller</a>, the same awesome person from which I learned Angular. All problems tackled in the course can be found on my <a href="https://github.com/marianfx/vue-udemy" target="_blank">GitHub</a>.`,
-    tags: ["VueJS"]
-  },
-  {
-    title: "🌞 Udemy - DevOps Essentials",
-    location: '<a href="http://ude.my/UC-NY1A7VGY" target="_blank">Certificate</a>',
-    startDate: new Date(2019, 8, 1),
-    endDate: new Date(2019, 8, 11),
-    description: `I took this course in order to learn the core notion of what DevOps ecosystem means. It is presented by The Linux Academy. After learning it, I prepared some CI/CD environments using docker and Jenkins`,
-    tags: ["DevOps"]
-  },
-  {
-    title: "🌞 Udemy - Agile Project Management: Scrum Cert. Prep",
-    location: '<a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a>',
-    startDate: new Date(2019, 7, 1),
-    endDate: new Date(2019, 7, 31),
-    description: `It includes 2 courses: Scrum Certification Prep + Scrum Master + Agile Scrum Training && Agile Project Management: Scrum Step by Step. <br/>
-      I took this set of courses in order to clarify my notions about Agile methodologies and the Scrum framework. Throughout the courses, I learned about Scrum Theory, Scrum Team Roles, Scrum Events, Scrum Artifacts, Scrum of Scrums, with practical exercises and questions about real-world scenarios.`,
-    tags: ["Agile", "Scrum"]
-  },
-  {
-    title: "🌞 Udemy - Angular (Angular 2+) - The Complete Guide",
-    location: '<a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>',
+    title: "🌞 Udemy - Courses",
+    location: "[certificates in description]",
     startDate: new Date(2019, 3, 1),
-    endDate: new Date(2019, 6, 30),
-    description: `I took this course after already working with Angular a few months, for rooting my knowledge on the subject. This complete guide is presented by Maximilian Schwarzmüller. <br/>
-      All problems tackled in the course can be found on my <a href="https://github.com/marianfx/ng-udemy-files" target="_blank">GitHub</a>. <br/>
-      Based on this course, I then prepared a restructured & optimized set of classes that I presented, with additional explanations, to a set of juniors`,
-    tags: ["Angular"]
+    endDate: new Date(2021, 11, 30),
+    description: `Took a series of courses on Udemy to expand my knowledge:
+    <ul>
+      <li>- <b>React - Full Guide & Redux Saga</b>: needed for work. See <a href="https://github.com/foxbits/playground-reactjs-redux-saga" target="_blank">GitHub</a></li>
+
+      <li>- <b>Vue JS 2 - The Complete Guide</b>: learned to keep-up with the ongoing progress of front-end technologies and to do some comparisons with Angular. See <a href="http://ude.my/UC-7PPSDK51" target="_blank">Certificate</a>
+      and <a href="https://github.com/foxbits/vue-udemy" target="_blank">GitHub</a></li>
+
+      <li>- <b>DevOps Essentials</b>: core DevOps ecosystem notions by The Linux Academy. See <a href="http://ude.my/UC-NY1A7VGY" target="_blank">Certificate</a>
+      and <a href="https://github.com/foxbits/devops-essentials-sample-app" target="_blank">GitHub</a></li>
+
+      <li>- <b>Agile Project Management: Scrum Cert. Prep</b>: It includes 2 courses: Scrum Certification Prep + Scrum Master + Agile Scrum Training && Agile Project Management: Scrum Step by Step. I took this set of courses in order to clarify my notions about Agile methodologies and the Scrum framework. See <a href="http://ude.my/UC-30XT1MAU" target="_blank">Certificate</a></li>
+
+      <li>- <b>Angular - The Complete Guide</b>: used for rooting my knowledge on Angular after already working on it for some months. See <a href="http://ude.my/UC-4GREQAHJ" target="_blank">Certificate</a>
+      and <a href="https://github.com/foxbits/ng-udemy-files" target="_blank">GitHub</a></li>
+    </ul>
+    <br/>
+    <b>Related projects:</b>
+    <a class="color__projects" href="#project-27">Learning Curve #2</a>`,
+    tags: ["Angular", "React", "Vue", "DevOps", "Agile"]
   },
   {
     title: "🎓 Faculty of Computer Science, „Alexandru Ioan Cuza” University, Iași",
@@ -531,7 +520,11 @@ const edus = [
     startDate: new Date(2014, 9, 1),
     endDate: new Date(2017, 5, 15),
     description: `Status: finished, no license.<br/> 
-      Three years of learning more or less useful knowledge (presented in a more or less optimized fashion), meeting new people and discovering new ideas about my future self. Topics studied added as tags.`,
+      Three years of learning more or less useful knowledge (presented in a more or less optimized fashion), meeting new people and discovering new ideas about my future self. Topics studied added as tags.
+      <br/><br/>
+      <b>Related projects:</b>
+      <a class="color__projects" href="#project-3">Fun Web / Solution1</a>,
+      <a class="color__projects" href="#project-14">Learning Curve - University</a>`,
     tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
   },
   {
@@ -548,7 +541,7 @@ const edus = [
     tags: ["Mathematics", "Computer Science", "Romanian Language &amp; Literature", "English Language"]
   },
   {
-    title: "👶 Elementary School &amp; Secondary Education",
+    title: "👶 Elementary School & Secondary Education",
     location: "Life++",
     startDate: new Date(2002, 8, 15),
     endDate: new Date(2010, 5, 15),
@@ -692,7 +685,7 @@ const allProjects = [
     <a href='https://github.com/foxbits/devops-essentials-sample-app' target='_blank'>devops</a>,
     <a href='https://github.com/foxbits/ng-udemy-files' target='_blank'>angular</a>,
     <a href='https://github.com/foxbits/vue-udemy' target='_blank'>vue</a>,
-    <a href='https://github.com/foxbits/playground-reactjs-redux-saga' target='_blank'>react</a>,
+    <a href='https://github.com/foxbits/playground-reactjs-redux-saga' target='_blank'>react</a>
     `,
     url: {
       title: "View on GitHub",
@@ -776,9 +769,9 @@ const allProjects = [
       <a target="_blank" href='https://bitbucket.org/javafxteam/cn-labs'>Numerical Calculus</a>,
       <a target="_blank" href='https://bitbucket.org/javafxteam/cg-labs'>Computer Graphics</a>,
       <a target="_blank" href='https://bitbucket.org/marianfx/cc-labs'>Cloud Computing</a>,
-      <a target="_blank" href='https://github.com/marianfx/python-labs'>Python</a>,
-      <a target="_blank" href='https://github.com/marianfx/ai-labs'>Artificial Intelligence</a>,
-      <a target="_blank" href='https://github.com/marianfx/dotnet-core-labs'>.NET Core</a>,
+      <a target="_blank" href='https://github.com/foxbits/python-labs'>Python</a>,
+      <a target="_blank" href='https://github.com/foxbits/ai-labs'>Artificial Intelligence</a>,
+      <a target="_blank" href='https://github.com/foxbits/dotnet-core-labs'>.NET Core</a>,
       `,
     url: {
       title: "Links in description"
@@ -806,7 +799,7 @@ const allProjects = [
     status: "Uni / Team Player",
     title: "Fun Web / Solution1 - Learning Multiplayer",
     description: `Fun educational app for learning courses, gaining XP, and competing in multiplayer Q&A. Transformed afterward in assignment upload/grade management. Check:
-      <a target="_blank" href='https://github.com/marianfx/team-7-fun-web'>here</a>,
+      <a target="_blank" href='https://github.com/foxbits/team-7-fun-web'>here</a>,
       <a target="_blank" href='https://github.com/tabby336/Solution1'>here</a>,
       `,
     url: {
@@ -822,10 +815,10 @@ const allProjects = [
     status: "Learning / Solo",
     title: "Learning Curve #1",
     description: `Small applications built for wanting to try out different technologies:
-      <a target="_blank" href='https://github.com/marianfx/change-notifier'>Change Notifier</a>,
-      <a target="_blank" href='https://github.com/marianfx/solver-codingame'>CodinGame Problem Solver</a>,
-      <a target="_blank" href='https://github.com/marianfx/solver-leetcode'>Leetcode Problem Solver</a>,
-      <a target="_blank" href='https://github.com/marianfx/com.fx.Id3Helper'>ID3 ML Helper</a>,
+      <a target="_blank" href='https://github.com/foxbits/change-notifier'>Change Notifier</a>,
+      <a target="_blank" href='https://github.com/foxbits/solver-codingame'>CodinGame Problem Solver</a>,
+      <a target="_blank" href='https://github.com/foxbits/solver-leetcode'>Leetcode Problem Solver</a>,
+      <a target="_blank" href='https://github.com/foxbits/com.fx.Id3Helper'>ID3 ML Helper</a>,
       `,
     url: {
       title: "Links in description"
