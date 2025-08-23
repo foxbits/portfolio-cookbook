@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build only') {
+        stage('Build') {
             steps {
                 echo "Running build"
                 sh 'chmod +x ./build-docker.sh'
                 sh "./build-docker.sh"
             }
         }
-        stage('Build & Deploy Locally') {
+        stage('Deploy Locally') {
             when {
                 branch 'main'
             }

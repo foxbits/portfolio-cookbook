@@ -2,9 +2,8 @@ import { DateBasedObject, toDisplayableDates } from '@/app/extensions/DateExtens
 import { FC, useEffect, useState } from 'react';
 
 export enum PortfolioItemCategory {
-  All = 'all',
-  WorkProjects = 'work-projects',
-  SideProjects = 'side-projects',
+  Work = 'work-projects',
+  Side = 'side-projects',
   Learning = 'learning-projects'
 };
 
@@ -42,9 +41,9 @@ const PortfolioSection: FC<PortfolioSectionProps> = ({ items }) => {
               <ul id="filter-list">
                 <li className="filter" data-filter="all">All</li>
                 <li className="filter" data-filter=".active">Active</li>
-                <li className="filter" data-filter=".work-projects">Work Projects</li>
-                <li className="filter" data-filter=".side-projects">Side Projects</li>
-                <li className="filter" data-filter=".learning-projects">Learning Projects</li>
+                { Object.entries(PortfolioItemCategory).map(([key, value]) => (
+                  <li key={key} className="filter" data-filter={`.${value}`}>{key}</li>
+                ))}
               </ul>
             </div>
           </div>

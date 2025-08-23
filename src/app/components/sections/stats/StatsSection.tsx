@@ -1,21 +1,21 @@
 import React from 'react';
 
-export interface CupsSectionProps {
-    numbers: {
+export interface StatsSectionProps {
+    stats: {
         title: string,
         count: number | undefined
     }[];
 }
 
-const CupsSection: React.FC<CupsSectionProps> = ({ numbers }) => {
+const StatsSection: React.FC<StatsSectionProps> = ({ stats }) => {
     return (
         <section className="content backgrounded smaller-padding" id="the-cups">
             <div className="container">
                 <div className="row">
                     <div className="col-xs-12">
-                        {/* <!-- Side-info counts containeed here --> */}
+                        {/* <!-- Side-info counts contained here --> */}
                         <div id="side-data-container" className="row">
-                            {numbers.map((item, index) => (
+                            {stats.map((item, index) => (
                                 <div key={index} className="col-xs-6 col-sm-6">
                                     <div className="service-info">
                                         <span className="counter">{item.count}</span>
@@ -31,4 +31,4 @@ const CupsSection: React.FC<CupsSectionProps> = ({ numbers }) => {
     );
 };
 
-export default CupsSection;
+export default StatsSection;

@@ -6,6 +6,7 @@ The CV is also available at [connect.foxbites.net](https://connect.foxbites.net)
 - [Tech Stack](#tech-stack)
 - [Documentation](#documentation)
   - [Application structure](#application-structure)
+  - [Customization](#customization)
   - [Caveats](#caveats)
 
 
@@ -40,12 +41,17 @@ The application is deployed with [Docker Compose](https://docs.docker.com/compos
 
 Standard next.js app router based structure, with some important mentions:
 
-- `/app/data/portfolio.ts` - static data source which is used to store CV data and render it with React
-- `/public/js`, `/public/css` - custom preloaded scripts that are not integrated with React
-- `/public/img` - images, logos, some of them with dual versions - one small (thumbnail), other large which is lazyloaded
-- `/public/files` - contains the EUROPASS style PDF  of the CV
-- `*docker*` files - scripts to build the docker image, deploy it with compose
-- `Jenkinsfile` - script that runs on jenkins, which uses a SSH agent that connects to docker (DooS) and is able to run the application (only does so from master)
+- [`src/app/data/portfolio.ts`](src/app/data/portfolio.ts) - static data source (with comments) which is used to store CV data, which is then rendered with React in the different sections
+- [`public/js`](public/js), [`public/css`](public/css) - custom preloaded scripts and CSS that are not integrated with React, loaded in the [`src/app/app-client-layout.tsx`](src/app/app-client-layout.tsx) and in [`src/app/page.tsx`](src/app/page.tsx)
+- [`public/img`](public/img) - images, logos, some of them with dual versions - one small (thumbnail), other large which is lazyloaded
+- [`public/files`](public/files) - can contain any file, recommended to keep other versions of the CV, like EUROPASS PDF, then linked in the Profile section
+- [`Dockerfile`](Dockerfile), [`docker-compose.yml`](docker-compose.yml) - scripts to build the docker image, deploy it with compose (linked to custom [`build-docker.sh`](build-docker.sh) and [`docker-compose.run.sh`](docker-compose.run.sh))
+- [`Jenkinsfile`](Jenkinsfile) - script that runs on jenkins, which uses a SSH agent that connects to docker (DooS) and is able to run the application (only does so from master)
+
+### Customization
+You can reorder sections as you wish in the [`page.tsx`](src/app/page.tsx).
+
+All the data that is shown on page is defined inside [`src/app/data/portfolio.ts`](src/app/data/portfolio.ts), which has comments on how to use it or customise it.
 
 ### Caveats
 

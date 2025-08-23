@@ -1,10 +1,34 @@
-import { title } from 'process';
 import { PortfolioItemCategory } from '../components/sections/portfolio/PortfolioSection';
 import { getAge } from '../extensions/DateExtensions';
 
+/**
+ * Application Information - Version
+ */
 export const APP_VERSION = "2025.1";
+/**
+ * Application Information - Repository
+ */
+export const APP_REPO = "https://github.com/foxbits/portfolio-cookbook";
+/**
+ * Application Information - Copyright Holder
+ */
+export const COPYRIGHT_HOLDER = "foxbites";
+/**
+ * Application Information - Copyright Year
+ */
 export const COPYRIGHT_YEAR = new Date().getFullYear();
 
+/**
+ * Built from the above application information
+ */
+const metaData = {
+  appVersion: APP_VERSION,
+  appRepo: APP_REPO,
+  copyrightYear: COPYRIGHT_YEAR,
+  copyrightHolder: COPYRIGHT_HOLDER
+};
+
+// Reusable personal information
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
 const email = "marian@foxbites.net";
@@ -12,6 +36,9 @@ const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
 const substackLink = "https://thefoxdiaries.substack.com/";
 
+/**
+ * List of "loves" - list that is displayed in the Home page as random "I Love <>"
+ */
 const loves = [
   {
     name: "Ideas"
@@ -45,6 +72,10 @@ const loves = [
   },
 ];
 
+/**
+ * List of social links displayed on the Home page.
+ * The icons are from Font Awesome 4 - https://fontawesome.com/v4/icons/
+ */
 const socialLinks = [
   {
     url: linkedinLink,
@@ -74,7 +105,11 @@ const socialLinks = [
   },
 ];
 
-const infos = [
+/**
+ * Personal information displayed in the About Me -> Basic Information section.
+ * "Value" supports custom HTML (links only recommended)
+ */
+const info = [
   {
     title: "Name",
     value: "Marian Focșa (FX)"
@@ -105,7 +140,10 @@ const infos = [
   }
 ];
 
-const profiFile = {
+/**
+ * A personal introduction and list of CV links displayed in the About Me -> Professional Profile section
+ */
+const profile = {
   description: `Sassy and creative software expert with great skills of communication, attention to details & architectural thinking. 
   Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on. With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to Angular and React), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
   links: [
@@ -124,7 +162,10 @@ const profiFile = {
   ]
 };
 
-const cards = [
+/**
+ * Main skills with their percentages (0 - 100), grouped in dynamic categories (recommended 4), displayed in the Skills section
+ */
+const skills = [
   {
     title: "Professional Skills",
     data: [
@@ -326,6 +367,13 @@ const cards = [
   },
 ];
 
+/**
+ * List of jobs, displayed in the Experience section as a Timeline
+ * "Location", "Description" support custom HTML code.
+ * "endDate" is optional and will mark the job as active.
+ * If you want to reference a project in the description, add a link tag with href="#project-<id>", where the id is the id you define in the projects list
+ * The jobs are not automatically ordered, they are displayed in the custom order defined here
+ */
 const jobs = [
   {
     title: "🚀 Freelance Technical Professional",
@@ -453,65 +501,74 @@ const jobs = [
   }
 ];
 
-const interestsIntro = {
+/**
+ * List of interests, passions and hobbies, displayed in the Interests section.
+ * Each entry includes a title, a link, and an icon (from Font Awesome 4 - https://fontawesome.com/v4/icons/).
+ * Links are optional, but can be used in a playful manner to showcase some of your online / hobby presence
+ * Recommended to use a number that looks good on your desired screen size.
+ */
+const interests = {
   description: '"We don\'t read and write poetry because it\'s cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. And medicine, law, business, engineering, these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love, these are what we stay alive for."',
-  caption: "- Robin Williams in ‘Dead Poets Society’"
+  caption: "- Robin Williams in ‘Dead Poets Society’",
+  data: [
+    {
+      title: "Movies",
+      link: "https://letterboxd.com/cinemarrian",
+      icon: "fa-film"
+    },
+    {
+      title: "Music",
+      link: "https://stats.fm/foxbites",
+      icon: "fa-music"
+    },
+    {
+      title: "Books",
+      link: "https://www.goodreads.com/cinemarrian",
+      icon: "fa-book"
+    },
+    {
+      title: "Writing",
+      link: substackLink,
+      icon: "fa-pencil-square"
+    },
+    {
+      title: "Money",
+      link: "https://revolut.me/mfx",
+      icon: "fa-money"
+    },
+    {
+      title: "Photography",
+      link: "https://gurushots.com/foxbites",
+      icon: "fa-photo"
+    },
+    {
+      title: "Art",
+      link: "https://www.cosmos.so/foxbites/artistic-habits",
+      icon: "fa-paint-brush"
+    },
+    {
+      title: "Humour",
+      link: "https://comedybox.ro",
+      icon: "fa-graduation-cap"
+    },
+    {
+      title: "Video Games",
+      link: "https://backloggd.com/u/foxbites/",
+      icon: "fa-gamepad"
+    },
+    {
+      title: "Shopping",
+      link: "https://www.vinted.ro/member/170366344-foxietamine",
+      icon: "fa-shopping-bag"
+    },
+  ]
 };
 
-const interestsData = [
-  {
-    title: "Movies",
-    link: "https://letterboxd.com/cinemarrian",
-    icon: "fa-film"
-  },
-  {
-    title: "Music",
-    link: "https://stats.fm/foxbites",
-    icon: "fa-music"
-  },
-  {
-    title: "Books",
-    link: "https://www.goodreads.com/cinemarrian",
-    icon: "fa-book"
-  },
-  {
-    title: "Writing",
-    link: substackLink,
-    icon: "fa-pencil-square"
-  },
-  {
-    title: "Money",
-    link: "https://revolut.me/mfx",
-    icon: "fa-money"
-  },
-  {
-    title: "Photography",
-    link: "https://gurushots.com/foxbites",
-    icon: "fa-photo"
-  },
-  {
-    title: "Art",
-    link: "https://www.cosmos.so/foxbites/artistic-habits",
-    icon: "fa-paint-brush"
-  },
-  {
-    title: "Humour",
-    link: "https://comedybox.ro",
-    icon: "fa-graduation-cap"
-  },
-  {
-    title: "Video Games",
-    link: "https://backloggd.com/u/foxbites/",
-    icon: "fa-gamepad"
-  },
-  {
-    title: "Shopping",
-    link: "https://www.vinted.ro/member/170366344-foxietamine",
-    icon: "fa-shopping-bag"
-  },
-];
-
-const edus = [
+/**
+ * List of educational experiences, displayed in the Education section as a Timeline.
+ * Same format and comments as for the jobs timeline
+ */
+const education = [
   {
     title: "🍉 The Principal Developer Masterclass",
     location: '<a href="https://certs.principal.dev/14x/U03NTA03VUN" target="_blank">Certificate</a>',
@@ -581,10 +638,18 @@ const edus = [
   }
 ];
 
-const allProjects = [
+/**
+ * List of projects, displayed in the Portfolio section.
+ * Each project has an id, which can be referenced in links with #project-<id>
+*  "Description" support custom HTML code.
+* "endDate" is optional and will mark the project as active, which will make it visible in the Active filter
+* The "category" enum defines the filters from the page and links each project to a filter category ("Active" is an extra category defined through the "endDate" as mentioned above, "All" is also an implicit category)
+* The "url" can have an actual url inside or not (e.g. private projects would not, projects with multiple links can have them in the description, up to each one's preference)
+ */
+const projects = [
   {
     id: 26,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2025, 7, 15),
     status: "Side Project / In Progress",
     title: "Secret projects #1",
@@ -596,7 +661,7 @@ const allProjects = [
   },
   {
     id: 29,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2024, 6, 1),
     status: "Side Project / In Progress",
     title: "Self-Hosting",
@@ -609,7 +674,7 @@ const allProjects = [
   },
   {
     id: 25,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2022, 6, 1),
     status: "Side Project / In Progress",
     title: "The Fox Diaries Substack",
@@ -622,7 +687,7 @@ const allProjects = [
   },
   {
     id: 28,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2021, 2, 21),
     status: "Side Project / In Progress",
     title: "CV / Portfolio Website",
@@ -635,7 +700,7 @@ const allProjects = [
   },
   {
     id: 30,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2021, 0, 1),
     status: "Side Project / In Progress",
     title: "GitHub* Contributor (seldom)",
@@ -655,7 +720,7 @@ const allProjects = [
   },
   {
     id: 24,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2020, 6, 1),
     endDate: new Date(2025, 6, 1),
     status: "Work / In Progress",
@@ -669,7 +734,7 @@ const allProjects = [
   },
   {
     id: 23,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2019, 9, 1),
     endDate: new Date(2020, 5, 30),
     status: "Work / Abandoned",
@@ -682,7 +747,7 @@ const allProjects = [
   },
   {
     id: 22,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2019, 8, 1),
     endDate: new Date(2020, 5, 30),
     status: "Work / Abandoned",
@@ -695,7 +760,7 @@ const allProjects = [
   },
   {
     id: 21,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2019, 9, 1),
     endDate: new Date(2020, 5, 30),
     status: "Work / Abandoned",
@@ -726,7 +791,7 @@ const allProjects = [
   },
   {
     id: 19,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2018, 7, 1),
     endDate: new Date(2020, 7, 31),
     status: "Side Project / Solo / Abandoned",
@@ -739,7 +804,7 @@ const allProjects = [
   },
   {
     id: 20,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2018, 4, 1),
     endDate: new Date(2019, 7, 31),
     status: "Work / Finished",
@@ -752,7 +817,7 @@ const allProjects = [
   },
   {
     id: 18,
-    category: PortfolioItemCategory.SideProjects,
+    category: PortfolioItemCategory.Side,
     startDate: new Date(2018, 8, 1),
     endDate: new Date(2018, 10, 30),
     status: "Side Project / Solo / Finished",
@@ -765,7 +830,7 @@ const allProjects = [
   },
   {
     id: 15,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2017, 7, 1),
     endDate: new Date(2018, 3, 30),
     status: "Work / Finished",
@@ -778,7 +843,7 @@ const allProjects = [
   },
   {
     id: 8,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2016, 10, 1),
     endDate: new Date(2017, 7, 31),
     status: "Work / Finished",
@@ -811,7 +876,7 @@ const allProjects = [
   },
   {
     id: 4,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2016, 5, 1),
     endDate: new Date(2016, 10, 30),
     status: "Work / Finished",
@@ -858,7 +923,7 @@ const allProjects = [
   },
   {
     id: 1,
-    category: PortfolioItemCategory.WorkProjects,
+    category: PortfolioItemCategory.Work,
     startDate: new Date(2015, 9, 1),
     endDate: new Date(2016, 5, 30),
     status: "Work / Finished",
@@ -871,6 +936,10 @@ const allProjects = [
   }
 ];
 
+/**
+ * Contact information displayed in the contact section
+ * The email is used for the email form
+ */
 const contactData = {
   address: `Iași, România`,
   phone: phoneNumber,
@@ -880,10 +949,14 @@ const contactData = {
   linkedinMessengerLink: linkedinLink
 };
 
-const numbersData = [
+/**
+ * Cards displayed in the statistics section
+ * Recommended to be a multiple of 2
+ */
+const stats = [
   {
     title: "Projects",
-    count: allProjects.length
+    count: projects.length
   },
   {
     title: "Cups of coffee",
@@ -899,24 +972,18 @@ const numbersData = [
   },
 ];
 
-const metaData = {
-  appVersion: APP_VERSION,
-  copyrightYear: COPYRIGHT_YEAR
-};
-
 
 export const portfolioData = {
   loves,
   socialLinks,
-  infos,
-  profiFile,
-  numbersData,
-  cards,
+  info,
+  profile,
+  stats,
+  skills,
   jobs,
-  interestsIntro,
-  interestsData,
-  edus,
-  allProjects,
+  interests,
+  education,
+  projects,
   contactData,
   metaData
 };
