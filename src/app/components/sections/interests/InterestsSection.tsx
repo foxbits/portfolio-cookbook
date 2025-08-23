@@ -1,18 +1,18 @@
 import React from 'react';
 
 export interface InterestSectionProps {
-    interestsIntro: {
+    interests: {
         description: string;
         caption: string;
-    },
-    interestsData: {
-        title: string;
-        link: string;
-        icon: string;
-    }[];
+        data: {
+            title: string;
+            link: string;
+            icon: string;
+        }[]
+    };
 }
 
-const InterestsSection: React.FC<InterestSectionProps> = ( {interestsIntro, interestsData }) => {
+const InterestsSection: React.FC<InterestSectionProps> = ( {interests }) => {
     return (
         <section className="content backgrounded" id="the-interests">
             <div className="container">
@@ -22,10 +22,10 @@ const InterestsSection: React.FC<InterestSectionProps> = ( {interestsIntro, inte
                         style={ { paddingBottom: "40px;" } }>
                             <h2>My Interests</h2>
                             {/* <!-- Container for Interests --> */}
-                            <p id="interests-description"> {interestsIntro.description}</p>
-                            <p id="interests-caption" style={{ textAlign: "right" }}>{interestsIntro.caption}</p>
+                            <p id="interests-description"> {interests.description}</p>
+                            <p id="interests-caption" style={{ textAlign: "right" }}>{interests.caption}</p>
                             <ul id="interests-container">
-                                {interestsData.map((interest, index) => (
+                                {interests.data.map((interest, index) => (
                                     <li key={index}>
                                         <a href={interest.link} target="_blank">
                                             <i className={`fa ${interest.icon}`}></i>

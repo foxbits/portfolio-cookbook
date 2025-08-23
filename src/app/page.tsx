@@ -9,7 +9,7 @@ import PortfolioSection from './components/sections/portfolio/PortfolioSection';
 import ContactSection from './components/sections/contact/ContactSection';
 
 import { portfolioData } from './data/portfolio';
-import CupsSection from './components/sections/cups/CupsSection';
+import StatsSection from './components/sections/stats/StatsSection';
 import InterestsSection from './components/sections/interests/InterestsSection';
 
 
@@ -61,13 +61,13 @@ export default function Home() {
   return (
     <>
       <HomeSection loves={portfolioData.loves} socialLinks={portfolioData.socialLinks} />
-      <AboutSection info={portfolioData.infos} profiFile={portfolioData.profiFile} />
-      <CupsSection numbers={portfolioData.numbersData} />
-      <SkillsSection skills={portfolioData.cards} />
+      <AboutSection info={portfolioData.info} profile={portfolioData.profile} />
+      <StatsSection stats={portfolioData.stats} />
+      <SkillsSection skills={portfolioData.skills} />
       <ExperienceSection timeline={portfolioData.jobs} />
-      <InterestsSection interestsIntro={portfolioData.interestsIntro} interestsData={portfolioData.interestsData} />
-      <EducationSection timeline={portfolioData.edus} />
-      <PortfolioSection items={portfolioData.allProjects} />
+      <InterestsSection interests={portfolioData.interests} />
+      <EducationSection timeline={portfolioData.education} />
+      <PortfolioSection items={portfolioData.projects} />
       <ContactSection contactData={portfolioData.contactData} />
     </>
   );

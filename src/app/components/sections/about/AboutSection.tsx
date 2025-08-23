@@ -5,7 +5,7 @@ interface AboutSectionProps {
     title: string;
     value: string;
   }[];
-  profiFile: {
+  profile: {
     description: string;
     links: {
       title: string;
@@ -14,7 +14,7 @@ interface AboutSectionProps {
   };
 }
 
-const AboutSection: FC<AboutSectionProps> = ({info, profiFile}) => {
+const AboutSection: FC<AboutSectionProps> = ({info, profile}) => {
   return (
     <section className="content backgrounded" id="about-me">
       <div className="container">
@@ -42,13 +42,13 @@ const AboutSection: FC<AboutSectionProps> = ({info, profiFile}) => {
           <div className="col-xs-12 col-sm-6">
             <div className="panel-box professional-profile wow fadeInRight basic-info-right">
               <h2>Professional Profile</h2>
-              <p>{profiFile.description}</p>
+              <p>{profile.description}</p>
               <div className="btn-group">
                 <a className='btn btn-primary dropdown-toggle' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Resume <span className="caret"></span>
                 </a>
                 <ul className="dropdown-menu" style={{ zIndex: 9999, fontSize: '12px' }}>
-                  {profiFile.links.map((link, index) => (
+                  {profile.links.map((link, index) => (
                     <li key={index}>
                       <a href={link.link} target="_blank" rel="noopener noreferrer">
                         {link.title}

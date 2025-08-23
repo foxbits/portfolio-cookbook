@@ -2,9 +2,8 @@ import { DateBasedObject, toDisplayableDates } from '@/app/extensions/DateExtens
 import { FC, useEffect, useState } from 'react';
 
 export enum PortfolioItemCategory {
-  All = 'all',
-  WorkProjects = 'work-projects',
-  SideProjects = 'side-projects',
+  Work = 'work-projects',
+  Side = 'side-projects',
   Learning = 'learning-projects'
 };
 
@@ -40,10 +39,11 @@ const PortfolioSection: FC<PortfolioSectionProps> = ({ items }) => {
           <div className="row">
             <div className="col-xs-12">
               <ul id="filter-list">
-                <li className="filter" data-filter="all">ALL</li>
-                <li className="filter" data-filter=".work-projects">Work Projects</li>
-                <li className="filter" data-filter=".side-projects">Side Projects</li>
-                <li className="filter" data-filter=".learning-projects">Learning Projects</li>
+                <li className="filter" data-filter="all">All</li>
+                <li className="filter" data-filter=".active">Active</li>
+                { Object.entries(PortfolioItemCategory).map(([key, value]) => (
+                  <li key={key} className="filter" data-filter={`.${value}`}>{key}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -51,7 +51,7 @@ const PortfolioSection: FC<PortfolioSectionProps> = ({ items }) => {
           <div className="row" style={{ padding: '20px', paddingTop: '0px' }}>
             <ul className="portfolio_items">
               {processedItems.map((item, index) => (
-                <li key={index} id={`project-${item.id}`} className={`full-card card ${item.category} col-xs-12 col-sm-6 col-md-4 mix`}>
+                <li key={index} id={`project-${item.id}`} className={`full-card card ${item.category} ${!item.endDate ? 'active': ''} col-xs-12 col-sm-6 col-md-4 mix`}>
                   <div className="wrapper" style={{ background: `url(${item.image}) center/cover no-repeat;` }}>
                     <div className="header">
                       <div className="date">
