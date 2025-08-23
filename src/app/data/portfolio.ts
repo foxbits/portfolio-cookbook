@@ -298,14 +298,14 @@ const cards = [
 const jobs = [
   {
     title: "🚀 Freelance Technical Professional",
-    location: "<span style='text-transform: none'>self-employed, side-projects, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
+    location: "<span style='text-transform: none'>side-projects, self-employed, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
     startDate: new Date(2025, 5, 1),
     endDate: undefined,
     description: `Software Development is about discovering that you are actually a god and you can create literally anything, you are limited only by your imagination (or at least this is the reason why I initially got into it).
-     That's why I started leaning into investing more time into personal projects:
+     Therefore I started investing more time into personal projects:
      <ul>
       <li>- Writer at <a href='https://thefoxdiaries.substack.com' target='_blank'>thefoxdiaries.substack.com</a></li>
-      <li>- Creator of two incipient projects: Hobbythos and Quizz Rivals</li>
+      <li>- Creator of two brand-new secret projects</li>
       <li>- Creator of <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a> (CV / Portfolio Website)</li>
       <li>- Self-hoster at foxbites.net</li>
       <li>- Seldom GitHub contributor</li>
@@ -314,8 +314,7 @@ const jobs = [
     <br/><br/>
     <b>Related projects:</b> 
     <a class="color__projects" href="#project-25">The Fox Diaries Substack</a>,
-    <a class="color__projects" href="#project-26">Hobbythos</a>,
-    <a class="color__projects" href="#project-27">Quizz Rivals</a>,
+    <a class="color__projects" href="#project-26">Secret Projects #1</a>,
     <a class="color__projects" href="#project-28">CV / Portfolio Website</a>,
     <a class="color__projects" href="#project-29">Self-Hosting</a>,
     <a class="color__projects" href="#project-30">GitHub* Contributor (seldom)</a>`,
@@ -560,28 +559,16 @@ const edus = [
 
 const allProjects = [
   {
-    id: 27,
-    category: PortfolioItemCategory.SideProjects,
-    startDate: new Date(2025, 7, 15),
-    status: "Side Project / In Progress",
-    title: "Quizz Rivals",
-    description: "A game with quizzes, similar to the former QuizzUp, but with a lovely twist",
-    url: {
-      title: "Private work"
-    },
-    image: "./img/portfolio/flowbird-abt.jpg"
-  },
-  {
     id: 26,
     category: PortfolioItemCategory.SideProjects,
     startDate: new Date(2025, 7, 15),
     status: "Side Project / In Progress",
-    title: "Hobbythos",
-    description: "A mobile application around building healthy hobbies and meeting people (with a twist)",
+    title: "Secret projects #1",
+    description: "Working on a mobile application around building healthy hobbies and meeting people (with a twist) and a game with quizzes, similar to the former QuizzUp, but with a lovely twist.",
     url: {
       title: "Private work"
     },
-    image: "./img/portfolio/flowbird-abt.jpg"
+    image: "./img/portfolio/secret-projects-1.jpg"
   },
   {
     id: 29,
@@ -594,7 +581,7 @@ const allProjects = [
       title: "View GitHub",
       url: "https://github.com/foxbits/self-hosting-cookbook"
     },
-    image: "./img/portfolio/flowbird-abt.jpg"
+    image: "./img/portfolio/home-lab.jpg"
   },
   {
     id: 25,
@@ -602,12 +589,12 @@ const allProjects = [
     startDate: new Date(2022, 6, 1),
     status: "Side Project / In Progress",
     title: "The Fox Diaries Substack",
-    description: "A technical blog (migrated from Medium) where I write about guidelines and tricks on technical topics (most famous until now are a migration from Docker to Rancher and a Plex Server setup guide)",
+    description: "A technical blog (migrated from Medium) where I write about tips and tricks on technical topics (most famous until now are a migration from Docker to Rancher and a Plex Server setup guide)",
     url: {
       title: "View Substack",
       url: "https://thefoxdiaries.substack.com"
     },
-    image: "./img/portfolio/flowbird-abt.jpg"
+    image: "./img/portfolio/foxdiaries.jpg"
   },
   {
     id: 28,
@@ -620,7 +607,7 @@ const allProjects = [
       title: "View GitHub",
       url: "https://github.com/foxbits/portfolio-cookbook"
     },
-    image: "./img/portfolio/flowbird-abt.jpg"
+    image: "./img/portfolio/portfolio-web.jpg"
   },
   {
     id: 30,
@@ -640,7 +627,7 @@ const allProjects = [
       title: "GitHub profile",
       url: "https://github.com/foxbits"
     },
-    image: "./img/portfolio/flowbird-abt.jpg"
+    image: "./img/portfolio/github.jpg"
   },
   {
     id: 24,
@@ -696,9 +683,28 @@ const allProjects = [
     image: "./img/portfolio/kaly.jpg"
   },
   {
+    id: 27,
+    category: PortfolioItemCategory.Learning,
+    startDate: new Date(2019, 3, 1),
+    status: "Learning / Solo",
+    title: "Learning Curve #2",
+    description: `Took different courses to learn new technologies and documented the process on GitHub, for example:
+    <a href='https://github.com/foxbits/devops-essentials-sample-app' target='_blank'>devops</a>,
+    <a href='https://github.com/foxbits/ng-udemy-files' target='_blank'>angular</a>,
+    <a href='https://github.com/foxbits/vue-udemy' target='_blank'>vue</a>,
+    <a href='https://github.com/foxbits/playground-reactjs-redux-saga' target='_blank'>react</a>,
+    `,
+    url: {
+      title: "View on GitHub",
+      url: "https://github.com/stars/foxbits/lists/learning-curve"
+    },
+    image: "./img/portfolio/learning-curve-2.jpg"
+  },
+  {
     id: 19,
     category: PortfolioItemCategory.SideProjects,
     startDate: new Date(2018, 7, 1),
+    endDate: new Date(2020, 7, 31),
     status: "Side Project / Solo / Abandoned",
     title: "Replay.NET",
     description: "Web application integrating many existing movie engines (IMDb, Trakt, Taste) for creating an one-place streaming experience.  Includes: ASP.NET Core, automation with Puppeteer, streaming from HTTP and P2P, WebTorrent, Electron.",
@@ -812,9 +818,9 @@ const allProjects = [
     id: 2,
     category: PortfolioItemCategory.Learning,
     startDate: new Date(2016, 0, 1),
-    time: "Jan. 2016 - ?",
-    status: "Side Project / Solo",
-    title: "Technology Testing #1",
+    endDate: new Date(2019, 2, 30),
+    status: "Learning / Solo",
+    title: "Learning Curve #1",
     description: `Small applications built for wanting to try out different technologies:
       <a target="_blank" href='https://github.com/marianfx/change-notifier'>Change Notifier</a>,
       <a target="_blank" href='https://github.com/marianfx/solver-codingame'>CodinGame Problem Solver</a>,
