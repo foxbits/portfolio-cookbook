@@ -410,9 +410,14 @@ const jobs = [
       <br/><br/>
       <b>Responsibilities:</b> system design, architecture, team choreography, technical solutions design, software development, code reviews, mentorship, interviews
       <br/><br/>
+
       <b>Activities:</b> Business Capping Rule Engine (re)design and expansion (e.g. concessions) to match custom transportation rules; Multi-Tenancy migration challenges analysis, change design and implementation; Notifications System (email + sms), Identity Validation (IDNow), Payment Processors & 3rd parties integration (e.g. Google Wallet, NMI), two production launches extended support (Sherlock Holmes + bugfixing); documentation guru; tooling management delegate (.NET 6 + .NET 8 + React upgrades, dev environment setup with docker compose, Jenkins scripting, Rancher Desktop migration, UI unit tests introduction); Settings management (upgrade settings storage and documentation); diagramming; Re-Captcha (brute-force attack mitigation); internal reusable generic mechanisms (e.g. redis caching, requeue for out-of-order messages, identity middlewares);
       <br/><br/>
-      <b>Highlights:</b> Ness Internal Partnership & Collaboration Award in 2022 for outstanding teamwork; opened the "Behind the Ness Scenes" program in 2024 (<a href="https://www.linkedin.com/posts/ness-digital-engineering-romania_voices-rewardsandrecognition-innovation-activity-7155202769992200192-PPSs" target="_blank" >social 1</a>, <a href="https://www.facebook.com/iasi.ness/videos/900454821625042" target="_blank" >social 2</a>) for outstanding customer satisfaction
+
+      <b>Highlights:</b> Ness Internal Partnership & Collaboration Award in 2022 for outstanding teamwork; opened the "Behind the Ness Scenes" program in 2024 (
+      <a href="https://www.linkedin.com/posts/ness-digital-engineering-romania_voices-rewardsandrecognition-innovation-activity-7155202769992200192-PPSs" target="_blank" >social 1</a>, 
+      <a href="https://www.facebook.com/iasi.ness/videos/900454821625042" target="_blank" >social 2</a>
+      ) for outstanding customer satisfaction
       <br/>
       <b>Related projects:</b> 
       <a class="color__projects" href="#project-24">Flowbird - ABT</a>
@@ -611,6 +616,13 @@ const education = [
     description: `Status: finished, no license.<br/> 
       Three years of learning more or less useful knowledge (presented in a more or less optimized fashion), meeting new people and discovering new ideas about my future self. Topics studied added as tags.
       <br/><br/>
+      <b>Highlights:</b>
+      <ul>
+        <li><b>Online International Olympiad of Mathematics MO-Ariel 2015</b>: Participated at MO-Ariel (online international olympiad of Mathematics) in 2015, alongside 3 teammates, guided by Mr.
+        Florin Iacob (FII). Advanced to the finals, in the online Mathematics „Championship”.
+        Won a bronze medal.
+        </li></ul>
+      <br/>
       <b>Related projects:</b>
       <a class="color__projects" href="#project-3">Fun Web / Solution1</a>,
       <a class="color__projects" href="#project-14">Learning Curve - University</a>`,
@@ -626,7 +638,24 @@ const education = [
           Baccalaureate - Jun 2014. Avg: <b>9.86</b> <br/> 
           ⭐ Mathematics: <b>10</b> <br/>
           ⭐ Computer Science (C/C++) : <b>10</b> <br/>
-          ⭐ Romanian Language &amp; Literature: <b>9.6</b>.`,
+          ⭐ Romanian Language &amp; Literature: <b>9.6</b>.
+
+          <br/><br/>
+          <b>Highlights:</b>
+          <ul>
+            <li><b>- IT Marathon, 2014</b>: Participated alongside a friend in this contest, organized by AC Iași. The main goal of the contest was to build in a day (6-8 hours) a desktop LAN chat client. Finished 3rd place.
+            </li>
+            <li><b>- O.T.I. 2011, 2012, 2014</b>: Participated at O.T.I. ("Olimpiada de Tehnologia Informației" ~ Competition of Informatics Technology, formerly known as C.I.A.).<br/>
+            2014: Domain was C#. 2nd place county level.<br/>
+            2012: Domain was Web / Microsoft Office / General Computer Knowledge. 1st place county level, nothing national level<br/>
+            2011: Domain was Web / Microsoft Office / General Computer Knowledge. 1st place county level, Silver national level
+            </li>
+            <li><b>- Mathematics Olympiad</b>: Participated in a mathematics club and competed in the county level competitions.
+            </li>
+            <li><b>- Computer Science Olympiad</b>: Participated in a CS club and competed in the county level competitions.
+            </li>
+          </ul>
+          <br/>`,
     tags: ["Mathematics", "Computer Science", "Romanian Language &amp; Literature", "English Language"]
   },
   {
