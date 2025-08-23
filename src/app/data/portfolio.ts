@@ -1,3 +1,4 @@
+import { title } from 'process';
 import { PortfolioItemCategory } from '../components/sections/portfolio/PortfolioSection';
 import { getAge } from '../extensions/DateExtensions';
 
@@ -105,7 +106,7 @@ const infos = [
 ];
 
 const profiFile = {
-  description: `Sassy software expert with great skills of communication, attention to details & architectural thinking. 
+  description: `Sassy and creative software expert with great skills of communication, attention to details & architectural thinking. 
   Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on. With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to Angular and React), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
   links: [
     {
@@ -130,21 +131,25 @@ const cards = [
       {
         title: "Web Development",
         value: 96,
-        tooltip: "Designing and creating APIs; consuming them through different web frameworks. Knowledge of core concepts that I can apply to any other framework"
+        tooltip: "Designing & creating APIs, sync or async; consuming them through different web frameworks. Knowledge of core concepts that I can apply to any other framework"
       },
       {
         title: ".NET Development",
         value: 93,
-        tooltip: "Web, Services or Desktop, with insights into latest versions of .NET"
+        tooltip: "Libraries, APIs or Desktop, with insights into latest versions of .NET"
       },
       {
-        title: "OOP / S.O.L.I.D. Programming",
+        title: "OOP / S.O.L.I.D.",
         value: 93
       },
       {
-        title: "Architecture",
+        title: "Data Structures & Algorithms",
+        value: 90
+      },
+      {
+        title: "Technical Design",
         value: 86,
-        tooltip: "Technical design of solutions fitting the business needs"
+        tooltip: "Technical design and optimization of solutions fitting the business needs"
       },
       {
         title: "Front-End Development",
@@ -152,18 +157,24 @@ const cards = [
         tooltip: "with or without a framework"
       },
       {
-        title: "Relational Databases",
-        value: 75,
-        tooltip: "Manage, Query, Procedural Programming"
+        title: "Enterprise patterns",
+        value: 78,
+        tooltip: "Choreographies between (micro)services using HTTP and/or exchanges/event queues for optimal problem solving"
       },
       {
-        title: "Data Structures & Algorithms",
-        value: 70
+        title: "AI (of course)",
+        value: 76,
+        tooltip: "The best skill of an experienced developer is googling; now it's the ability to use AI for googling. Master of Perplexity and Copilot"
+      },
+      {
+        title: "Databases",
+        value: 75,
+        tooltip: "Mostly relational: Manage, Query, sometimes even Procedural Programming"
       },
       {
         title: "Mentorship",
         value: 70,
-        tooltip: "Ability to teach knowledge from all these fields to others"
+        tooltip: "Ability to teach knowledge from all these fields to others, provide guidance to interns and peers etc."
       }
     ]
   },
@@ -171,65 +182,86 @@ const cards = [
     title: "Personal Skills",
     data: [
       {
+        title: "Problem Solving",
+        value: 99
+      },
+      {
+        title: "Organizational Suite",
+        value: 95,
+        tooltip: "Bringing order into chaos - task management, documentation, code - everything must be organized!"
+      },
+      {
         title: "Confidence",
         value: 92
       },
       {
-        title: "Organizational Skills Suite",
-        value: 90
-      },
-      {
         title: "Attention to Details",
-        value: 90
+        value: 90,
+        tooltip: "A very keen eye, being able to spot details and figure out what's wrong with lightspeed"
       },
       {
-        title: "Leadership",
-        value: 85
-      },
-      {
-        title: "Architectural Thinking",
-        value: 82
-      },
-      {
-        title: "Team Coreography",
-        value: 82
-      },
-      {
-        title: "Communication",
-        value: 80
+        title: "Creativity",
+        value: 88,
+        tooltip: "A great software creator needs creativity, imagination, and the ability to think outside the box in order to come forth with innovative solutions"
       },
       {
         title: "Fast Learning algorithm",
-        value: 75
+        value: 86,
+        tooltip: "Quick grasp of new concepts and technologies; practical sense of how things work and cross-applying concepts"
+      },
+      {
+        title: "Architectural Mind",
+        value: 84,
+        tooltip: "Abstract concepts feel easy as a breeze"
+      },
+      {
+        title: "Leadership & Team Choreography",
+        value: 82,
+        tooltip: "Ability to lead teams, as a technical leader not as a manager, to help them grow, to provide guidance and support and, on top of all, a lot of fun"
+      },
+      {
+        title: "Communication",
+        value: 80,
+        tooltip: "Easy to communicate with, thanks to a strong passion for human psychology"
+      },
+      {
+        title: "Interviewing",
+        value: 80,
+        tooltip: "Developed an algorithm for conversational interviews to figure out the technical & psychological match of candidates with the team/project"
       }
     ]
   },
   {
     title: "Technologies Mastered",
     data: [{
-      title: "ASP.NET (+Core) & Related",
+      title: "ASP.NET",
       value: 92,
-      tooltip: "Includes ASP.NET (MVC, Web API), .NET Core alternatives and many Nu-Get libraries for any usecase"
+      tooltip: "Includes ASP.NET (MVC, Web API) and many Nu-Get libraries for any usecase"
     },
     {
       title: "Front-End Frameworks & Libs",
       value: 85,
-      tooltip: "React, Angular (5+), Material UI, Unit Testing with Jest, jQuery, Vue.JS, Bootstrap, Material Design Frameworks (Angular Material, Materialize), PrimeNG, Chart.JS, etc"
+      tooltip: "React, Angular, Unit Testing, jQuery, Vue.JS, Bootstrap, Material Design Frameworks (Angular Material, Materialize, Material UI), PrimeNG, Ionic, etc"
     },
     {
       title: "Databases / ORMs",
       value: 82,
-      tooltip: "Includes Postgres / SQL Server / MariaDB / Oracle knowledge, advanced query writing, query building mechanisms, Entity Framework (Core) proficiency with extras like EFPlus (batch) and LINQ, that can be adapted easily to other ORMs"
+      tooltip: "Includes Postgres / SQL Server / MariaDB knowledge, query writing, query building, Entity Framework proficiency (+- EFPlus, LINQ), adaptable to other ORMs"
     },
     {
       title: "Docker & The Cloud",
-      value: 79,
-      tooltip: "Working scenarios and application deployments through docker containers to the cloud (AWS / Azure)"
+      value: 80,
+      tooltip: "Working scenarios and application build & deployment through docker containers to the cloud (AWS / Azure), recently also through kubernetes"
     },
     {
-      title: "Enterprise patterns",
-      value: 78,
-      tooltip: "Defining choreographies between microservices using HTTP and/or exchanges/queues (RabbitMQ) according to business needs"
+      title: "Application Security",
+      value: 77,
+      tooltip: "Expertise with secure coding practices, application auth* and vulnerability assessments"
+    },
+    {
+      title: "CI / CD",
+      value: 75,
+      tooltip: "Worked with various pipelines for CI/CD: Jenkins, GitHub Actions, GitLab, Bitbucket Pipelines, TeamCity"
     },
     {
       title: "Agile & Customs",
@@ -240,57 +272,56 @@ const cards = [
       value: 70
     },
     {
-      title: "Old School .NET Framework",
+      title: "Old .NET Framework",
       value: 69,
       tooltip: "Refers to other .NET Framework knowledge, like WCF, WFA, WPF"
     },
     {
-      title: "Node.js & Frameworks",
+      title: "Cross-platform web",
       value: 60,
-      tooltip: "Never used in professional environment, only as test-playground"
-    },
-    {
-      title: "Functional Programming",
-      value: 55,
-      tooltip: "Applied with JavaScript mostly, and a long time ago with Python"
-    },
-    {
-      title: "Regular Expressions",
-      value: 55,
-      tooltip: "Includes basic knowledge, mostly used when searching in files and when validating data"
-    },
+      tooltip: "Experience with building cross-platform desktop/mobile applications using Electron, Cordova, Ionic"
+    }
     ]
   },
   {
     title: "Languages (Programming)",
-    data: [{
-      title: "C#",
-      value: 95
-    },
-    {
-      title: "JavaScript (ES6+ +/- TypeScript)",
-      value: 92
-    },
-    {
-      title: "SQL (PL/SQL, T-SQL, MySQL)",
-      value: 80
-    },
-    {
-      title: "VB.NET",
-      value: 50
-    },
-    {
-      title: "Python",
-      value: 50
-    },
-    {
-      title: "C/C++",
-      value: 30
-    },
-    {
-      title: "Java",
-      value: 30
-    },
+    data: [
+      {
+        title: "C#",
+        value: 95
+      },
+      {
+        title: "TypeScript",
+        value: 94
+      },
+      {
+        title: "JavaScript",
+        value: 92
+      },
+      {
+        title: "SQL",
+        value: 80
+      },
+      {
+        title: "Python",
+        value: 70
+      },
+      {
+        title: "Scripting (others)",
+        value: 60
+      },
+      {
+        title: "VB.NET",
+        value: 40
+      },
+      {
+        title: "Java",
+        value: 30
+      },
+      {
+        title: "C/C++",
+        value: 30
+      }
     ]
   },
 ];
