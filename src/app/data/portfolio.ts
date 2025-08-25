@@ -32,7 +32,7 @@ const metaData = {
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
 const email = "marian@foxbites.net";
-const cvPdf = "/files/CV.Marian.Focsa.EN.2022.1.pdf"; // recommended to use a different name on each change, for cache problems
+const cvPdf = "/files/CV.Marian.Focsa.EN.2025.1.pdf"; // recommended to use a different name on each change, for cache problems
 const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
 const substackLink = "https://thefoxdiaries.substack.com/";
@@ -377,24 +377,23 @@ const skills = [
  */
 const jobs = [
   {
-    title: "🚀 Freelance Technical Professional",
+    title: "🚀 Independent Software Engineer",
     location: "<span style='text-transform: none'>side-projects, self-employed, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
     startDate: new Date(2025, 5, 1),
-    endDate: undefined,
     description: `Software Development is about discovering that you are actually a god and you can create literally anything, you are limited only by your imagination (or at least this is the reason why I initially got into it).
-     Therefore I started investing more time into personal projects:
+     Therefore I started investing more time, alongside my main job, into personal projects:
      <ul>
       <li>- Writer at <a href='https://thefoxdiaries.substack.com' target='_blank'>thefoxdiaries.substack.com</a></li>
-      <li>- Creator of two brand-new secret projects</li>
+      <li>- Creator of two brand-new side projects</li>
       <li>- Creator of <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a> (CV / Portfolio Website)</li>
-      <li>- Self-hoster at foxbites.net</li>
-      <li>- Seldom GitHub contributor</li>
+      <li>- Self-hoster at <a href='https://foxbites.net' target='_blank'>foxbites.net</a></li>
+      <li>- Seldom <a href='https://github.com/foxbits' target='_blank'>GitHub</a> contributor</li>
      </ul>
     Details can be found in the Projects section.
     <br/><br/>
     <b>Related projects:</b> 
     <a class="color__projects" href="#project-25">The Fox Diaries Substack</a>,
-    <a class="color__projects" href="#project-26">Secret Projects #1</a>,
+    <a class="color__projects" href="#project-26">Side Projects #1</a>,
     <a class="color__projects" href="#project-28">CV / Portfolio Website</a>,
     <a class="color__projects" href="#project-29">Self-Hosting</a>,
     <a class="color__projects" href="#project-30">GitHub* Contributor (seldom)</a>`,
@@ -404,23 +403,24 @@ const jobs = [
     title: "💺 Technical Lead",
     location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2021, 6, 1),
-    endDate: undefined,
-    description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum team towards sprint goals in an Agile environment, visibly reducing their stress, helping them learn, be productive and never forget that humor is important -  all through a philosophy of building trust, based on professionalism and saying "no" when needed, with other engineers and product representatives across UK and France.
-
+    description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum team towards sprint goals in an Agile environment, visibly reducing their stress, helping them learn, be productive and never forget that humour is important -  all through a philosophy of building trust, based on professionalism and saying "no" when needed, with other engineers and product representatives across UK and France.
+      <br/>
+      <b>Related projects:</b>
+      <a class="color__projects" href="#project-24">Flowbird - ABT</a>
       <br/><br/>
+
       <b>Responsibilities:</b> system design, architecture, team choreography, technical solutions design, software development, code reviews, mentorship, interviews
       <br/><br/>
 
       <b>Activities:</b> Business Capping Rule Engine (re)design and expansion (e.g. concessions) to match custom transportation rules; Multi-Tenancy migration challenges analysis, change design and implementation; Notifications System (email + sms), Identity Validation (IDNow), Payment Processors & 3rd parties integration (e.g. Google Wallet, NMI), two production launches extended support (Sherlock Holmes + bugfixing); documentation guru; tooling management delegate (.NET 6 + .NET 8 + React upgrades, dev environment setup with docker compose, Jenkins scripting, Rancher Desktop migration, UI unit tests introduction); Settings management (upgrade settings storage and documentation); diagramming; Re-Captcha (brute-force attack mitigation); internal reusable generic mechanisms (e.g. redis caching, requeue for out-of-order messages, identity middlewares);
       <br/><br/>
 
-      <b>Highlights:</b> Ness Internal Partnership & Collaboration Award in 2022 for outstanding teamwork; opened the "Behind the Ness Scenes" program in 2024 (
+      <b>Highlights:</b> <b>Ness Excellence Champion Q2 2023</b> - for nurturing a culture of excellence within the organization; 
+      opened the <b>"Behind the Ness Scenes"</b> program in 2024 (
       <a href="https://www.linkedin.com/posts/ness-digital-engineering-romania_voices-rewardsandrecognition-innovation-activity-7155202769992200192-PPSs" target="_blank" >social 1</a>, 
       <a href="https://www.facebook.com/iasi.ness/videos/900454821625042" target="_blank" >social 2</a>
       ) for outstanding customer satisfaction
-      <br/>
-      <b>Related projects:</b> 
-      <a class="color__projects" href="#project-24">Flowbird - ABT</a>
+      
       <br/><br/>
       <b>Tech stack</b>: similar to the previous position, with the addition of more cloud tools, bits of kubernetes and third party integrations - Google Wallet, IDNow, AWS (S3, SNS, SMS, Glacier, Elastic, RDS)`,
     tags: ["Leadership", "Business value", "Web Development", "ASP.NET", "Architecture", "Transportation"]
@@ -428,16 +428,20 @@ const jobs = [
   {
     title: "🚌 Senior Software Engineer",
     location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
-    startDate: new Date(2020, 6, 1),
+    startDate: new Date(2020, 5, 1),
     endDate: new Date(2021, 5, 30),
     description: `Creative software engineer working on a transport intelligence product in a scrum-based large team, with a tech-stack floating around .NET (Core) and React, collaborating in an Agile environment with other engineers and product representatives across UK and France.
+    <br/>
+    <b>Related projects:</b> 
+        <a class="color__projects" href="#project-24">Flowbird - ABT</a>
+    <br/><br/>
 
-      <br/><br/>
       <b>Activities:</b> software development & maintenance, bug tracking, architecture, API Design, providing technical solutions for business requirements, code reviews, writing technical documentation, investigating tech news & solutions and presenting them to the team, mentorship (interns, new joiners)
-      <br/>
-      <b>Related projects:</b> 
-          <a class="color__projects" href="#project-24">Flowbird - ABT</a>
       <br/><br/>
+
+      <b>Highlights:</b> <b>Ness Partnership Ambassador Q3 2021</b> - for outstanding teamwork
+      <br/><br/>
+
       <b>Back-end:</b> .NET Core, ASP.NET (Core) WebApi, Entity Framework (Core), Redis, RabbitMQ, Keycloak (Identity Provider), Hangfire, MSUnit
       <br/>
       <b>UI:</b> React, Material UI, HTML, CSS, SCSS, JSS, JEST
@@ -453,19 +457,20 @@ const jobs = [
     title: "🍹 Lead Software Developer",
     location: '<a href="https://www.kireygroup.com" target="_blank">Kirey Group</a>',
     startDate: new Date(2017, 7, 1),
-    endDate: new Date(2020, 5, 30),
+    endDate: new Date(2020, 4, 30),
     description: `Team leader/lead developer of a continuously growing team, working with a tech-stack floating around .NET (Core) and Angular, collaborating in an Agile environment with clients and managers.
-
-      <br/><br/>
-      <b>Activities:</b> software development & maintenance, writing technical documentation, API design, technical decisions based on requirements, software architecture, planning & estimates, mentorship (<i>planning & implementation of training sessions on .NET, Angular & related</i>)
       <br/>
-      <b>Related projects:</b> 
+      <b>Related projects:</b>
           <a class="color__projects" href="#project-23">K-Value | KG Talent Platform</a>,
           <a class="color__projects" href="#project-22">GDM</a>,
           <a class="color__projects" href="#project-21">Kaly</a>,
           <a class="color__projects" href="#project-20">Risk Asset Manager</a>,
           <a class="color__projects" href="#project-15">Promis - Oil&Gas PM</a>
       <br/><br/>
+
+      <b>Activities:</b> software development & maintenance, writing technical documentation, API design, technical decisions based on requirements, software architecture, planning & estimates, mentorship (<i>planning & implementation of training sessions on .NET, Angular & related</i>)
+      <br/>
+
       <b>Frameworks:</b> .NET Framework / Core, ASP.NET (Core) MVC / WebApi, Entity Framework (Core), Angular, MSUnit
       <br/>
       <b>Languages:</b> C#, TypeScript, JavaScript, LINQ, SQL (flavors: T-SQL, MySQL, PostgreSQL)
@@ -478,16 +483,16 @@ const jobs = [
   {
     title: "🍷 .NET Software Developer",
     location: '<a href="https://www.kireygroup.com" target="_blank">Kirey Est</a>',
-    startDate: new Date(2015, 9, 1),
+    startDate: new Date(2015, 8, 1),
     endDate: new Date(2017, 6, 31),
     description: `Worked part-time, while also studying at university, alongside both junior and experienced developers, on a various set of technologies, in order to gain experience.
-
-      <br/><br/>
-      <b>Related projects:</b> 
+      <br/>
+      <b>Related projects:</b>
           <a class="color__projects" href="#project-1">Anti-fraud - Fraud & Risk Management</a>,
           <a class="color__projects" href="#project-4">"Vittoria's Secrets" - Automated Tests & Tools</a>,
           <a class="color__projects" href="#project-8">""Product Factory" - Banking Product Management</a>
-      <br/>
+      <br/><br/>
+
       <b>Frameworks:</b> .NET Framework, ASP.NET WebForms, WPF (MVVM), Entity Framework, Spring.NET, Telerik
       <br/>
       <b>Languages:</b> C#, VB.NET, T-SQL flavor, LINQ, XAML
@@ -615,17 +620,19 @@ const education = [
     endDate: new Date(2017, 5, 15),
     description: `Status: finished, no license.<br/> 
       Three years of learning more or less useful knowledge (presented in a more or less optimized fashion), meeting new people and discovering new ideas about my future self. Topics studied added as tags.
+
+      <br/>
+      <b>Related projects:</b>
+      <a class="color__projects" href="#project-3">Fun Web / Solution1</a>,
+      <a class="color__projects" href="#project-14">Learning Curve - University</a>
       <br/><br/>
+
       <b>Highlights:</b>
       <ul>
         <li><b>Online International Olympiad of Mathematics MO-Ariel 2015</b>: Participated at MO-Ariel (online international olympiad of Mathematics) in 2015, alongside 3 teammates, guided by Mr.
         Florin Iacob (FII). Advanced to the finals, in the online Mathematics „Championship”.
         Won a bronze medal.
-        </li></ul>
-      <br/>
-      <b>Related projects:</b>
-      <a class="color__projects" href="#project-3">Fun Web / Solution1</a>,
-      <a class="color__projects" href="#project-14">Learning Curve - University</a>`,
+        </li></ul>`,
     tags: ["Web Technologies", "Cloud Computing", ".NET", ".NET Advanced", "OOP", "Programming Engineering", "Computer Networks", "Databases &amp; DBMS Practice", "Operating Systems - Linux", "Python", "Game design &amp; Development", "Computer Graphics", "Regular Expressions / Formal Languages", "Mathematics", "Logics for Computer Science", "Machine Learning", "Artificial Intelligence", "Data Structures", "Algorithms Design", "Java"]
   },
   {
@@ -682,7 +689,7 @@ const projects = [
     category: PortfolioItemCategory.Side,
     startDate: new Date(2025, 7, 15),
     status: "Side Project / In Progress",
-    title: "Secret projects #1",
+    title: "Side projects #1",
     description: "Working on a mobile application around building healthy hobbies and meeting people (with a twist) and a game with quizzes, similar to the former QuizzUp, but with a lovely twist.",
     url: {
       title: "Private work"
@@ -694,7 +701,7 @@ const projects = [
     category: PortfolioItemCategory.Side,
     startDate: new Date(2024, 6, 1),
     status: "Side Project / In Progress",
-    title: "Self-Hosting",
+    title: "Self-Hosting Lab",
     description: "Home server, first for multimedia (Plex), then extended for photos (immich), cloud (nextcloud), development (jenkins, gitlab) & app deployments (e.g. portfolio website). Protected with tailscale & cloudflare zerotrust. Wrote about it on <a href='https://thefoxdiaries.substack.com' target='_blank'>substack</a>",
     url: {
       title: "View GitHub",
@@ -897,7 +904,7 @@ const projects = [
       <a target="_blank" href='https://bitbucket.org/marianfx/cc-labs'>Cloud Computing</a>,
       <a target="_blank" href='https://github.com/foxbits/python-labs'>Python</a>,
       <a target="_blank" href='https://github.com/foxbits/ai-labs'>Artificial Intelligence</a>,
-      <a target="_blank" href='https://github.com/foxbits/dotnet-core-labs'>.NET Core</a>,
+      <a target="_blank" href='https://github.com/foxbits/dotnet-core-labs'>.NET Core</a>
       `,
     url: {
       title: "Links in description"
@@ -926,7 +933,7 @@ const projects = [
     title: "Fun Web / Solution1 - Learning Multiplayer",
     description: `Fun educational app for learning courses, gaining XP, and competing in multiplayer Q&A. Transformed afterward in assignment upload/grade management. Check:
       <a target="_blank" href='https://github.com/foxbits/team-7-fun-web'>here</a>,
-      <a target="_blank" href='https://github.com/tabby336/Solution1'>here</a>,
+      <a target="_blank" href='https://github.com/tabby336/Solution1'>here</a>
       `,
     url: {
       title: "Links in description"
@@ -944,7 +951,7 @@ const projects = [
       <a target="_blank" href='https://github.com/foxbits/change-notifier'>Change Notifier</a>,
       <a target="_blank" href='https://github.com/foxbits/solver-codingame'>CodinGame Problem Solver</a>,
       <a target="_blank" href='https://github.com/foxbits/solver-leetcode'>Leetcode Problem Solver</a>,
-      <a target="_blank" href='https://github.com/foxbits/com.fx.Id3Helper'>ID3 ML Helper</a>,
+      <a target="_blank" href='https://github.com/foxbits/com.fx.Id3Helper'>ID3 ML Helper</a>
       `,
     url: {
       title: "Links in description"
@@ -954,7 +961,7 @@ const projects = [
   {
     id: 1,
     category: PortfolioItemCategory.Work,
-    startDate: new Date(2015, 9, 1),
+    startDate: new Date(2015, 8, 1),
     endDate: new Date(2016, 5, 30),
     status: "Work / Finished",
     title: "'Anti-fraud' - Fraud Management System",
