@@ -5,6 +5,7 @@ The CV is also available at [connect.foxbites.net](https://connect.foxbites.net)
 - [Functionality:](#functionality)
 - [Tech Stack](#tech-stack)
 - [Documentation](#documentation)
+- [Pre-requisites](#pre-requisites)
   - [Application structure](#application-structure)
   - [Customization](#customization)
   - [Caveats](#caveats)
@@ -33,9 +34,16 @@ In the rather technical order of appearing in pages:
 
 The contents of the website is built with [React](https://react.dev) ([Next.JS](https://nextjs.org)) and some custom libraries on top of it. The standard react workflows and commands are available for it.
 
-The application is deployed with [Docker Compose](https://docs.docker.com/compose/). It is integrated with an automated CI/CD on a private [Jenkins](https://www.jenkins.io) Server, which connects it through [cloudflare](https://www.cloudflare.com/en-gb/) to the publicly hosted website.
+The application is deployed with [Docker Compose](https://docs.docker.com/compose/). It is integrated with an automated CI/CD on a private [Jenkins](https://www.jenkins.io) Server (it runs a simple custom agent defined in the [self-hosting-cookbook](https://github.com/foxbits/self-hosting-cookbook)), which connects it through [cloudflare](https://www.cloudflare.com/en-gb/) to the publicly hosted website.
 
 ## Documentation
+
+## Pre-requisites
+
+- Node.js
+- make
+- docker, docker compose
+- [optional] a Jenkins server with an agent that is able to run docker compose and make commands
 
 ### Application structure
 
@@ -45,8 +53,8 @@ Standard next.js app router based structure, with some important mentions:
 - [`public/js`](public/js), [`public/css`](public/css) - custom preloaded scripts and CSS that are not integrated with React, loaded in the [`src/app/app-client-layout.tsx`](src/app/app-client-layout.tsx) and in [`src/app/page.tsx`](src/app/page.tsx)
 - [`public/img`](public/img) - images, logos, some of them with dual versions - one small (thumbnail), other large which is lazyloaded
 - [`public/files`](public/files) - can contain any file, recommended to keep other versions of the CV, like EUROPASS PDF, then linked in the Profile section
-- [`Dockerfile`](Dockerfile), [`docker-compose.yml`](docker-compose.yml) - scripts to build the docker image, deploy it with compose (linked to custom [`build-docker.sh`](build-docker.sh) and [`docker-compose.run.sh`](docker-compose.run.sh))
-- [`Jenkinsfile`](Jenkinsfile) - script that runs on jenkins, which uses a SSH agent that connects to docker (DooS) and is able to run the application (only does so from master)
+- [`Dockerfile`](Dockerfile), [`docker-compose.yml`](docker-compose.yml) - scripts to build the docker image, deploy it with compose (with a [`Makefile`](Makefile) that provides two commands - `build` and `run` respectively)
+- [`Jenkinsfile`](Jenkinsfile) - script that runs on jenkins, which uses a SSH agent that connects to docker (DooS) and is able to run the application (only does so from master). It is ran by a simple custom agent defined in the [self-hosting-cookbook](https://github.com/foxbits/self-hosting-cookbook) which runs the pre-existing `make` commands
 
 ### Customization
 You can reorder sections as you wish in the [`page.tsx`](src/app/page.tsx).
