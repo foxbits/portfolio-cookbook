@@ -20,12 +20,11 @@ const imagesArray = [
     11,
     12,
     13,
-    14,
-    15
+    14
 ];
-let usedImageIndexes: number[] = [];
-const intervalChangeMs = 10000;
 const initialImageIndex = 6;
+let usedImageIndexes: number[] = [initialImageIndex];
+const intervalChangeMs = 10000;
 
 const PortraitCarousel: FC<PortraitCarouselProps> = ({ children }) => {
 
