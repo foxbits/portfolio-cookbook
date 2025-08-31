@@ -52,7 +52,7 @@ const PortfolioSection: FC<PortfolioSectionProps> = ({ items }) => {
             <ul className="portfolio_items">
               {processedItems.map((item, index) => (
                 <li key={index} id={`project-${item.id}`} className={`full-card card ${item.category} ${!item.endDate ? 'active': ''} col-xs-12 col-sm-6 col-md-4 mix`}>
-                  <div className="wrapper" style={{ background: `url(${item.image}) center/cover no-repeat;` }}>
+                  <div className="wrapper" style={{ background: `url(${item.image}) center/cover no-repeat` }}>
                     <div className="header">
                       <div className="date">
                         <span className="year">{item.displayString}</span>
