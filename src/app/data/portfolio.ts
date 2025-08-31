@@ -32,7 +32,7 @@ const metaData = {
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
 const email = "marian@foxbites.net";
-const cvPdf = "/files/CV.Marian.Focsa.EN.2025.2.pdf"; // recommended to use a different name on each change, for cache problems
+const cvPdf = "/files/CV.Marian.Focsa.EN.2025.3.pdf"; // recommended to use a different name on each change, for cache problems
 const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
 const substackLink = "https://thefoxdiaries.substack.com/";
@@ -380,14 +380,14 @@ const jobs = [
     title: "🚀 Independent Software Engineer",
     location: "<span style='text-transform: none'>side-projects, self-employed, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
     startDate: new Date(2025, 5, 1),
-    description: `Software Development is about discovering that you are actually a god and you can create literally anything, you are limited only by your imagination (or at least this is the reason why I initially got into it).
-     Therefore I started investing more time, alongside my main job, into personal projects:
+    description: `Software Development is about discovering that you are a god and you can create literally anything, limited only by your imagination (or at least this is the reason why I initially got into it).
+     As a result I started investing more time, alongside my main job, into personal/side projects:
      <ul>
       <li>- Writer at <a href='https://thefoxdiaries.substack.com' target='_blank'>thefoxdiaries.substack.com</a></li>
       <li>- Creator of two brand-new side projects</li>
       <li>- Creator of <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a> (CV / Portfolio Website)</li>
+      <li>- Creator of small <a href='https://github.com/foxbits' target='_blank'>open source tools</a></li>
       <li>- Self-hoster at <a href='https://foxbites.net' target='_blank'>foxbites.net</a></li>
-      <li>- Seldom <a href='https://github.com/foxbits' target='_blank'>GitHub</a> contributor</li>
      </ul>
     Details can be found in the Projects section.
     <br/><br/>
@@ -395,9 +395,9 @@ const jobs = [
     <a class="color__projects" href="#project-25">The Fox Diaries Substack</a>,
     <a class="color__projects" href="#project-26">Side Projects #1</a>,
     <a class="color__projects" href="#project-28">CV / Portfolio Website</a>,
-    <a class="color__projects" href="#project-29">Self-Hosting</a>,
-    <a class="color__projects" href="#project-30">GitHub* Contributor (seldom)</a>`,
-    tags: ["Side-projects", "GitHub", "Substack", "Self-hosting"]
+    <a class="color__projects" href="#project-30">Open Source Tools</a>,
+    <a class="color__projects" href="#project-29">Self-Hosting</a>`,
+    tags: ["Side-projects", "Open Source", "Substack", "Self-hosting"]
   },
   {
     title: "💺 Technical Lead",
@@ -702,7 +702,7 @@ const projects = [
     startDate: new Date(2024, 6, 1),
     status: "Side Project / In Progress",
     title: "Self-Hosting Lab",
-    description: "Home server, first for multimedia (Plex), then extended for photos (immich), cloud (nextcloud), development (jenkins, gitlab) & app deployments (e.g. portfolio website). Protected with tailscale & cloudflare zerotrust. Wrote about it on <a href='https://thefoxdiaries.substack.com' target='_blank'>substack</a>",
+    description: "Home server, first for multimedia (Plex, *arr), then extended for photos (immich), cloud (nextcloud), development (jenkins, gitlab) & app deployments (e.g. portfolio). Protected with tailscale & cloudflare zerotrust. Wrote about it on <a href='https://thefoxdiaries.substack.com' target='_blank'>substack</a>",
     url: {
       title: "View GitHub",
       url: "https://github.com/foxbits/self-hosting-cookbook"
@@ -740,14 +740,13 @@ const projects = [
     category: PortfolioItemCategory.Side,
     startDate: new Date(2021, 0, 1),
     status: "Side Project / In Progress",
-    title: "GitHub* Contributor (seldom)",
+    title: "Open Source Tools",
     description: `Created:
     <a href='https://github.com/foxbits/fx-core' target='_blank'>fx-core</a>,
     <a href='https://github.com/foxbits/portfolio-cookbook' target='_blank'>portfolio-cookbook</a>,
-    <a href='https://github.com/foxbits/self-hosting-cookbook' target='_blank'>self-hosting-cookbook</a>
-    and others, and contributed to:
-    <a href='https://github.com/arvvoid/plugin.video.hbogoeu' target='_blank'>plugin.video.hbogoeu</a>,
-    <a href='https://github.com/Jackett/Jackett' target='_blank'>Jackett</a>
+    <a href='https://github.com/foxbits/self-hosting-cookbook' target='_blank'>self-hosting-cookbook</a>,
+    <a href='https://github.com/foxbits/ytm-to-statsfm' target='_blank'>ytm-to-statsfm</a>
+    and others, and sometimes contributed to external repos.
     `,
     url: {
       title: "GitHub profile",
