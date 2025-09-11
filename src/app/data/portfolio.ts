@@ -32,7 +32,7 @@ const metaData = {
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
 const email = "marian@foxbites.net";
-const cvPdf = "/files/CV.Marian.Focsa.EN.2025.3.pdf"; // recommended to use a different name on each change, for cache problems
+const cvPdf = "/files/CV.Marian.Focsa.EN.2025.4.pdf"; // recommended to use a different name on each change, for cache problems
 const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
 const substackLink = "https://thefoxdiaries.substack.com/";
@@ -145,8 +145,11 @@ const info = [
  * A personal introduction and list of CV links displayed in the About Me -> Professional Profile section
  */
 const profile = {
-  description: `Sassy and creative software expert with great skills of communication, attention to details & architectural thinking. 
-  Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions. Open-minded, I'll be always looking for a new challenge to take on. With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to Angular and React), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
+  description: `Sassy, creative, and strategic thinker with carefully crafted communication, pattern analysis, and long-term planning skills, driven by an ideology of attention to details and an architectural mind.
+  <br/>
+  Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions.
+  <br/>
+  With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to React and Angular), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
   links: [
     {
       title: "This page (complete)",
