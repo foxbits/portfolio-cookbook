@@ -568,16 +568,28 @@ b {
 }
 
 /*========================= About Me =======================*/
-.panel-box.basic-info-left,
-.panel-box.basic-info-right {
-	min-height: 400px !important;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px)
 {
 	.panel-box.basic-info-left,
 	.panel-box.basic-info-right {
 		min-height: 510px !important;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	.panel-box.basic-info-left,
+	.panel-box.basic-info-right {
+		min-height: 440px !important;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
+
+	.panel-box.basic-info-left,
+	.panel-box.basic-info-right {
+		min-height: 400px !important;
 	}
 }
 
@@ -1708,12 +1720,6 @@ footer a:focus {
 	}
 	.vertical .container {
 		width: 970px;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.vertical .professional-profile p {
-		margin: 0 0 38px;
 	}
 }
 

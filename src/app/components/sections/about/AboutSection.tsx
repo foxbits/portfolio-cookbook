@@ -42,7 +42,7 @@ const AboutSection: FC<AboutSectionProps> = ({info, profile}) => {
           <div className="col-xs-12 col-sm-6">
             <div className="panel-box professional-profile wow fadeInRight basic-info-right">
               <h2>Professional Profile</h2>
-              <p>{profile.description}</p>
+              <p dangerouslySetInnerHTML={{ __html: profile.description }} />
               <div className="btn-group">
                 <a className='btn btn-primary dropdown-toggle' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Resume <span className="caret"></span>
