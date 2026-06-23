@@ -57,10 +57,10 @@ const loves = [
     name: "Unconventional Learning"
   },
   {
-    name: "JavaScript"
+    name: "Open Source AI"
   },
   {
-    name: "Photography"
+    name: "Art"
   },
   {
     name: "Good Books"
