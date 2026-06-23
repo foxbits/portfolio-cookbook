@@ -587,6 +587,14 @@ const interests = {
  */
 const education = [
   {
+    title: "🤖 GenAI & Agentic AI Development",
+    location: 'Internal',
+    startDate: new Date(2022, 6, 1),
+    endDate: new Date(2022, 6, 4),
+    description: `Internal Ness trainings on GenAI & Agentic AI Development, with a focus on understanding the principles of generative AI and its applications in software development. The training covered topics such as prompt engineering, LLM concepts, using agentic systems & tools, models and token optimizations.`,
+    tags: ["AI", "LLMs"]
+  },
+  {
     title: "🍉 The Principal Developer Masterclass",
     location: '<a href="https://certs.principal.dev/14x/U03NTA03VUN" target="_blank">Certificate</a>',
     startDate: new Date(2022, 6, 1),
