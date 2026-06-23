@@ -4,7 +4,7 @@ import { getAge } from '../extensions/DateExtensions';
 /**
  * Application Information - Version
  */
-export const APP_VERSION = "2025.1";
+export const APP_VERSION = "2026.1";
 /**
  * Application Information - Repository
  */
