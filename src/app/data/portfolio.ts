@@ -144,7 +144,7 @@ const profile = {
   <br/>
   Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions.
   <br/>
-  With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to React and Angular), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
+  With a verifiable experience in developing web applications, and a born ability to track and fix problems, build tools, and use the proper technologies, I am ready to expose to you the secrets of high-quality software development.`,
   links: [
     {
       title: "This page (complete)",
