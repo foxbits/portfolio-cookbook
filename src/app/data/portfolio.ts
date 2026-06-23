@@ -4,7 +4,7 @@ import { getAge } from '../extensions/DateExtensions';
 /**
  * Application Information - Version
  */
-export const APP_VERSION = "2025.1";
+export const APP_VERSION = "2026.1";
 /**
  * Application Information - Repository
  */
@@ -32,7 +32,7 @@ const metaData = {
 const age = getAge(1996, 8, 4);
 const phoneNumber = "+40 75*-***-669";
 const email = "marian@foxbites.net";
-const cvPdf = "/files/CV.Marian.Focsa.EN.2025.4.pdf"; // recommended to use a different name on each change, for cache problems
+const cvPdf = "/files/CV.Marian.Focsa.EN.2026.1.pdf"; // recommended to use a different name on each change, for cache problems
 const messengerLink = "https://m.me/marian.fx";
 const linkedinLink = "https://www.linkedin.com/in/marianfx/";
 const substackLink = "https://thefoxdiaries.substack.com/";
@@ -57,10 +57,10 @@ const loves = [
     name: "Unconventional Learning"
   },
   {
-    name: "JavaScript"
+    name: "Open Source AI"
   },
   {
-    name: "Photography"
+    name: "Art"
   },
   {
     name: "Good Books"
@@ -87,11 +87,6 @@ const socialLinks = [
     url: "https://github.com/foxbits",
     icon: "fa-github-alt",
     title: "Github"
-  },
-  {
-    url: "https://facebook.com/marian.fx",
-    icon: "fa-facebook-square",
-    title: "Facebook"
   },
   {
     url: substackLink,
@@ -149,7 +144,7 @@ const profile = {
   <br/>
   Based on my fast learning algorithm and team choreography understanding, I'm looking forward to growing myself into the better professional by tackling difficult projects and coming front with innovative solutions.
   <br/>
-  With a verifiable experience in developing web applications with (but not limited to) the .NET tech stack and various front-end goodies (from plain JS up to React and Angular), and a born ability to track and fix problems, build tools, and test new technologies, I am ready to expose to you the secrets of high-quality software development.`,
+  With a verifiable experience in developing web applications, and a born ability to track and fix problems, build tools, and use the proper technologies, I am ready to expose to you the secrets of high-quality software development.`,
   links: [
     {
       title: "This page (complete)",
@@ -161,7 +156,7 @@ const profile = {
     },
     {
       title: "Linkedin (Web, minimal)",
-      link: "https://www.linkedin.com/in/marianfx/"
+      link: linkedinLink
     }
   ]
 };
@@ -175,17 +170,17 @@ const skills = [
     data: [
       {
         title: "Web Development",
-        value: 96,
+        value: 95,
         tooltip: "Designing & creating APIs, sync or async; consuming them through different web frameworks. Knowledge of core concepts that I can apply to any other framework"
       },
       {
         title: ".NET Development",
-        value: 93,
+        value: 90,
         tooltip: "Libraries, APIs or Desktop, with insights into latest versions of .NET"
       },
       {
         title: "OOP / S.O.L.I.D.",
-        value: 93
+        value: 90
       },
       {
         title: "Data Structures & Algorithms",
@@ -193,27 +188,27 @@ const skills = [
       },
       {
         title: "Technical Design",
-        value: 86,
+        value: 85,
         tooltip: "Technical design and optimization of solutions fitting the business needs"
       },
       {
+        title: "Agentic AI",
+        value: 80,
+        tooltip: "Times change, but the best skills of an experienced developer continue to be research and critical thinking. Master of coding agents."
+      },
+      {
         title: "Front-End Development",
-        value: 85,
+        value: 75,
         tooltip: "with or without a framework"
       },
       {
         title: "Enterprise patterns",
-        value: 78,
+        value: 75,
         tooltip: "Choreographies between (micro)services using HTTP and/or exchanges/event queues for optimal problem solving"
       },
       {
-        title: "AI (of course)",
-        value: 76,
-        tooltip: "The best skill of an experienced developer is googling; now it's the ability to use AI for googling. Master of Perplexity and Copilot"
-      },
-      {
         title: "Databases",
-        value: 75,
+        value: 70,
         tooltip: "Mostly relational: Manage, Query, sometimes even Procedural Programming"
       },
       {
@@ -280,7 +275,7 @@ const skills = [
     title: "Technologies Mastered",
     data: [{
       title: "ASP.NET",
-      value: 92,
+      value: 90,
       tooltip: "Includes ASP.NET (MVC, Web API) and many Nu-Get libraries for any usecase"
     },
     {
@@ -304,8 +299,13 @@ const skills = [
       tooltip: "Expertise with secure coding practices, application auth* and vulnerability assessments"
     },
     {
-      title: "CI / CD",
+      title: "Agentic Programming",
       value: 75,
+      tooltip: "Prompt engineering, plans, skills & knowledge base building, token consumption optimization."
+    },
+    {
+      title: "CI / CD",
+      value: 70,
       tooltip: "Worked with various pipelines for CI/CD: Jenkins, GitHub Actions, GitLab, Bitbucket Pipelines, TeamCity"
     },
     {
@@ -316,16 +316,6 @@ const skills = [
       title: "Async programming",
       value: 70
     },
-    {
-      title: "Old .NET Framework",
-      value: 69,
-      tooltip: "Refers to other .NET Framework knowledge, like WCF, WFA, WPF"
-    },
-    {
-      title: "Cross-platform web",
-      value: 60,
-      tooltip: "Experience with building cross-platform desktop/mobile applications using Electron, Cordova, Ionic"
-    }
     ]
   },
   {
@@ -333,15 +323,15 @@ const skills = [
     data: [
       {
         title: "C#",
-        value: 95
+        value: 90
       },
       {
         title: "TypeScript",
-        value: 94
+        value: 85
       },
       {
         title: "JavaScript",
-        value: 92
+        value: 85
       },
       {
         title: "SQL",
@@ -352,20 +342,12 @@ const skills = [
         value: 70
       },
       {
+        title: "Anything else (with AI)",
+        value: 65
+      },
+      {
         title: "Scripting (others)",
         value: 60
-      },
-      {
-        title: "VB.NET",
-        value: 40
-      },
-      {
-        title: "Java",
-        value: 30
-      },
-      {
-        title: "C/C++",
-        value: 30
       }
     ]
   },
@@ -380,17 +362,37 @@ const skills = [
  */
 const jobs = [
   {
+    title: "🔐 Technical Lead",
+    location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
+    startDate: new Date(2025, 9, 1),
+    description: `Collaborated with team of Software & DevOps engineers to help drive the development of new integrations into an XDR product, while automating processes and improving codebase and documentation with the help of AI.
+      <br/>
+      <b>Related projects:</b>
+      <a class="color__projects" href="#project-31">Barracuda XDR</a>
+      <br/><br/>
+
+      <b>Responsibilities:</b> team choreography, technical solutions design, software development, AI-driven feature automations, AI adoption and usage optimization, code reviews, mentorship, interviews
+      <br/><br/>
+
+      <b>Activities:</b> new integrations development, codebase documentation, AI plans & skills implementation, Automated Ports configuration, unit testing optimization, Windows & WSL support for development, processes documentation, token optimization
+      <br/><br/>
+      
+      <br/><br/>
+      <b>Tech stack</b>: similar to the previous position, with the addition of Agentic AI tools, Node.js, Python, Elastic and Databricks`,
+    tags: ["Leadership", "Web Development", "Agentic AI", "Node.js", "Security Reporting"]
+  },
+  {
     title: "🚀 Independent Software Engineer",
     location: "<span style='text-transform: none'>side-projects, self-employed, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
     startDate: new Date(2025, 5, 1),
-    description: `Software Development is about discovering that you are a god and you can create literally anything, limited only by your imagination (or at least this is the reason why I initially got into it).
-     As a result I started investing more time, alongside my main job, into personal/side projects:
+    description: `Software Development is about discovering that you are a God and you can create literally anything, limited only by your imagination <i>(or at least this is the reason why I initially got into it)</i>.
+     Therefore, as a result of the fact that I'm sparkling with creativity, I started investing more time, alongside my main job, into personal/side projects:
      <ul>
-      <li>- Writer at <a href='https://thefoxdiaries.substack.com' target='_blank'>thefoxdiaries.substack.com</a></li>
-      <li>- Creator of two brand-new side projects</li>
-      <li>- Creator of <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a> (CV / Portfolio Website)</li>
-      <li>- Creator of small <a href='https://github.com/foxbits' target='_blank'>open source tools</a></li>
       <li>- Self-hoster at <a href='https://foxbites.net' target='_blank'>foxbites.net</a></li>
+      <li>- Creator of two brand-new side projects (yet to be revealed)</li>
+      <li>- Writer at <a href='https://thefoxdiaries.substack.com' target='_blank'>thefoxdiaries</a> and creator at <a href='https://youtube.com/@foxbitestv' target='_blank'>foxbites.tv</a></li>
+      <li>- Creator of small <a href='https://github.com/foxbits' target='_blank'>open source tools</a></li>
+      <li>- Creator of <a href='https://connect.foxbites.net' target='_blank'>connect.foxbites.net</a> (CV)</li>
      </ul>
     Details can be found in the Projects section.
     <br/><br/>
@@ -406,6 +408,7 @@ const jobs = [
     title: "💺 Technical Lead",
     location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2021, 6, 1),
+    endDate: new Date(2025, 4, 31),
     description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum team towards sprint goals in an Agile environment, visibly reducing their stress, helping them learn, be productive and never forget that humour is important -  all through a philosophy of building trust, based on professionalism and saying "no" when needed, with other engineers and product representatives across UK and France.
       <br/>
       <b>Related projects:</b>
@@ -572,7 +575,7 @@ const interests = {
     },
     {
       title: "Shopping",
-      link: "https://www.vinted.ro/member/170366344-foxietamine",
+      link: "https://www.vinted.ro/member/170366344",
       icon: "fa-shopping-bag"
     },
   ]
@@ -583,6 +586,14 @@ const interests = {
  * Same format and comments as for the jobs timeline
  */
 const education = [
+  {
+    title: "🤖 GenAI & Agentic AI Development",
+    location: 'Internal',
+    startDate: new Date(2022, 6, 1),
+    endDate: new Date(2022, 6, 4),
+    description: `Internal Ness trainings on GenAI & Agentic AI Development, with a focus on understanding the principles of generative AI and its applications in software development. The training covered topics such as prompt engineering, LLM concepts, using agentic systems & tools, models and token optimizations.`,
+    tags: ["AI", "LLMs"]
+  },
   {
     title: "🍉 The Principal Developer Masterclass",
     location: '<a href="https://certs.principal.dev/14x/U03NTA03VUN" target="_blank">Certificate</a>',
@@ -688,6 +699,19 @@ const education = [
  */
 const projects = [
   {
+    id: 31,
+    category: PortfolioItemCategory.Work,
+    startDate: new Date(2025, 9, 1),
+    status: "Work / In Progress",
+    title: "Barracuda XDR",
+    description: "Worked on the XDR Dashboard, a security product that integrates with various security tools and platforms to provide a unified view of threats and incidents, enabling faster response and remediation.",
+    url: {
+      title: "More details",
+      url: "https://www.barracuda.com/products/managed-xdr"
+    },
+    image: "./img/portfolio/barracuda-xdr.jpg"
+  },
+  {
     id: 26,
     category: PortfolioItemCategory.Side,
     startDate: new Date(2025, 7, 15),
@@ -705,7 +729,7 @@ const projects = [
     startDate: new Date(2024, 6, 1),
     status: "Side Project / In Progress",
     title: "Self-Hosting Lab",
-    description: "Home server, first for multimedia (Plex, *arr), then extended for photos (immich), cloud (nextcloud), development (jenkins, gitlab) & app deployments (e.g. portfolio). Protected with tailscale & cloudflare zerotrust. Wrote about it on <a href='https://thefoxdiaries.substack.com' target='_blank'>substack</a>",
+    description: "Home server, first for multimedia (Plex, *arr), then extended for photos, cloud, development & app deployments (e.g. portfolio), and lately AI. Protected with tailscale & cloudflare zerotrust. Wrote about it on <a href='https://thefoxdiaries.substack.com' target='_blank'>substack</a>",
     url: {
       title: "View GitHub",
       url: "https://github.com/foxbits/self-hosting-cookbook"
@@ -745,10 +769,11 @@ const projects = [
     status: "Side Project / In Progress",
     title: "Open Source Tools",
     description: `Created:
+    <a href='https://github.com/foxbits/self-hosting-cookbook' target='_blank'>self-hosting-cookbook</a>,
+    <a href='https://github.com/foxbits/open-crawl' target='_blank'>open-crawl</a>,
+    <a href='https://github.com/foxbits/ytm-to-statsfm' target='_blank'>ytm-to-statsfm</a>,
     <a href='https://github.com/foxbits/fx-core' target='_blank'>fx-core</a>,
     <a href='https://github.com/foxbits/portfolio-cookbook' target='_blank'>portfolio-cookbook</a>,
-    <a href='https://github.com/foxbits/self-hosting-cookbook' target='_blank'>self-hosting-cookbook</a>,
-    <a href='https://github.com/foxbits/ytm-to-statsfm' target='_blank'>ytm-to-statsfm</a>
     and others, and sometimes contributed to external repos.
     `,
     url: {
@@ -762,7 +787,7 @@ const projects = [
     category: PortfolioItemCategory.Work,
     startDate: new Date(2020, 6, 1),
     endDate: new Date(2025, 6, 1),
-    status: "Work / In Progress",
+    status: "Work / Finished",
     title: "Flowbird - ABT",
     description: "Account Based Ticketing (ABT) is an open-payment transport intelligence solution for making public transport easier (tap your card & no cares). It Reacts to the users when viewing their journeys data & uses the cloud to choreograph its workflows through RabbitMQ & ASP.NET",
     url: {
@@ -998,7 +1023,7 @@ const stats = [
     count: projects.length
   },
   {
-    title: "Cups of coffee",
+    title: "Tokens consumed",
     count: Infinity
   },
   {
@@ -1006,7 +1031,7 @@ const stats = [
     count: new Date().getFullYear() - jobs[jobs.length - 1].startDate.getFullYear()
   },
   {
-    title: "Glasses of wine",
+    title: "Cups of coffee",
     count: 1996
   },
 ];

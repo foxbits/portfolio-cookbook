@@ -15,14 +15,9 @@ const imagesArray = [
     6,
     7,
     8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14
+    9
 ];
-const initialImageIndex = 6;
+const initialImageIndex = 5;
 let usedImageIndexes: number[] = [initialImageIndex];
 const intervalChangeMs = 10000;
 
