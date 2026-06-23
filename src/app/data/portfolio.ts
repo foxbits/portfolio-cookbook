@@ -89,11 +89,6 @@ const socialLinks = [
     title: "Github"
   },
   {
-    url: "https://facebook.com/marian.fx",
-    icon: "fa-facebook-square",
-    title: "Facebook"
-  },
-  {
     url: substackLink,
     icon: "fa-pencil-square",
     title: "Substack"
