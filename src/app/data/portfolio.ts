@@ -408,6 +408,7 @@ const jobs = [
     title: "💺 Technical Lead",
     location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
     startDate: new Date(2021, 6, 1),
+    endDate: new Date(2025, 4, 31),
     description: `Solving business problems and architectural challenges on a transport intelligence product while leading a scrum team towards sprint goals in an Agile environment, visibly reducing their stress, helping them learn, be productive and never forget that humour is important -  all through a philosophy of building trust, based on professionalism and saying "no" when needed, with other engineers and product representatives across UK and France.
       <br/>
       <b>Related projects:</b>
