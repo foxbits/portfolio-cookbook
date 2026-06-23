@@ -362,6 +362,26 @@ const skills = [
  */
 const jobs = [
   {
+    title: "🔐 Technical Lead",
+    location: '<a href="https://www.ness.com" target="_blank">Ness Digital Engineering</a>',
+    startDate: new Date(2025, 9, 1),
+    description: `Collaborated with team of Software & DevOps engineers to help drive the development of new integrations into an XDR product, while automating processes and improving codebase and documentation with the help of AI.
+      <br/>
+      <b>Related projects:</b>
+      <a class="color__projects" href="#project-31">Barracuda XDR</a>
+      <br/><br/>
+
+      <b>Responsibilities:</b> team choreography, technical solutions design, software development, AI-driven feature automations, AI adoption and usage optimization, code reviews, mentorship, interviews
+      <br/><br/>
+
+      <b>Activities:</b> new integrations development, codebase documentation, AI plans & skills implementation, Automated Ports configuration, unit testing optimization, Windows & WSL support for development, processes documentation, token optimization
+      <br/><br/>
+      
+      <br/><br/>
+      <b>Tech stack</b>: similar to the previous position, with the addition of Agentic AI tools, Node.js, Python, Elastic and Databricks`,
+    tags: ["Leadership", "Web Development", "Agentic AI", "Node.js", "Security Reporting"]
+  },
+  {
     title: "🚀 Independent Software Engineer",
     location: "<span style='text-transform: none'>side-projects, self-employed, <a href='https://connect.foxbites.net' target='_blank'>foxbites.net</a></span>",
     startDate: new Date(2025, 5, 1),
@@ -670,6 +690,19 @@ const education = [
  */
 const projects = [
   {
+    id: 31,
+    category: PortfolioItemCategory.Work,
+    startDate: new Date(2025, 9, 1),
+    status: "Work / In Progress",
+    title: "Barracuda XDR",
+    description: "Worked on the XDR Dashboard, a security product that integrates with various security tools and platforms to provide a unified view of threats and incidents, enabling faster response and remediation.",
+    url: {
+      title: "More details",
+      url: "https://www.barracuda.com/products/managed-xdr"
+    },
+    image: "./img/portfolio/barracuda-xdr.jpg"
+  },
+  {
     id: 26,
     category: PortfolioItemCategory.Side,
     startDate: new Date(2025, 7, 15),
@@ -745,7 +778,7 @@ const projects = [
     category: PortfolioItemCategory.Work,
     startDate: new Date(2020, 6, 1),
     endDate: new Date(2025, 6, 1),
-    status: "Work / In Progress",
+    status: "Work / Finished",
     title: "Flowbird - ABT",
     description: "Account Based Ticketing (ABT) is an open-payment transport intelligence solution for making public transport easier (tap your card & no cares). It Reacts to the users when viewing their journeys data & uses the cloud to choreograph its workflows through RabbitMQ & ASP.NET",
     url: {
